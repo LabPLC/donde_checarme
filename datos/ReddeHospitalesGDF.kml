@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Red de Hospitales GDF</name>
+  <description><![CDATA[Red de Hospitales de la Secretaría de Salud del Gobierno del Distrito Federal]]></description>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://www1.df.gob.mx/iconos_mapas/hospitales.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Hospital Materno Infantil Dr. Nicolás M. Cedillo</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dra. Patricia Flores Galicia <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Gustavo J. S/n, Esq. Víctor Hernández Covarrubias, Col. Unidad Francisco Villa <BR>Delegación Azcapotzalco C.P. 02400. <STRONG><FONT style="background-color:#ffffff" color="#000099">Teléfono:</FONT></STRONG> 53 94 05 65</FONT></DIV>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>-99.203300,19.498251,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Azcapotzalco</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dra. Guadalupe Alejandra Santillán Muñoz<BR><FONT color="#000099"><STRONG>Dirección:</STRONG></FONT> Los Reyes, Azcapotzalco, Ciudad de México, DF<BR><FONT color="#000099"><STRONG>Teléfono:</STRONG></FONT> 55 61 28 54</FONT></DIV>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-99.185608,19.484491,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Materno Infantil Cuautepec</name>
+    <description><![CDATA[<DIV style="color:rgb(102,102,102)" dir="ltr"><SPAN style="color:rgb(0,0,153);font-weight:bold">Director:</SPAN> Dr. Roberto Pérez Aguilar<BR><SPAN style="font-weight:bold"><SPAN style="color:rgb(0,0,153)">Dirección:</SPAN> </SPAN>Emiliano Zapata No 17, Col. Cuautepec Barrio Bajo Delegación Gustavo A. Madero C.P. 07200. <BR><SPAN style="color:rgb(0,0,153);font-weight:bold">Teléfono:</SPAN> 53 06 21 90</DIV>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>-99.140785,19.539803,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Ticomán</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><FONT color="#000099"><STRONG>Director</STRONG>:</FONT> Dr. Carlos Vazquez Noriega <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Plan de San Luis S/n, Col. Ticomán Delegación Gustavo A. Madero. C.P. 07330. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 57 54 39 79 </FONT></DIV>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-99.138245,19.514547,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Villa</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dra. María del Rocío Lima Carcaño <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Avenida Cantera, Esq. Hidalgo S/n, Col. Estanzuela Delegación Gustavo A. Madero C.P. 07050. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 57 81 20 69</FONT></DIV>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-99.113876,19.487551,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico San Juan de Aragón</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><FONT color="#000099"><STRONG>Director:</STRONG></FONT> Dr. Raúl Contreras Artine <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Av. 506 entre calle 517 y 521, Col. San Juan de Aragón 1a. Sección <BR>Del. Gustavo A. Madero C.P. 07969. <STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 55 51 00 03</FONT></DIV>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-99.092812,19.457306,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General La Villa</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Enrique Garduño Salvador <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Av. San Juan de Aragón No 28, Col. Granjas Modernas. Delegación Gustavo A. Madero C.P. 07460. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 55 77 88 67 <BR></FONT></DIV>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-99.103371,19.480774,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Legaria</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Arturo Rafael Capistrán Guadalajara <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Calzada Legaría 371, Col. México Nuevo, Delegación Miguel Hidalgo C. P. 11260. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 50 82 76 42 </FONT></DIV>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-99.202934,19.450733,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Dr. Rubén Leñero</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. José Alfredo Jiménez Douglas <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Plan de San Luis y Díaz Mirón, Col. Casco de Santo Tomás Delegación Miguel Hidalgo C.P. 11340. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 53 41 17 93 <BR></FONT></DIV>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-99.169189,19.450987,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Tacubaya</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Carlos Javier Arnaiz Toledo <BR><FONT color="#000099"><STRONG>Dirección:</STRONG></FONT> Calle Carlos Lazo No.25, Esq. Gaviota, Col. Tacubaya Delegación Miguel Hidalgo C.P. 11870. <BR><FONT color="#000099"><STRONG>Teléfono:</STRONG></FONT> 55 15 79 20 </FONT></DIV>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>-99.190842,19.402475,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Dr. Gregorio Salas Flores</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Argemiro José Genes Naar <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Carmen No. 41, Col. Centro <BR>Delegación Cuauhtémoc C.P 06020. <STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 57 02 03 72 <BR></FONT></DIV>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>-99.129356,19.437643,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Peralvillo</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Emilio Escobar Picazo <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Tolnahuac No. 14, Col. San Simón Delegación Cuauhtémoc C.P. 06920. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 55 83 41 80 </FONT></DIV>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-99.141022,19.460251,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Materno Infantil Iniguarán</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Martín Viveros Alcaraz <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Estaño No. 307, Esq. Congreso de la Unión, Col. Felipe Ángeles Delegación Venustiano Carranza C.P 15310. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 57 95 67 64</FONT> </DIV>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>-99.113228,19.452307,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Balbuena</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Miguel Angel Martínez Guzmán <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Cecilio Róbelo y sur No.103, Col. Aeronáutica Militar, Delegación Venustiano Carranza C.P. 15900. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 55 52 16 02 </FONT></DIV>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-99.115303,19.424906,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Moctezuma</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Enrique Grania Pozada <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Oriente 158 No. 189, Col. Moctezuma 2da. Sección, Delegación Venustiano Carranza C.P. 15530. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 55 71 40 57</FONT></DIV>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-99.098358,19.432852,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Materno Infantil Cuajimalpa</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dra. María del Rosario Arrazola Flores <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Av. 16 de Septiembre s/n, Col. Contadero, Delegación Cuajimalpa de Morelos C.P.06500. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 58 12 22 11 </FONT></DIV>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-99.301117,19.347433,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Dr. Enrique Cabrera</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dra. Arcelia Martínez González <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Av. Centenario, esquina prolongación 5 de mayo, Col. Exhacienda de Tarango, Delegación Álvaro Obregón <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 12 85 29 54 <BR></FONT></DIV>]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>-99.224678,19.361961,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Xoco</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr.Jorge Arturo Aviña Valencia <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Av. México Coyoacán s/n, Esq. Bruno Traven, Col. General Anaya, Delegación Benito Juárez C.P. 30340. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 56 88 91 31</FONT></DIV>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-99.163162,19.360050,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Iztacalco</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Hugo Caballero Novara <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Avenida Coyuya y Terraplén de Río Frío S/n, Col. La Cruz, Delegación Iztacalco C.P. 08310. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 56 57 93 75 </FONT></DIV>]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>-99.117943,19.402376,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Coyoacán</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><FONT color="#000099"><STRONG>Director:</STRONG></FONT> Dr. Miguel Camarillo Valencia <BR><FONT color="#000099"><STRONG>Dirección:</STRONG></FONT> Moctezuma No. 18, Col. Del Carmen Coyoacán, Delegación Coyoacán C.P. 0400. <BR><FONT color="#000099"><STRONG>Teléfono:</STRONG></FONT> 55 54 28 60 </FONT></DIV>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>-99.167725,19.345737,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Pediátrico Iztapalapa</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><FONT color="#000099"><STRONG>Director:</STRONG></FONT> Dr. Ramón Carballo Herrada <BR><FONT color="#000099"><STRONG>Dirección:</STRONG></FONT> Calzada Ermita Iztapalapa No. 780, Col. Granjas San Antonio, Delegación Iztapalapa C.P. 09070. <BR><FONT color="#000099"><STRONG>Teléfono:</STRONG></FONT> 56 85 94 16 </FONT></DIV>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-99.107689,19.356548,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital de Especialidades Dr. Belisario Domínguez</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Osvaldo González La Riviere <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Av. Tlahuac No. 4866, Esq. Zacatlan, Col. San Lorenzo Tezonco, Delegación Iztapalapa C.P. 09790. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 58 50 00 02 </FONT></DIV>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-99.065460,19.306768,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Iztapalapa C.E.E.</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Benjamín Méndez Pinto <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Avenida Ermita Iztapalapa no. 3018, Col. Citlali; Delegación Iztapalapa, CP 09660 <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 54293212</FONT></DIV>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-99.027863,19.343451,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Materno Infantil Topilejo</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Calzada Santa Cruz No. 1, Col.San Miguel Topilejo, Delegación Tlalpan C.P. 14500. <BR><FONT color="#000099"><STRONG>Teléfono:</STRONG></FONT> 58 48 08 70 </FONT></DIV>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>-99.140236,19.199308,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Materno Infantil Xochimilco</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Victor Hugo Pulido Olivares <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Prolongación 16 de Septiembre y Calzada Nativitas, Barrio Xaltocán, Delegación Xochimilco C.P. 16090. <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 56 76 49 93 <BR></FONT></DIV>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-99.104958,19.254906,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital Materno Infantil Tláhuac</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr. Raúl Ernesto Guevara Meléndez Machuca <BR><STRONG><FONT color="#000099">Dirección</FONT>:</STRONG> Av. Tláhuac Chalco No. 231, Col. La Habana, Delegación Tláhuac C.P. 13050.</FONT></DIV>
+<DIV dir="ltr"><FONT color="#666666"><FONT color="#000099"><STRONG>Teléfono:</STRONG></FONT> 58 42 36 01 <BR>&nbsp;</FONT></DIV>]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>-98.997925,19.265505,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital General Milpa Alta</name>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Dr.Benjamín Ortega Romero <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Carretera Milpa Alta Chalco km. 2.5, Col. Villa Milpa Alta, Delegación Milpa Alta CP 12000 <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 2211-5839</FONT></DIV>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-99.011253,19.200199,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
