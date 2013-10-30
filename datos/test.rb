@@ -7,6 +7,8 @@ def kml
   this.remove_namespaces!
 end
 
+cdata_regex = /^Director:(?<director>.*)Dirección:(?<direccion>.*)Teléfono:(?<telefono>.*)$/x
+
 kml.remove_namespaces!
 placemarks = kml.xpath("//Document/Placemark")
 
@@ -24,6 +26,8 @@ desc = placemarks.xpath("//description")
 desc.each do |d|
   cdata = Nokogiri::HTML(d.text)
   cdata.remove_namespaces!
-  puts cdata.xpath("//div").text
+  texto = cdata.xpath("//div").text
+
+  
   
 end

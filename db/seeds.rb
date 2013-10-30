@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'nokogiri'
 def f
-  File.open("../datos/ReddeHospitalesGDF.kml")
+  File.open("datos/ReddeHospitalesGDF.kml")
 end
 def kml
   this = Nokogiri::XML(f)
@@ -23,15 +23,33 @@ end
 kml.remove_namespaces!
 placemarks = kml.xpath("//Document/Placemark")
 
-
+cdata_regex = /(Director:*)?(?<director>.*)(Dirección*:)+(?<direccion>.*)(Teléfono:*)+(?<telefono>.*)/x
 
 places = []
+i = 1
+puts placemarks.count
 placemarks.each do |p|
   name = p.xpath("name").text
   coord = p.xpath("Point/coordinates").text
+  latitude, longitude = coord.split(',')
   texto = extract_desc(p.xpath("description"))
   
-  puts name, coord, texto
+  partes = texto.match(cdata_regex)
+  # puts partes[:director]
+  # puts partes[:telefono]
+  # puts partes[:direccion]
+  # puts "#{latitude} --- #{longitude}"
+  p = Place.new(nombre: name, 
+                            latitude: latitude, 
+                            longitude: longitude,
+                            direccion: partes[:direccion],
+                            encargado: partes[:director],
+                            telefono: partes[:telefono])
+  places.push(p)
+end
+
+places.each do |p|
+  p.save
 end
 
 # placemarks.xpath("//name").each do |p|

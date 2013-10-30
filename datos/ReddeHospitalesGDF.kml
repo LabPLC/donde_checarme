@@ -403,7 +403,7 @@
   </Placemark>
   <Placemark>
     <name>Hospital General Milpa Alta</name>
-    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Dr.Benjamín Ortega Romero <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Carretera Milpa Alta Chalco km. 2.5, Col. Villa Milpa Alta, Delegación Milpa Alta CP 12000 <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 2211-5839</FONT></DIV>]]></description>
+    <description><![CDATA[<DIV dir="ltr"><FONT color="#666666"><STRONG><FONT color="#000099">Director:</FONT></STRONG> Dr.Benjamín Ortega Romero <BR><STRONG><FONT color="#000099">Dirección:</FONT></STRONG> Carretera Milpa Alta Chalco km. 2.5, Col. Villa Milpa Alta, Delegación Milpa Alta CP 12000 <BR><STRONG><FONT color="#000099">Teléfono:</FONT></STRONG> 2211-5839</FONT></DIV>]]></description>
     <styleUrl>#style22</styleUrl>
     <Point>
       <coordinates>-99.011253,19.200199,0.000000</coordinates>
