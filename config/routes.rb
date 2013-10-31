@@ -1,7 +1,8 @@
 ChecateAquiApp::Application.routes.draw do
-
   root 'static_pages#home'
+
   match '/ayuda', to: 'static_pages#ayuda', via: 'get'
+  match '/mapa', to: 'places#index', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
