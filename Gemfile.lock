@@ -202,6 +202,7 @@ DEPENDENCIES
   geocoder
   guard-rspec (= 2.5.0)
   guard-spork (= 1.5.0)
+  haml
   haml-rails
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
