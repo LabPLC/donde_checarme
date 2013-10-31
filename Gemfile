@@ -3,7 +3,7 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.0'
-
+gem 'bootstrap-sass'
 gem 'haml'
 gem 'haml-rails', :group => :development
 

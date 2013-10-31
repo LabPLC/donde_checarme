@@ -4,22 +4,24 @@ describe "PaginasEstaticas" do
 
   let(:titulo_base) { "Checate Aqui" }
 
+
   describe "Pagina de inicio" do
+
+    before { visit root_path }
     
     it "debe tener el Contenido 'Donde'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Donde')
+      expect(page).to have_content('donde')
     end
 
     it "debe tener el titulo 'Checate aqui'" do
-      visit '/static_pages/home'
       expect(page).to have_title("#{titulo_base} | Inicio")
     end
   end
 
   describe "Pagina de Ayuda" do
+    before { visit ayuda_path }
+
     it "debe tener el contenido 'Ayuda'" do
-      visit '/static_pages/ayuda'
       expect(page).to have_content('Ayuda')
     end
     
