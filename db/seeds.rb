@@ -31,7 +31,7 @@ puts placemarks.count
 placemarks.each do |p|
   name = p.xpath("name").text
   coord = p.xpath("Point/coordinates").text
-  latitude, longitude = coord.split(',')
+  longitude, latitude = coord.split(',')
   texto = extract_desc(p.xpath("description"))
   
   partes = texto.match(cdata_regex)
@@ -48,8 +48,7 @@ placemarks.each do |p|
   places.push(p)
 end
 
-places.each do |p|
-  p.save
+places.each do |p
 end
 
 # placemarks.xpath("//name").each do |p|
