@@ -48,8 +48,6 @@ placemarks.each do |p|
   places.push(p)
 end
 
-places.each do |p
-end
 
 # placemarks.xpath("//name").each do |p|
 #   puts p.text
