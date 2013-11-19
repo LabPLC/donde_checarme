@@ -35,8 +35,8 @@ placemarks.each do |p|
   texto = extract_desc(p.xpath("description"))
   
   partes = texto.match(cdata_regex)
-  # puts partes[:director]
-  # puts partes[:telefono]
+  #puts partes[:director]
+   puts partes[:telefono]
   # puts partes[:direccion]
   # puts "#{latitude} --- #{longitude}"
   p = Place.new(nombre: name, 
@@ -48,9 +48,9 @@ placemarks.each do |p|
   places.push(p)
 end
 
-places.each do |p|
-  p.save
-end
+#places.each do |p|
+ # p.save
+#end
 
 
 # placemarks.xpath("//name").each do |p|
