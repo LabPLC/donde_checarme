@@ -7,4 +7,5 @@ json.centros @centros.each do |centro|
 	json.(centro, :telefono)
 	json.(centro, :tipo)
 	json.(centro, :horario)
+	json.(centro, :categories)
 end
