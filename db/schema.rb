@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131030025833) do
+ActiveRecord::Schema.define(version: 20131127205528) do
+
+  create_table "categories", force: true do |t|
+    t.string   "tipo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categorizations", force: true do |t|
+    t.integer  "place_id"
+    t.string   "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "places", force: true do |t|
     t.string   "nombre"
@@ -22,6 +35,25 @@ ActiveRecord::Schema.define(version: 20131030025833) do
     t.string   "direccion"
     t.string   "encargado"
     t.string   "telefono"
+    t.string   "tipo"
+    t.string   "subtipo"
+    t.string   "delegacion"
+    t.string   "horario"
   end
+
+  create_table "questions", force: true do |t|
+    t.string   "palabra"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "nombre"
+    t.integer  "edad"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["nombre"], name: "index_users_on_nombre"
 
 end

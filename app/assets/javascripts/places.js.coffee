@@ -37,7 +37,9 @@ gm_init =  ->
 #gm_center = (map, lat, lon) ->
 
 
-infowindow = new google.maps.InfoWindow
+infowindow = new google.maps.InfoWindow({
+	maxWidth: 300
+	})
 window.markers = []
 
 $ ->
@@ -71,14 +73,16 @@ display_on_map = (data, map) ->
 
 create_marker = (point, map) ->
 
-	content_string = '<div class="centro_info"' +
+	content_string = '<div class="centro_info">' +
 		'<div class="centro_encabezado">' +
-			'<h1>' + point.nombre + '</h1>' +
+			'<h3>' + point.nombre + '</h3>' +
 		'</div>' +
 		'<div class="centro_content"' +
-			'<strong>Teléfono:</strong>' + 
+			'<h4>Teléfonos:</h4>' + 
 			'<p>' + point.telefono + '</p>' + 
-		'</div>'
+			'<h4> Horario:</h4>'+
+			'<p>'+ point.horario + '</p>' +
+		'</div>' + '</div>'
 
 	marker = new google.maps.Marker
 		position: new google.maps.LatLng(point.latitude, point.longitude)

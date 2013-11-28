@@ -5,6 +5,31 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'csv'
+
+csv_fname = 'datos/hospitales.csv'
+
+csv = CSV.read(csv_fname, :headers => true )
+
+csv.each do |row|
+  place =Place.create(
+    nombre: row['NOMBRE_CENTRO'],
+    delegacion: row['NOMBRE_DELEGACION'],
+    latitude: row['LONGITUD'],
+    longitude: row['LATITUD'],
+    telefono: row['TELEFONO'],
+    direccion: row['DOMICILIO'],
+    horario: row['HORARIO'],
+    tipo: row['TIPO'],
+    subtipo: row['SUB-TIPO']
+    )
+end
+
+
+
+
+=begin
 require 'nokogiri'
 def f
   File.open("datos/ReddeHospitalesGDF.kml")
@@ -46,21 +71,4 @@ placemarks.each do |p|
                             encargado: partes[:director],
                             telefono: partes[:telefono])
   places.push(p)
-end
-
-#places.each do |p|
- # p.save
-#end
-
-
-# placemarks.xpath("//name").each do |p|
-#   puts p.text
-# end
-
-# placemarks.xpath("//Point/coordinates").each do |p|
-#   puts p.text
-# end
-# #puts placemarks.xpath("//description").text
-
-# desc = placemarks.xpath("//description")
-
+=end

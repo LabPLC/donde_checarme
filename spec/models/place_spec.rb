@@ -1,3 +1,22 @@
+# == Schema Information
+#
+# Table name: places
+#
+#  id         :integer          not null, primary key
+#  nombre     :string(255)
+#  latitude   :float
+#  longitude  :float
+#  created_at :datetime
+#  updated_at :datetime
+#  direccion  :string(255)
+#  encargado  :string(255)
+#  telefono   :string(255)
+#  tipo       :string(255)
+#  subtipo    :string(255)
+#  delegacion :string(255)
+#  horario    :string(255)
+#
+
 require 'spec_helper'
 
 describe Place do
