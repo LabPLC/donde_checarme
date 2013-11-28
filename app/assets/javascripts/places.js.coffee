@@ -41,6 +41,8 @@ infowindow = new google.maps.InfoWindow({
 	maxWidth: 300
 	})
 window.markers = []
+window.infowindows = []
+window.current_points = []
 
 $ ->
 	console.log "poss"
@@ -60,13 +62,14 @@ load_points = (map) ->
 	$.get '/mapa.json', {}, callback, 'json'
 
 set_marker_map = (map) ->
+	#indow.center_marker.setMap(map)
 	for marker in window.markers
 		console.log("marcador")
 		marker.setMap(map)
 
 display_on_map = (data, map) ->
-	console.log(map)
-	console.log(data.centros[0])
+	#console.log(map)
+	#console.log(data.centros[0])
 	for centro in data.centros
 		create_marker(centro, map)
 	set_marker_map(map)
@@ -90,9 +93,11 @@ create_marker = (point, map) ->
 		map: map
 
 	window.markers.push(marker)
+	window.current_points.push(point)
 	google.maps.event.addListener(marker, 'click', ->
 		infowindow.setContent(content_string);
 		infowindow.open(map, this)
+		window.infowindows.push(infowindow)
 		#if marker.getAnimation()?
 		#	marker.setAnimation(null)
 		#else
@@ -106,12 +111,43 @@ delete_markers = (map)->
 	console.log (window.markers)
 	set_marker_map(null)
 	window.markers = []
+	window.infowindows = []
+	window.current_points = []
 
 moviendo_mapa = ->
 	centro_pos = window.map.getCenter()
-	console.log(centro_pos)
-	delete_markers(window.map)
-	load_from_position(window.map, centro_pos.lat(), centro_pos.lng())
+	distancia_centro =  google.maps.geometry.spherical.computeDistanceBetween(centro_pos, window.center_marker.getPosition());
+	console.log distancia_centro + "metros"
+	console.log window.current_points
+	#console.log window.markers
+	create_cards()
+	if distancia_centro > 3000
+		delete_markers(window.map)
+		window.center_marker.setMap(null)
+		window.center_marker = null
+		load_from_position(window.map, centro_pos.lat(), centro_pos.lng())	
+		window.center_marker = new google.maps.Marker
+			position: window.map.getCenter()
+			map: window.map
+			icon: {
+				url: 'arrows.png'
+			}
+
+create_cards = ->
+	$("#tarjetas div").empty()
+	$("#tarjetas").append(card(point)) for point in window.current_points
+
+card = (point) ->
+	nombre_centro = "<h3 class='card_title'><a href='#'>"+ point.nombre + "</a></h3>"
+	direccion_centro = "<p class='card_direccion'>" + point.direccion + "</p>"
+	horario_centro = "<p class='card_horario'>" + point.horario + "</p>"
+	telefonos_centro = "<p class='card_telefonos'>" + point.telefono + "</p>"
+	div_card_centro = "<div class='card'>" + 
+		nombre_centro +
+		direccion_centro +
+		horario_centro +
+		telefonos_centro + "</div>"
+	
 
 
 
