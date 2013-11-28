@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20131127205528) do
 
   create_table "categorizations", force: true do |t|
     t.integer  "place_id"
-    t.string   "category_id"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,14 +46,5 @@ ActiveRecord::Schema.define(version: 20131127205528) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "users", force: true do |t|
-    t.string   "nombre"
-    t.integer  "edad"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "users", ["nombre"], name: "index_users_on_nombre"
 
 end
