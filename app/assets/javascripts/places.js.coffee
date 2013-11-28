@@ -23,6 +23,7 @@ success = (position) ->
 	delete_markers(window.map)
 	load_from_position(window.map, latitude, longitude)
 
+
 error = (err) ->
 	console.log "no position disponible"
 	
@@ -70,9 +71,12 @@ set_marker_map = (map) ->
 display_on_map = (data, map) ->
 	#console.log(map)
 	#console.log(data.centros[0])
+	set_marker_map(null)
 	for centro in data.centros
 		create_marker(centro, map)
 	set_marker_map(map)
+	console.log "total marcadores " + window.markers.length
+	create_cards()
 
 create_marker = (point, map) ->
 
@@ -134,7 +138,7 @@ moviendo_mapa = ->
 			}
 
 create_cards = ->
-	$("#tarjetas div").empty()
+	$("#tarjetas div").remove()
 	$("#tarjetas").append(card(point)) for point in window.current_points
 
 card = (point) ->
