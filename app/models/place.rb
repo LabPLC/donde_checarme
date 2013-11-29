@@ -37,4 +37,8 @@ class Place < ActiveRecord::Base
   def add_category!(category)
     categorizations.create(category_id: category.id)
   end
+
+  def self.search(busqueda)
+    
+  end
 end

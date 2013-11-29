@@ -7,6 +7,10 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
   end
 
+  def search
+    @places = Place.find_by_tipo(params[:tipo])
+  end
+
   def lugares
     @lat = params[:latitude]
     @lon = params[:longitude]

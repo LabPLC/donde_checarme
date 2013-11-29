@@ -146,11 +146,13 @@ card = (point) ->
 	direccion_centro = "<p class='card_direccion'>" + point.direccion + "</p>"
 	horario_centro = "<p class='card_horario'>" + point.horario + "</p>"
 	telefonos_centro = "<p class='card_telefonos'>" + point.telefono + "</p>"
+	hacer_cita = "<span class='card_cita'><a href='places/" + point.id + "'>Agenda una cita</a></span>" 
 	div_card_centro = "<div class='card'>" + 
 		nombre_centro +
 		direccion_centro +
 		horario_centro +
-		telefonos_centro + "</div>"
+		telefonos_centro + 
+		hacer_cita + "</div>"
 	
 
 
