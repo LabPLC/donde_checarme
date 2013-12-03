@@ -60,7 +60,7 @@ load_from_position = (map, lat, lon) ->
 
 load_points = (map) ->
 	callback = (data) -> display_on_map(data, map)
-	$.get '/mapa.json', {}, callback, 'json'
+	$.get '/hospitales.json', {}, callback, 'json'
 
 set_marker_map = (map) ->
 	#indow.center_marker.setMap(map)
