@@ -51,6 +51,7 @@ $ ->
 	load_points(map)
 	google.maps.event.addListener(map, 'dragend', moviendo_mapa)
 	navigator.geolocation.getCurrentPosition(success,error)
+	ajaxtrue()
 	#
 
 load_from_position = (map, lat, lon) ->
@@ -153,6 +154,11 @@ card = (point) ->
 		horario_centro +
 		telefonos_centro + 
 		hacer_cita + "</div>"
+
+ajaxtrue = ->
+	$("#forma_busqueda").bind('ajax:success', (evt, data, status, xhr) ->
+		console.log data
+	)
 	
 
 

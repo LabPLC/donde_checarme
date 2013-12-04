@@ -1,6 +1,10 @@
 class PlacesController < ApplicationController
   def index
-    @centros = Place.all
+    if params.has_key? :search
+      @centros = Place.find([1,2] )
+    else
+      @centros = Place.all
+    end 
   end
 
   def show
