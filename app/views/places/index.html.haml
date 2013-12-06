@@ -2,18 +2,18 @@
 
 .container-fluid
   #busqueda_cont.row
-    #busqueda.col-md-8
+    #busqueda.col-sm-8
       =form_tag "/lugares.json", :method => :get, :remote => "true",:id => "forma_busqueda" do
         = text_field_tag "search", "", :placeholder => "Busca"
         = submit_tag "Submit", :class => "btn btn-default"
-    .botones.col-md-4
+    #botones.col-sm-4
       %button.btn.btn-default#boton_todos Localizarme 
     
   
-.container-fluid
-  #contflu.row-fluid
-    #map_canvas.mapa.col-md-6
-    #tarjetas.col-md-6
+.container-fluid.explorar
+  #contflu.row-fluid.contenedor
+    #map_canvas.mapa.flexible.col-sm-8
+    #tarjetas.col-sm-4
       %h2 Lista
 
 %h1= @lolo
