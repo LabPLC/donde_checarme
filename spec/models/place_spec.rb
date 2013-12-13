@@ -70,4 +70,8 @@ describe Place do
     it { should_not be_valid}
   end
 
+  describe "busqueda de un lugar sin parametros" do
+    
+  end
+
 end
