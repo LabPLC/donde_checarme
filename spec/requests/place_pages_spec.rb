@@ -7,7 +7,7 @@ describe "PlacePages" do
   subject { page }
 
   describe "pagina del mapa" do
-    before { visit mapa_path }
+    before { visit '/hospitales' }
 
     it { should have_css('div.mapa') }
     it { should have_title("#{titulo_base} | Mapa") }
