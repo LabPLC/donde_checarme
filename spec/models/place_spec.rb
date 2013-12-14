@@ -70,8 +70,10 @@ describe Place do
     it { should_not be_valid}
   end
 
-  describe "busqueda de un lugar sin parametros" do
-    
+  describe "busqueda de un lugar" do
+    it "no debe ser valido sin parametros" do
+      expect{Place.search()}.to raise_error
+    end
   end
 
 end
