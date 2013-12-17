@@ -1,6 +1,10 @@
 class PlacesController < ApplicationController
   def index
-    @centros = Place.all
+    if params.has_key? :busca
+      @centros = Place.where("nombre LIKE ?", params[:busca])
+    else
+      @centros = Place.all
+    end 
   end
 
   def show
@@ -14,6 +18,10 @@ class PlacesController < ApplicationController
   def lugares
     @lat = params[:latitude]
     @lon = params[:longitude]
-    @centros = Place.near([@lat, @lon], 3)
+    if params.has_key? :busca
+      @centros.Place.near([@lat, @lon], 3).where("nombre LIKE ?", params[:busca])
+    else
+      @centros = Place.near([@lat, @lon], 3)
+    end
   end
 end

@@ -4,8 +4,9 @@ ChecateAquiApp::Application.routes.draw do
   match '/ayuda', to: 'static_pages#ayuda', via: 'get'
   match '/hospitales', to: 'places#index', via: 'get'
   match '/lugares', to: 'places#lugares', via: 'get'
-    match '/search', to: 'places#search', via: 'get'
-    match '/hospitales/:id', to: 'places#show', via: 'get'
+  match '/search', to: 'places#search', via: 'get'
+  match '/hospitales/:id', to: 'places#show', via: 'get'
+  
 
   resources :places
 
