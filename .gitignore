@@ -17,4 +17,4 @@ doc/
 .DS_Store
 .idea
 bundler_stubs/
-/datos/
+#/datos/

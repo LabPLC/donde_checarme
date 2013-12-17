@@ -1,0 +1,590 @@
+NUMERO,INSTITUCION,TIPO,SUB-TIPO,NOMBRE_CENTRO,CLAVE_LOCALIDAD,NOMBRE_LOCALIDAD,CLAVE_MUNICIPIO,NOMBRE_MUNICPIO,CLAVE_ESTATAL,NOMBRE_ESTADO,POBLACION_BENEFICIADA,EQUIPOS_COMPUTO,LATITUD,Conversion,LONGITUD,Conversion,TELEFONO,DOMICILIO,HORARIO
+1,SEDESA,Hospital,General,Dr. Enrique Cabrera,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,123,-99.22412222,**,19.36168611,**,55 12 85 71 00 Ext. 5043,"Av. Centenario, esquina prolongación 5 de mayo, 
+Col. Exhacienda de Tarango, 
+Del. Álvaro Obregón, 
+C.P. 01618, México, D.F.",Permanente
+2,SEDESA,Hospital,General,Xoco,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,64,-99.07920556,-99.1626,19.36010278,19.360164,"55 12 85 71 04
+55 12 85 71 07","Av. México Coyoacán s/n, Esq. Bruno Traven, Col. General Anaya, Del. Benito Juárez 
+C.P. 33340, México, D.F.",Permanente
+3,SEDESA,Hospital,General,Gregorio Salas,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,44,-99.10325556,-99.129656,19.48060278,19.438019,,,Permanente
+4,SEDESA,Hospital,General,Villa,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,58,-99.13830556,-99.103164,19.51441389,19.480622,,"Av. San Juan de Aragón No 285, Col. Granjas Modernas. 
+Del. Gustavo A. Madero 
+C.P. 07460.
+México, D.F.",Permanente
+5,SEDESA,Hospital,General,Ticomán,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,58,-99.13830556,**,19.51441389,**,,"Plan de San Luis S/N, Col. Ticoman, 
+Del. Gustavo A. Madero, 
+C.P. 07330, México D.F.",Permanente
+6,SEDESA,Hospital,General Regional,Iztapalapa,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,164,-99.02731944,**,19.34326667,**,,"Av. Ermita Iztapalapa No. 3018, Col. Citlali, Del. Iztapalapa, C.P. 09660,
+México, D.F.",Permanente
+7,SEDESA,Hospital,General,Rubén Leñero,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,65,-99.16980278,**,19.4518,**,,"Plan de San Luis y Salvador Díaz Mirón S/N, 
+Col. Casco de Santo Tomas, 
+Del. Miguel Hidalgo, 
+C.P. 11400, México D.F.",Permanente
+8,SEDESA,Hospital,General,Tláhuac,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,127,-99.052675,**,19.28719722,**,,"La Turba 655, 
+Col Villa Centroamericana y del Caribe, 
+Del. Tlahuac, C.P. 13250
+México, D.F.",Permanente
+9,SEDESA,Hospital,General,Torre Médica Tepepan,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.17436667,-99.144133,19.26635833,19.2763,,"Calle Joya s/n, Valle Escondido, Mz 002, 
+Del. Tlalpan, 
+C.P. 16020, México, D.F.",Permanente
+10,SEDESA,Hospital,General,Ajusco Medio,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.20801111,**,19.27169444,**,,"Encinos 41, 
+Col. Miguel Hidalgo 4ta. Seccion 
+Del Tlalpan, 
+C.P. 14250 
+México D.F.",Permanente
+11,SEDESA,Hospital,General,Balbuena,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,84,-99.1155,**,19.4243,**,,"Cecilio Robelo y Sur No.103, Col. Aeronáutica Militar, Del. Venustiano Carranza ,
+C. P. 15900. México D.F.",Permanente
+12,SEDESA,Hospital,General,Milpa Alta,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,49,-99.011331,,19.200669,,,"Boulevard Nuevo León No. 386,
+Col. Villa Milpa Alta,
+Delegación Milpa Alta
+C.P. 12000, México D.F.",Permanente
+13,SEDESA,Hospital,Especialidades,Belisario Domínguez,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,137,-99.065394,,19.306994,,," Av. Tlahuac No. 4866, Esq. Zacatlán, 
+Col. San Lorenzo Tezonco, 
+Del. Iztapalapa 
+C.P. 09790, México, D.F.",Permanente
+14,SEDESA,Hospital,Materno Infantil,Emiliano Zapata,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,23,-98.978283,,19.339325,,"55 26 35 36 71
+ext. 13523"," Calle Cuco Sánchez No. 71, Col. Ampliación Emiliano Zapata, Del. Iztapalapa, CP. 16090, México D.F.",Permanente
+15,SEDESA,Hospital,Materno Infantil,Cuajimalpa,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,27,-99.301778,,19.347417,,55 5812 2211," Av. 16 de Septiembre s/n, Col. Contadero, Del. Cuajimalpa de Morelos, C.P.06500,
+México, D.F.",Permanente
+16,SEDESA,Hospital,Materno Infantil,Cuautepec,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,31,-99.14105,,19.539717,,"55 5306 2190
+55 5306 0622"," Emiliano Zapata No 17, 
+Col. Cuautepec Barrio Bajo,  
+Del. Gustavo A. Madero, 
+C.P. 07200, México D.F.",Permanente
+17,SEDESA,Hospital,Materno Infantil,Inguarán,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,58,-99.113267,,19.452208,,"55 5795 6764
+55 5795 4261"," Estaño No. 307, Col. Felipe Ángeles, 
+Del. Venustiano Carranza, 
+C.P 15310, México D.F.",Permanente
+18,SEDESA,Hospital,Materno Infantil,Magdalena Contreras,1,Magdalena Contreras,8,Magdalena Contreras,9,Distrito Federal,,19,-99.239122,,19.319331,,"55 5683 5094
+55 5683 5108"," Av. Luís Cabrera No. 619, 
+Col. San Jerónimo Lídice, 
+Del. Magdalena Contreras, 
+C.P. 10200, México D.F.",Permanente
+19,SEDESA,Hospital,Materno Infantil,Dr. Nicolás M. Cedillo,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,16,-99.203119,,19.497981,,"55 5394 0565 
+ext. 5114
+55 5394 0536"," Gustavo J. s/n, Col. Unidad Francisco Villa, Del. Azcapotzalco C.P. 02400, México D.F.",Permanente
+20,SEDESA,Hospital,Materno Infantil,Tláhuac,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,33,-98.997686,,19.264769,," 55 5842 3601
+55 5842 3610"," Av. Tláhuac Chalco No. 231, Col. La Habana, Del. Tláhuac, 
+C.P. 13050, México D.F:",Permanente
+21,SEDESA,Hospital,Materno Infantil,Topilejo,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,28,-99.140097,,19.199206,,55 5848 0870," Calzada Santa Cruz No. 1, 
+Col. San Miguel Topilejo, 
+Del.Tlalpan, 
+C.P. 14500, México D.F.",Permanente
+22,SEDESA,Hospital,Materno Pediatrico,Xochimilco,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,35,-99.104978,,19.254536,,55 5676 4993,"Prolongación 16 de Septiembre y Calzada Nativitas,
+Col. Barrio Xaltocán, 
+Del. Xochimilco, C.P. 16090, México D.F.",Permanente
+23,SEDESA,Hospital,Pediatrico,Azcapotzalco,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,23,-99.1855,,19.484336,,"55 5347 1452
+55 5561 7894"," Av. Azcapotzalco No. 731, 
+Col. Azcapotzalco, Del. Azcapotzalco, C.P. 02000, México D.F.",Permanente
+24,SEDESA,Hospital,Pediatrico,Coyoacán,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,42,-99.167897,,19.345428,,"55 5554 1664
+55 5554 2860"," Moctezuma No. 18, 
+Col. Del Carmen Coyoacán, 
+Del. Coyoacán C.P. 04000, 
+México, D.F.",Permanente
+25,SEDESA,Hospital,Pediatrico,Iztacalco,1,Iztacalco,6,Iztacalco,9,Distrito Federal,,33,-99.117519,,19.402664,,55 5657 9375," Avenida Coyuya y Terraplén de Río Frío s/n,      
+Col. La Cruz, 
+Del. Iztacalco 
+C.P. 08310,
+México, D.F.",Permanente
+26,SEDESA,Hospital,Pediatrico,Iztapalapa,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,39,-99.107131,,19.35655,,"55 5685 9416
+55 5685 4802"," Calzada Ermita Iztapalapa No. 780, 
+Col. Granjas San Antonio, 
+Del. Iztapalapa, C.P. 09070,
+México, D.F.",Permanente
+27,SEDESA,Hospital,Pediatrico,Legaria,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,47,-99.203039,,19.450658,,55 5082 7642," Calzada Legaría 371, 
+Col. México Nuevo, 
+Del. Miguel Hidalgo C. P. 11260,
+México, D.F.",Permanente
+28,SEDESA,Hospital,Pediatrico,Moctezuma,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,33,-99.093953,,19.429497,,"55 5571 4057
+55 5762 5655"," Oriente 158 No. 189, 
+Col. Moctezuma 2da. Sección, 
+Del.  Venustiano Carranza 
+C.P. 15530, 
+México, D.F.",Permanente
+29,SEDESA,Hospital,Pediatrico,Peralvillo,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,37,-99.141247,,19.460303,,5583-4180," Tolnahuac No. 14, Col. San Simón, 
+Del. Cuauhtémoc C.P. 06920,
+México, .D.F",Permanente
+30,SEDESA,Hospital,Pediatrico,San Juan de Aragón,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,31,-99.092772,,19.457614,,"55 2471 0463
+55 5551 0003"," Av. 506 entre calle 517 y 521, Col. San Juan de Aragón 1a. Sección, Del. Gustavo A. Madero C.P. 07969",Permanente
+31,SEDESA,Hospital,Pediatrico,Tacubaya,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,,-99.191089,,19.402528,,"55 5515 7920
+55 5515 7987"," Calle Carlos Lazo No.25,  
+Col. Tacubaya,  
+Del.  Miguel Hidalgo C.P. 11870, 
+México, D.F.",Permanente
+32,SEDESA,Hospital,Pediatrico,Villa,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,41,-99.114281,,19.487364,,"55 5577 6707
+55 5781 2069"," Avenida Cantera,  S/n, 
+Col. Estanzuela, 
+Del. Gustavo A. Madero 
+C.P. 07050,
+México, D.F.",Permanente
+1,SEDESA,Centro de Atención,Toxicológico,"TOXICOLÓGICO
+VENUSTIANO
+CARRANZA",1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,,-99.068867,,19.420586,,5756-1259,"Prolongación Río Churubusco esq. Ernesto P. Uruchurto, Col. Adolfo López Mateos, Del. Venustiano Carranza, c.p. 15970, México, D.F.","Lunes a Viernes 
+8 a 14:30"
+2,SEDESA,Centro de Atención,Toxicológico,"TOXICOLÓGICO
+XOCHIMILCO",1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.113814,,19.263569,,5676-2767,"Prolongación División del Norte y Av. México, Colonia San Marcos, Huichapan, Xochimilco, c.p. 16030, México, D.F.","Lunes a Viernes 
+8 a 14:30"
+3,SEDESA,Escuela,Escuela,ESCUELA DE ENFERMERÍA,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,,-99.181422,,19.457222,,"5342-1251
+5342-4166","Calzada México - Tacuba No. 595, Edificio Norte M-Cuitl 3 P Colonia Popotla
+Delegación Miguel Hidalgo, México Distrito Federal","Lunes a Viernes 
+8 a 14:30"
+4,SEDESA,Unidad Médica,Unidad Médica,"RECLUSORIO
+PREVENTIVO
+VARONIL
+NORTE",1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.149764,,19.545161,,"5323-7706
+5306-4124","Jaime Nunó No. 155, Col. Centro Escolar, Delegación Gustavo A. Madero,  c.p. 72000 México, D.F.","Lunes a Viernes 
+8 a 14:30"
+5,SEDESA,Unidad Médica,Unidad Médica,RECLUSORIO ORIENTE,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.066986,,19.320439,,"5426-3239
+5443-4870
+5443-5307","Reforma Oriente No. 100, Col. San Lorenzo Tezonco, Delegación Iztapalapa, c.p. 09900 México, D.F.","Lunes a Viernes 
+8 a 14:30"
+6,SEDESA,Unidad Médica,Unidad Médica,RECLUSORIO SUR,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.124236,,19.234831,,"2156-1073
+2156-4103","Av. Javier Piña Palacios s/n, Col. San Mateo Xalpa, Delegación Xochimilco, c.p. 16800 México, D.F.","Lunes a Viernes 
+8 a 14:30"
+7,SEDESA,Unidad Médica,Unidad Médica,CENTRO VARONIL DE READAPTACIÓN PSIQUIÁTRICA SAN MATEO (CEVAREPSI),1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.124517,,19.234819,,"2156-6192
+2156-0898","Av. Javier Piña Palacios s/n, Col. San Mateo Xalpa, Delegación Xochimilco, c.p. 16800 México, D.F.","Lunes a Viernes 
+8 a 14:30"
+8,SEDESA,Unidad Médica,Unidad Médica,CENTRO  FEMENIL DE READAPTACIÓN SOCIAL SANTA MARTHA ACATITLA (CEFERESO),1,Iztapalapa,13,Iztapalapa,9,Distrito Federal,,,-99.048797,,19.342428,,5429-1206,"Calzada Ermita Iztapalapa S/N, Col. Santa Martha Acatitla, Delegación Iztapalapa","Lunes a Viernes 
+8 a 14:30"
+9,SEDESA,Unidad Médica,Unidad Médica,CENTRO DE READAPTACIÓN SOCIAL VARONIL SANTA MARTHA ACATITLA (CERESOVA),1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.014342,,19.355542,,5427-4346,"Calzada Ermita Iztapalapa S/N, Col. Santa Martha Acatitla, Delegación Iztapalapa","Lunes a Viernes 
+8 a 14:30"
+10,SEDESA,Unidad Médica,Unidad Médica, CENTRO DE READAPTACION SOCIAL MASCULINO SANTA MARTHA ACATITLA (PENITENCIARIA),1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.012831,,19.353581,,"5427-6977
+5429-9994","Calzada Ermita Iztapalapa S/N, Col. Santa Martha Acatitla, Delegación Iztapalapa","Lunes a Viernes 
+8 a 14:30"
+11,SEDESA,Unidad Médica,Unidad Médica, CENTRO DE SANCIONES ADMINISTRATIVAS (TORITO),1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,,-99.191322,,19.461128,,"5386-9397
+5386-8258","Aquiles Serdán Esq. Lago Gascasónica s/n, Huichapan, Miguel Hidalgo, 11290 Ciudad de México, D.F.","Lunes a Viernes 
+8 a 14:30"
+1,SEDESA,Clínica,T-II,La Cascada,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,2,-99.20015,,19.369312,,55450335 y 55311594,"Piedra Guija s/n, entre Peridoto y Piedra Azul, Col. La Cascada, C.P. 01490","Lunes a Viernes 
+8 a 14:30"
+2,SEDESA,Clínica,T-II,Jalalpa,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,3,-99.231826,,19378305,,,"Calle Cuauhtémoc Lote 8, Col. Jalalpa, C.P. 01297","Lunes a Viernes 
+8 a 14:30"
+3,SEDESA,Clínica,T-II,Santa Rosa Xochiac,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,5,-99.280402,,19.328912,,,Camino Desierto de los Leones No. 7615 Col. Santa Rosa Xochiac,"Lunes a Viernes 
+8 a 14:30"
+4,SEDESA,Clínica,T-III,Ampliación Presidentes,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,18,-99.174809,,19.300046,,52776311 y 55154899,"John F. Kennedy s/n, Colonia Ampliación Presidentes, C.P. 01299","Lunes a Viernes 
+8 a 14:30"
+5,SEDESA,Clínica,T-III,Dr. Eduardo Jenner,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,22,-99.230824,,19.378594,,,"Privada Matamoros No.21, Col. Santa Fé, C.P. 01210","Lunes a Viernes 
+8 a 14:30"
+6,SEDESA,Clínica,T-III,Dr. Ignacio Morones Prieto,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,17,-99.153251,,19.332169,,,"Calle Plaza Hidalgo S/N esq. Cda. Tlacotepec (Río Seco) Col. San Bartolo Ameyalco,Delegación Álvaro Obregón.","Lunes a Viernes 
+8 a 14:30"
+7,SEDESA,Clínica,T-III,Dr. Manuel Márquez Escobedo,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,14,-99.213005,,19.371154,,"  55228611, 55224392","Joaquín Párave No. 10, Col. Olivar del Conde 2a Sección, C.P. 01450 ","Lunes a Viernes 
+8 a 14:30"
+8,SEDESA,Clínica,T-III,Dr. Manuel Escontria,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,19,-99.193264,,19.342852,, 55266290 y 55291248,"Calle de Frontera No. 15 Col. San Ángel, Delegación Álvaro Obregón.","Lunes a Viernes 
+8 a 14:30"
+9,SEDESA,Clínica,T-III,Lomas de la Era,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,15,-99.258916,,19.326125,,,"Cda. Nogal esq Alcanfores (Lt 14 Mza. 201, Zona 03),  Col. Lomas de la Era, Poblado de San Bernabé Ocotepec C.P. 01860","Lunes a Viernes 
+8 a 14:30"
+10,SEDESA,Clínica,T-III,Minas de Cristo,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,15,-99.20074,,19.381478,,55217573 y 55125295,"Río Becerra S/N, Col. Minas de Cristo, C.P. 01419","Lunes a Viernes 
+8 a 14:30"
+11,SEDESA,Clínica,T-I,Ave Real,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.238655,,19.361569,,55450335 y 55311594,"Zacua S/N, Esq. Con Albatros, Col. Ave Real, C.P. 01560 ","Lunes a Viernes 
+8 a 14:30"
+12,SEDESA,Clínica,T-I,Herón Proal,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.231287,,19.359271,,  55196351 y 55387033,"Av. Centenario No.1220, Col. Herón Proal, C.P. 01640   ","Lunes a Viernes 
+8 a 14:30"
+13,SEDESA,Clínica,T-I,Puente Colorado,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.229919,,19.349162,,,"Puente Nacional Tetlac No. 100, Col.  Puente Colorado, C.P. 01730","Lunes a Viernes 
+8 a 14:30"
+14,SEDESA,Clínica,T-I,Tarango,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.13137,,19.211888,,,"Tarango s/n, entre 5to y 6to Andador, Col. Ampliación Las Aguilas, C.P. 01750","Lunes a Viernes 
+8 a 14:30"
+15,SEDESA,Clínica,T-I,Tetelpan,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.230595,,19.341617,,,"Calzada Desierto de los Leones No.5020, Col. Pueblo de Tetelpan, C.P. 01760","Lunes a Viernes 
+8 a 14:30"
+16,SEDESA,Clínica,T-I,Corpus Christy,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.247523,,19.363376,,,"Av. Tamaulipas s/n esq. Alto Lerma, Col. Corpus Christy, C.P. 01530","Lunes a Viernes 
+8 a 14:30"
+17,SEDESA,Clínica,,La Conchita (NUEVA CREACIÓN) ,1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.207585,,19.392297,,,"Calle 1° de Noviembre s/n, colonia La Conchita, del. Álvaro Obregón, c. P. 01131 (dentro del deportivo “La Conchita”)","Lunes a Viernes 
+8 a 14:30"
+18,SEDESA,Clínica,,Garcimarrero (NUEVA CREACIÓN),1,Álvaro Obregón,10,Álvaro Obregón,9,Distrito Federal,,,-99.236362,,19.36769,,,"Encino esquina Av. Santa Lucia s/n, col. Garcimarrero, del. Álvaro Obregón, C. P. 01401","Lunes a Viernes 
+8 a 14:30"
+19,SEDESA,Clínica,T-II,El Arenal,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,15,-99.148562,,19.464817,,"55833692, 55976019, 55974092  y 55976030","Calle Aztlán No.77, Col. La Raza, C.P. 02990 ","Lunes a Viernes 
+8 a 14:30"
+20,SEDESA,Clínica,T-II,Santiago Ahuizotla,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,16,-99.211892,,19.478667,, 53594292 y 53596728,"Calle Rosas Moreno esq. Camino a Nextengo, Col. Santiago Ahuizotla C.P. 02750 ","Lunes a Viernes 
+8 a 14:30"
+21,SEDESA,Clínica,T-II,Tezozomoc,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,15,-99.199147,,19.48928,, 53941994 y 53944625,"Av.Rafael Buelna s/n esq. Amusgos, Col. Tezozomoc, C.P. 02459.","Lunes a Viernes 
+8 a 14:30"
+22,SEDESA,Clínica,T-III,Dr. Galo Soberón y Parra,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,27,-99.179526,,19.472014,,"  53412166,  53968153, 53421236 y 53425544","Calzada Camarones No.485, Col. Sindicato Mexicano de Electricistas,  C.P. 02060  ","Lunes a Viernes 
+8 a 14:30"
+23,SEDESA,Clínica,T-III,Dr. Manuel Martínez Báez,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,19,-99.192774,,19.49841,," 55833682, 55774092, 53823598","Av. Del Rosario No. 34, Col. San Martín Xochinahuac, C.P. 02210.","Lunes a Viernes 
+8 a 14:30"
+24,SEDESA,Clínica,T-I,23 de Abril,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.215787,,19.481932,,55767551,"Lote 1 Manzana 15, Zona 1, actualmente Liberato Lara S/N esq. Con Joaquín Amaro, Col. Ampliación San Pedro Xalpa,  C.P. 02719 ","Lunes a Viernes 
+8 a 14:30"
+25,SEDESA,Clínica,T-I,Santa Bárbara,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.17992,,19.494898,,,"Cerrada Adolfo Ruiz Cortínez s/n esq. Hidalgo, Col. Santa Bárbara, C.P. 02230 ","Lunes a Viernes 
+8 a 14:30"
+26,SEDESA,Clínica,T-I,Santa Inés,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.189664,,19.492653,,,"San Francisco s/n esq. Esperanza, Col. Santa Inés, C.P. 02140","Lunes a Viernes 
+8 a 14:30"
+27,SEDESA,Clínica,T-I,Santa Catarina,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.177158,,19.490493,,,"Av. Santa Catarina entre Eje 4 Azcapotzalco-La Villa y Calle Tlatenco, Col. Pueblo de Santa Catarina, C.P. 02230 ","Lunes a Viernes 
+8 a 14:30"
+28,SEDESA,Clínica,T-I,Reynosa,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.184883,,19.492274,,,"Campo Arroyo Chico S/N esq. Refinería Minatitlán, Col. Reynosa Tamaulipas, C.P. 02200","Lunes a Viernes 
+8 a 14:30"
+29,SEDESA,Clínica,T-I,San Pedro Xalpa,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.209521,,19.484081,,,"Justo Sierra s/n y Av. Hidalgo, Col. San Pedro Xalpa, C.P. 27109","Lunes a Viernes 
+8 a 14:30"
+30,SEDESA,Clínica,T-I,San Miguel Amantla,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.204377,,19.475246,,53596668,"Av. Democracias S/N casi esq. con la calle Morelos, Col.  San Miguel Amantla, C.P. 2700.","Lunes a Viernes 
+8 a 14:30"
+31,SEDESA,Clínica,T-I,Prohogar,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.149929,,19.474927,,,"Calle 22 s/n esq. Calle 19, Col. Prohogar, C.P.02600","Lunes a Viernes 
+8 a 14:30"
+32,SEDESA,Clínica,T-I,Tlatilco,1,Azcapotzalco,2,Azcapotzalco,9,Distrito Federal,,,-99.164423,,19.459602,,,"Calzada Tlatilco s/n esq. Profesora Eulalia Guzmán, Col. Tlatilco, C.P. 02060","Lunes a Viernes 
+8 a 14:30"
+33,SEDESA,Clínica,T-III,Portales,1,Benito Juárez,14,Benito Juárez,9,Distrito Federal,,21,-99.144752,,19.374959,," 55324244, 56741845,55390699 y 55396567","Av. San Simón No.94,  Col.  San Simón Ticumac, C.P. 03660 ","Lunes a Viernes 
+8 a 14:30"
+34,SEDESA,Clínica,T-III,Mixcoac,1,Benito Juárez,14,Benito Juárez,9,Distrito Federal,,2,-99.188827,,19.381255,,"55633728, 55633713 y 55633753","Rembrandt No.32, Col. Mixcoac, C.P.03910  ","Lunes a Viernes 
+8 a 14:30"
+35,SEDESA,Clínica,T-I,Valentín Gómez Farías,1,Benito Juárez,14,Benito Juárez,9,Distrito Federal,,,-99.111617,,19.234416,,,"Río Becerra S/N esq. 11 de Abril, Col. 8 de Agosto,  Delegación Benito Juárez, C.P. 03820 ","Lunes a Viernes 
+8 a 14:30"
+36,SEDESA,Clínica,T-I,Xoco,1,Benito Juárez,14,Benito Juárez,9,Distrito Federal,,,-99.166206,,19.360851,,,"Calle Puente San Felipe No. 167, Col. Xoco, C.P. 03330  tel.56057618","Lunes a Viernes 
+8 a 14:30"
+37,SEDESA,Clínica,T-II ,Ajusco,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,13,-99.160389,,19.319264,,"  56180032, 15170918, 56109361 y 56107116","Rey Tecpancaltzin s/n, Colonia Ajusco, C.P. 04300","Lunes a Viernes 
+8 a 14:30"
+38,SEDESA,Clínica,T-II,Nayaritas,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,14,-99.153168,,19.322073,, 56171570 y 56189905,"Huitzilopochtli s/n esq. Nayaritas, Col. Ampliación Ajusto, C.P. 04390 ","Lunes a Viernes 
+8 a 14:30"
+39,SEDESA,Clínica,T-II,Santa Úrsula Coapa,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,14,-99.159628,,19.308977,," 53385472, 54210734, 56184243 y 54210313","San Pascacio s/n esq. San Jorge, Col. Santa Úrsula Coapa C.P. 04600 ","Lunes a Viernes 
+8 a 14:30"
+40,SEDESA,Clínica,T-III,Carmen Serdán,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,11,-99.108638,,19.320241,," 56320500, 56089271 y 56953134","Calle Soledad Solórzano s/n esq. María Pistolas,  Col. Carmen Serdán, C.P. 04850 ","Lunes a Viernes 
+8 a 14:30"
+41,SEDESA,Clínica,T-III,San Francisco Culhuacán,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,20,-99.122819,,19.336657,,"56070937, 56951703 y 56071161","Heroica Escuela Naval Militar S/N, entre Calz. Taxqueña y Ejido San Antonio Tomatlán, Col. San Francisco Culhuacan, C.P. 04260 ","Lunes a Viernes 
+8 a 14:30"
+42,SEDESA,Clínica,T-III,Dr. Gustavo A. Rovirosa Pérez,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,20,-99.150229,,19.314302,,"tel. 56184492, 54210444 y  54210443","Calle San Gabriel No. 517 esq. San Alberto (Lote 1, Mza. 931, Zona 1) No. 517, Col. de Santa Úrsula Coapa, C.P. 04850 ","Lunes a Viernes 
+8 a 14:30"
+43,SEDESA,Clínica,T-III,Dra. Margarita Chorné y Salazar,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,20,-99.147985,,19.340683,,"  56895155, 56890461, 56897419, 56895136.","Av. División del Norte 2986, Col. Atlántida, C.P. 04370","Lunes a Viernes 
+8 a 14:30"
+44,SEDESA,Clínica,T-II,Copilco el Alto,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,,-99.177522,,19.332081,,55548228,"Leopoldo Salazar s/n, entre Jacinto Pallares (al final de la calle) y Joaquín Noreña, Col. Copilco El Alto, C.P. 04360 ","Lunes a Viernes 
+8 a 14:30"
+45,SEDESA,Clínica,T-I,La Ciénega,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,,-99.168773,,19.3355,,56197303,"Av. Pedro Enriquez Ureña, Eje 10 Sur No. 224, esq. Ilama, Col. Pedregal de Santo Domingo, C.P. 04369 ","Lunes a Viernes 
+8 a 14:30"
+46,SEDESA,Clínica,T-II,Ejidos de Sta. Úrsula,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,14,-99.143737,,19.304395,,,"Cda. De Ejido s/n entre Viaducto Tlalpan y Calz. De Tlalpan, 
+Col. Pueblo de Santa  Úrsula,
+ C. P. 03400","Lunes a Viernes 
+8 a 14:30"
+47,SEDESA,Clínica,T-I,Sto. Domingo Oriente,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,,-99.164862,,19.325958,,56109589,"Canacuate S/N esq. Cicalco, Col. Pedregal de Santo Domingo, Delegación Coyoacan. Colonia Santo Domingo de los Reyes), C.P. 04369","Lunes a Viernes 
+8 a 14:30"
+48,SEDESA,Clínica,T-I,Sto. Domingo Poniente,1,Coyoacán,3,Coyoacán,9,Distrito Federal,,,-99.169938,,19.319031,,54210310,"Tejamanil esq. Zihuatlán s/n, Col .Santo Domingo Poniente, C.P. 04369","Lunes a Viernes 
+8 a 14:30"
+49,SEDESA,Clínica,T-III,Cuajimalpa,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,23,-99.298544,,19.356969,,  58 12 04 42,"Cerrada de Juárez s/n, Col. Cuajimalpa, C.P. 05000","Lunes a Viernes 
+8 a 14:30"
+50,SEDESA,Clínica,T-III,La Navidad,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,24,-99.283513,,19.375289,,58 15 06 46 y 58 15 15 35,"25 de Diciembre s/n, entre Baltazar y Estrella de Belén, Col. La Navidad C.P. 05210                    ","Lunes a Viernes 
+8 a 14:30"
+51,SEDESA,Clínica,T-I,Acopilco,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.326562,,19.333402,,58 11 15 38,"Prolongación Leandro Valle s/n, esq. Calle Moneruco, Col. San Lorenzo Acopilco C.P. 05410 ","Lunes a Viernes 
+8 a 14:30"
+52,SEDESA,Clínica,T-I, San Mateo (actualmente San Mateo Tlaltenango),1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.271787,,19.34596,, 58 13 39 18,"Calle Zanja esq. San Fernando s/n, Col. San Mateo Taltenango, C.P. 05600","Lunes a Viernes 
+8 a 14:30"
+53,SEDESA,Clínica,T-I,Chimalpa (Actualmente San Pablo Chiamlapa),1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.319175,,19.354468,,,"Av. Constitución s/n Plaza Principal, Centro Cívico,  Col. San Pablo Chimalpa, C.P. 05050","Lunes a Viernes 
+8 a 14:30"
+54,SEDESA,Clínica,T-I,Memetla,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.286168,,19.361063,,,"Calle Miguel Romero s/n (Lte. 17) casi esq. Calle Juan de Dios, Col. MemetlaC.P. 05200","Lunes a Viernes 
+8 a 14:30"
+55,SEDESA,Clínica,T-I,El Chamizal,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.263868,,19.390566,,52573388,"Escuela Aeronaval s/n entre Potrero del Llano  y Escuela Aeronáutica, Col. Lomas del Chamizal, C.P. 05129 ","Lunes a Viernes 
+8 a 14:30"
+56,SEDESA,Clínica,T-I,Jardines de la Palma,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.28013,,19.371129,,58123411,"Camino al Huizachito s/n, Col. Jardínes de la Palma (Huizachito), C.P. 05249","Lunes a Viernes 
+8 a 14:30"
+57,SEDESA,Clínica,T-I,Palo Alto,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.255319,,19.382885,,,"Calle Arboricultores esq. Av. Granjas No. 2, Col. Granjas Palo Alto,C.P. 05118","Lunes a Viernes 
+8 a 14:30"
+58,SEDESA,Clínica,T-I,Rosa Torres,1,Cuajimalpa,4,Cuajimalpa,9,Distrito Federal,,,-99.289298,,19.368794,,,"Andador Pie de Pava s/n esq. Andador Picantillo (Dentro de la U.H. Nueva Rosita), Col. San José de los Cedros C.P. 05200","Lunes a Viernes 
+8 a 14:30"
+59,SEDESA,Clínica,T-III,Dr. Atanasio Garza Ríos,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,21,-99.147407,,19.418253,,"55886697, 55886144 y 55886033","Av. José Ma. Vértiz esq. Dr. Erazo No. 75, Col. Doctores, C.P.  06720  ","Lunes a Viernes 
+8 a 14:30"
+60,SEDESA,Clínica,T-III,Dr. Domingo Orvañanos,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,23,-99.135348,,19.444205,, 55261359 y 57723439,"Comonfort No. 34, Col. Morelos, C.P. 06200 ","Lunes a Viernes 
+8 a 14:30"
+61,SEDESA,Clínica,T-III,Dr. José María Rodríguez,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,23,-99.135801,,19.404066,,57400701 y 57405703,"Calz. San Antonio Abad No. 350, Col. Asturias, C.P. 06850  ","Lunes a Viernes 
+8 a 14:30"
+62,SEDESA,Clínica,T-III,Dr. Manuel Domínguez,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,21,-99.147193,,19.44031,," 55928880, 55460087, 55467799 y 55466959","Héroes No. 38, Col. Guerrero, C.P. 06300 ","Lunes a Viernes 
+8 a 14:30"
+63,SEDESA,Clínica,T-III,Soledad Orozco de Ávila Camacho,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,20,-99.133385,,19.458722,,"55834649, 55830170, 55830180, 55830125 y 55830179","Juventino Rosas No. 78 y Tetrazzini, Col. Exhipódromo de Peralvillo, C.P. 06250  ","Lunes a Viernes 
+8 a 14:30"
+64,SEDESA,Clínica,T-I,Espacio Interactivo en Salud para Jóvenes,1,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,,-99.126887,,19.433372,,55423618,Santísima No. 10 Col. Centro C.P. 06010 ,"Lunes a Viernes 
+8 a 14:30"
+65,SEDESA,Clínica,T-II,Gabriel Hernández,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,14,-99.102115,,19.506771,, 57 53 58 02 o 82 83 03 14,"Eva Sámano de López Mateos s/n, Col. Ampliación Gabriel Hernández C.P. 07080  ","Lunes a Viernes 
+8 a 14:30"
+66,SEDESA,Clínica,T-II,Gertrudis Sánchez,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,12,-99.099824,,19.468494,, 57 60 67 54 o 57 60 62 65,"Calle Norte 82-B, casi esq. Oriente 121 No. 6025, Col. Gertrudis Sánchez, C.P. 07839  ","Lunes a Viernes 
+8 a 14:30"
+67,SEDESA,Clínica,T-II,La Malinche,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,15,-99.101734,,19.452465,,55 51 81 28 o 26 03 34 58,"Norte 94 S/N esq. Oriente 83 Col. Malinche, C.P. 07880  ","Lunes a Viernes 
+8 a 14:30"
+68,SEDESA,Clínica,T-II,Dr. Narciso Bassols,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,0,-99.05795,,19.454544,,   21 58 58 29,"Av. 604-A entre Calle 669 y Agrupamiento I, Col. U.H.Narciso Bassols, C.P. 07980. ","Lunes a Viernes 
+8 a 14:30"
+69,SEDESA,Clínica,T-II,Valle Madero,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,15,-99.143996,,19.548224,,Tel. 53 03 92 03 o 53 23 55 50 ,"Calle Estado de México casi esq. Tecnológico s/n, Col. Valle de Madero ( Antes San Miguel del Rosario), C.P. 07190  ","Lunes a Viernes 
+8 a 14:30"
+70,SEDESA,Clínica,T-III,Dr. Gabriel Garzón Cossa,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,22,-99.109717,,19.456739,,55 51 77 30 o 55 51 07 50,"Calle Oriente 85 entre Norte 72-A y Norte 74, Col. La Joya C.P. 07860  ","Lunes a Viernes 
+8 a 14:30"
+71,SEDESA,Clínica,T-III,Dr. Manuel Cárdenas de la Vega,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,21,-99.112871,,19.486256,,55 77 10 46 o 55 77 10 49,"5 de Febrero s/n, entre José María Bocanegra y Abasolo, Col. Martín Carrera, C.P. 07070    ","Lunes a Viernes 
+8 a 14:30"
+72,SEDESA,Clínica,T-III,Dr. Rafael Ramírez Suárez,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,23,-99.142289,,19.492749,, 55 86 56 33,"Montevideo No. 555 esq. 17 de Mayo, Col. San Bartolo Atepehuacan, C.P. 07730   ","Lunes a Viernes 
+8 a 14:30"
+73,SEDESA,Clínica,T-III,Nueva Atzacoalco,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,19,-99.086199,,19.496228,,  57 53 72 11,"Calle 310  s/n esq. 317,  Col. Nueva Atzacoalco, C.P. 07420   ","Lunes a Viernes 
+8 a 14:30"
+74,SEDESA,Clínica,T-III,Palmatitla,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,15,-99.13391,,19.552698,, 53 06 21 91 o 53 03 40 36,"Calle Dr. Rubén Leñero s/n esq. Dr. Angel Brioso (Lote 21, Manzana 9, Zona 5), s/n,  Col. Palmatitla, C.P. 07170 ","Lunes a Viernes 
+8 a 14:30"
+75,SEDESA,Clínica,T-I,25 de Julio,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.080743,,19.495657,, 82 83 36 92,"Calle Benito Juárez Oriente, esq.  Ejido (Manzana 18-A, Lote 1-A, Zona-1), s/n , Col. 25 de Julio, C.P. 07520 ","Lunes a Viernes 
+8 a 14:30"
+76,SEDESA,Clínica,T-II,Pradera,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,10,-99.069617,,19.479388,,   23 17 21 34 o 57 11 59 61,"Volcán de Acatenango y Volcán Popocatepetl s/n, Col. Ampliación Providencia, C.P. 07080 ","Lunes a Viernes 
+8 a 14:30"
+77,SEDESA,Clínica,T-I,La Esmeralda,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.084919,,19.487621,, 57 57 29 00 o 57 67 05 17 ,"Norte 94 S/N entre Norte 94-A y Oriente 171, Col. La Esmeralda, C.P. 07540   ","Lunes a Viernes 
+8 a 14:30"
+78,SEDESA,Clínica,T-I,San Juan de Aragón 1ra. Sección,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.093553,,19.463952,,,"Av. 505 s/n casi esq. 5ta.Cda. de Av. 503, Colonia San Juan de Aragón 1a. Sección, C.P. 07920","Lunes a Viernes 
+8 a 14:30"
+79,SEDESA,Clínica,T-I,Barrio San Juan Ticomán,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.128261,,19.522066,,,"Niños Héroes No. 5, Colonia San Juan Ticomán, C.P. 07360   Tel. 53 84 86 66","Lunes a Viernes 
+8 a 14:30"
+80,SEDESA,Clínica,T-I,Providencia,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.072395,,19.484367,,,"Edo. de Durango No.16 esq. Edo. de Morelos, Col. Ampliación Providencia (Centro Social de Barrio),  C.P.07550","Lunes a Viernes 
+8 a 14:30"
+81,SEDESA,Clínica,T-I,Cabo Buena Esperanza,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.099969,,19.50176,,,"Cabo Buena Esperanza esq. Tixtla Guerrero, Col. Gabriel Hernández, C.P. 07080","Lunes a Viernes 
+8 a 14:30"
+82,SEDESA,Clínica,T-I,San Juan de Aragón 6ta. Sección,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.068716,,19.467816,,,"Calle 1513, casi esq. Con calle 414, Col. San Juan de Aragón Sexta Sección, C.P. 07950","Lunes a Viernes 
+8 a 14:30"
+83,SEDESA,Clínica,T-I,Gertrudiz Sánchez,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.102991,,19.459071,,57715628,"Norte 84 s/n, Camellón Central de Oriente 95, Col. Gertrudis Sánchez, ( C.P. 07830 ","Lunes a Viernes 
+8 a 14:30"
+84,SEDESA,Clínica,T-I,Compositores Mexicanos,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.13944,,19.566508,,,"Guti Cárdenas esq. Consuelo Velásquez S/N, Col. Compositores Mexicanos, (Zona 04, Manzana 94-A, Fracción del Lote 03, del Poblado de Cuautepec I), C.P. 07130","Lunes a Viernes 
+8 a 14:30"
+85,SEDESA,Clínica,T-I,Arboledas de Cuautepec,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.124755,,19.56089,,,"Lázaro Cárdenas y Morelos, Col. Arboledas Cuautepec  (LT 7 MZ 15, Zona 11, del Poblado de Cuautepec II, C.P. 07140","Lunes a Viernes 
+8 a 14:30"
+86,SEDESA,Clínica,T-I,Lomas de Cuautepec,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.134371,,19.569268,,,"Iztaccíhuatl S/N esq. Lomas Cierzo, Col. Lomas de Cuautepec, C.P.O7110","Lunes a Viernes 
+8 a 14:30"
+87,SEDESA,Clínica,T-I,Tlalpexco,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.126008,,19.54464,,,"Calle Sauces (Lote 11, Manzana 68, Zona-9)  s/n, Col. Tlalpexco (Antes Ejido de Cuautepec), C.P. 07188  tel 53233968","Lunes a Viernes 
+8 a 14:30"
+88,SEDESA,Clínica,T-I,Malacates Ponderosa,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.133225,,19.575088,,,"Calle San Felipe esq. San Ángel (también Octaviano Valle y Antonio Rodil)  s/n, Col. Malacates Ponderosa (Antes Ejido Cuautepec), C.P. 07119","Lunes a Viernes 
+8 a 14:30"
+89,SEDESA,Clínica,T-I,Cocoyotes,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.12737,,19.550277,,,"Flor de Cuaresma s/n (antes Pirules), esq. Flor de Corpus (antes Fresno), Col. Cocoyotes C.P. 07180","Lunes a Viernes 
+8 a 14:30"
+90,SEDESA,Clínica,T-I,Felipe Berriozábal,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.129961,,19.555342,,,"4a. Cerrada Apango L-8 Esq. Con Apango, Col. Felipe Berriozábal,  C.P. 07180 Tel. 53 23 39 36","Lunes a Viernes 
+8 a 14:30"
+91,SEDESA,Clínica,T-I,Diana Laura Riojas de Colosio,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.143898,,19.561327,,,"Cda. Halcón casi esq. Av. Rio San Javier, Mza. 18, Lote 11, Col. Luis Donaldo Colosio Murrieta, C.P. 07130","Lunes a Viernes 
+8 a 14:30"
+92,SEDESA,Clínica,T-I,Castillo Grande,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.138807,,19.538144,,,"Castillo de Chapultepec S/N, entre Palmira y Castillo de Arévalo, Col. Castillo Grande,  C.P. 07220","Lunes a Viernes 
+8 a 14:30"
+93,SEDESA,Clínica,T-I,Ahuehuetes,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.130905,,19.544991,,,"Andador de Ahuehuetes S/N y Andador Manantiales, Col. Ahuehuetes, (LT 1 MZ 49, Zona 08, Col. Cuautepec II) C.P. 07189","Lunes a Viernes 
+8 a 14:30"
+94,SEDESA,Clínica,T-I,La Pastora,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.137635,,19.523932,,,"Ilhuicamina s/n, entre Cuauhtémoc y Moctezuma, Col. La Pastora, C.P. 07920   Tel. 22 27 44 03","Lunes a Viernes 
+8 a 14:30"
+95,SEDESA,Clínica,T-I,DR. HECTOR ELIOZA SANTACRUZ,1,Gustavo A. Madero,5,Gustavo A. Madero,9,Distrito Federal,,,-99.126008,,19.54464,,,"CalleSauces (lote 11 manzana68, Zona 9) s/n, Col. Tlalpexo (antes Ejido de Cuautepec), C.P. 07188","Lunes a Viernes 
+8 a 14:30"
+96,SEDESA,Clínica,T-III,2 de octubre,1,Iztacalco,5,Iztacalco,9,Distrito Federal,,16,-99.115733,,19.383933,,,"Guillermo Prieto No. 73 , Col. Benito Juárez, C.P.08930","Lunes a Viernes 
+8 a 14:30"
+97,SEDESA,Clínica,T-III,Dr. José Zozaya,1,Iztacalco,6,Iztacalco,9,Distrito Federal,,32,-99.118755,,19.39844,,,"Calle Corregidora No. 135 esq. Plutarco Elías Calles, Col. Santa Anita (Antes Rancho Santa Cruz Matlapanco), C.P. 08300","Lunes a Viernes 
+8 a 14:30"
+98,SEDESA,Clínica,T-III,Dr. Luis Mazzotti Galindo,1,Iztacalco,6,Iztacalco,9,Distrito Federal,,20,-99.058604,|,19.413629,,,"Calle 6 (Lote 12) es. Priovada T. Roche, Col. Pantitlán, C.P. 08100","Lunes a Viernes 
+8 a 14:30"
+99,SEDESA,Clínica,T-III,Dr. Manuel Pesqueira,1,Iztacalco,6,Iztacalco,9,Distrito Federal,,26,-99.070545,,19.394285,,,"Avenida Sur 16 S/N, entre oriente 245 Y 245-A, Col. Agrícola Oriental C.P. 08500","Lunes a Viernes 
+8 a 14:30"
+100,SEDESA,Clínica,T-II,Ramos Millán,1,Iztacalco,6,Iztacalco,9,Distrito Federal,,16,-99.095373,,19.386265,,,"Sur 159 esq. Oriente 120, Col. Ampliación Gabriel Ramos Millán, C.P. 08730","Lunes a Viernes 
+8 a 14:30"
+101,SEDESA,Clínica,T-II,Ejido Los Reyes,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,18,-99.101203,,19.345322,,,"Tetlepanquetzaltzin S/N casi esq. Cuauhtemoc, Col. Los Reyes Culhuacán, Delegación Iztapalapa  (Lote 5, Manzana 727-A, Zona 47, del Ex Ejido de los Reyes Culhuacán), C.P. 08620","Lunes a Viernes 
+8 a 14:30"
+102,SEDESA,Clínica,T-II,Quetzalcóatl,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,13,-99.045065,,19.327454,,,"Villa Buena de Alava esq. Villa Federal, Col. Desarrollo Urbano Quetzalcoatl, C.P.09700","Lunes a Viernes 
+8 a 14:30"
+103,SEDESA,Clínica,T-II,San Andrés Tomatlán,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,13,-99.10358,,19.327981,,,"Ave. Tlahuac s/n, casi esq. Hermanos Wright (Zona 67 Mza. 267, Lt 2), del Poblado de San Andrés Tomatlán,  C.P. 09870","Lunes a Viernes 
+8 a 14:30"
+104,SEDESA,Clínica,T-II,San Miguel Teotongo,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,15,-98.989795,,19.342726,,,"Calle Génaro Vázquez esq. Joselito Huerta s/n,  Col. San Miguel Teotongo, C.P. 09630","Lunes a Viernes 
+8 a 14:30"
+105,SEDESA,Clínica,T-II,Santa María Aztahuacán,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,16,-99.032139,,19.356134,,,"Ave. Herminio Chavarría S/N, esq. Plan de Ayala, Col. Ejidal Santa María Aztahuacán, (Lote 4 Manzana 34 Zona 1), C.P. 09500","Lunes a Viernes 
+8 a 14:30"
+106,SEDESA,Clínica,T-II,Santiago Acahualtepec,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,15,-99.012059,,19.347,,,"Calle Retama s/n esq. 5 de Febrero (Lote 2 A, Manzana 247, Zona 2), Col. 2° Ampliación de Santiago Acahualtepec, C.P. 09609","Lunes a Viernes 
+8 a 14:30"
+107,SEDESA,Clínica,T-III,Buenavista,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,14,-99.03161,,19.331934,,,"Av. San Miguel s/n, (Manza 17, Lote 16, entre Cuarta Cerrada San Miguel y Calle de la Rosa, Col. San José Buenavista C.P. ","Lunes a Viernes 
+8 a 14:30"
+108,SEDESA,Clínica,T-III,Chinampác de Juárez,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,18,-99.054221,,19.376807,,,"Prol. Telecomunicaciones S/N, Col. Chinampac de Juárez, C.P. 09225","Lunes a Viernes 
+8 a 14:30"
+109,SEDESA,Clínica,T-III,Dr. Francisco J. Balmis,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,20,-99.134628,,19.376165,,,"Independencia No. 20, Col. Zacahuizco, C.P. 09490","Lunes a Viernes 
+8 a 14:30"
+110,SEDESA,Clínica,T-III,Dr. Guillermo Román y Carrillo,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,24,-99.065969,,19.313148,,,"Zacatlán S/N, entre Ave. Tlahuac y Cempásúchitl, Col. San Lorenzo Tezonco","Lunes a Viernes 
+8 a 14:30"
+111,SEDESA,Clínica,T-III,Dr. Maximiliano Ruiz Castañeda,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,19,-99.009503,,19.362723,,,"Av. México-Puebla s/n, esquina Benito Juárez, Col. Santa Martha Acatitla, C.P. 09510","Lunes a Viernes 
+8 a 14:30"
+112,SEDESA,Clínica,T-III,Dr. Rafael Carrillo,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,21,-99.094626,,19.36036,,,"Guadalupe Victoria No. 32, Col. Barrio San Lucas, C.P. 09000","Lunes a Viernes 
+8 a 14:30"
+113,SEDESA,Clínica,T-I,Santa Cruz Meyehualco,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.044571,,19.346426,,,"Calle 55 entre Av. 4 y 6 , Col. Santa Cruz Meyehualco, C.P. 09290","Lunes a Viernes 
+8 a 14:30"
+114,SEDESA,Clínica,T-I, Xalpa,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.017037,,19.33203,,,"Zihuatanejo No. 1, (dentro del Centro Social Xalpa), Col. Xalpa, C.P. 09640","Lunes a Viernes 
+8 a 14:30"
+115,SEDESA,Clínica,T-I,Margarita Maza de Juárez,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.070078,,19.368614,,,"Andador Juana de Arco s/n, Unidad Habitacional  Margarita  Maza de Juárez, C.P. 09330","Lunes a Viernes 
+8 a 14:30"
+116,SEDESA,Clínica,T-I,Apatlaco,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.117108,,19.379626,,,"5 de Mayo esq. Eje 5 Sur (Purísima) s/n, Col. Apatlaco C.P. 09850","Lunes a Viernes 
+8 a 14:30"
+117,SEDESA,Clínica,T-I,San José Aculco ,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.101133,,19.373371,,,"Av.Río churubusco Eje 4 Oriente S/N esq. San José Aculco, Col. San José Aculco, C.P.09410","Lunes a Viernes 
+8 a 14:30"
+118,SEDESA,Clínica,T-I,Francisco Villa,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.059033,,19.337538,,,"Cañón de Bachimba No. 1, Col. Francisco Villa, C.P.0 9720","Lunes a Viernes 
+8 a 14:30"
+119,SEDESA,Clínica,T-I,Las Peñas,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.052183,,19.33939,,,"Andalucía No. 3, Esq. Prolongación Morelos, Col. Las Peñas. C.P. 9750","Lunes a Viernes 
+8 a 14:30"
+120,SEDESA,Clínica,T-I,Campestre Potrero,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-98.978888,,19.33115,,,"Prol. Violeta esq. Josefa Ortiz de Domínguez, Col. Campestre Potrero, C.P. 09720","Lunes a Viernes 
+8 a 14:30"
+121,SEDESA,Clínica,T-I,Renovación,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.048728,,19.365982,,,"Calle 5, Lote 31, Col. Renovación C.P. 09209","Lunes a Viernes 
+8 a 14:30"
+122,SEDESA,Clínica,T-I,San Andrés Xicotencatl,1,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.00532,,19.224369,,,"Lote 2 de la Manzana 168, Col. Santa Martha Acatitla actualmente Marcos Flores Jiménez S/N, , Col. San Andrés Xicotencatl (o Ampliación Santa Martha Acatitla), C.P. 09510","Lunes a Viernes 
+8 a 14:30"
+123,SEDESA,Clínica,T-II,San Bartolo Ameyalco,1,Magdalena Contreras,8,Magdalena Contreras,9,Distrito Federal,,16,-99.246806,,19.326825,,,"Av. Francisco I. Madero y San Francisco s/n,  Col. San Bartolo Ameyalco, C.P. 10010","Lunes a Viernes 
+8 a 14:30"
+124,SEDESA,Clínica,T-III,Dr. Ángel de la Garza Brito,1,Magdalena Contreras,8,Magdalena Contreras,9,Distrito Federal,,23,-99.250393,,19.305443,,,"Av. San Jerónimo Esq. Nogal S/N,  Col. Pueblo Nuevo Alto, C.P. 10640","Lunes a Viernes 
+8 a 14:30"
+125,SEDESA,Clínica,T-III,El Oasis,1,Magdalena Contreras,8,Magdalena Contreras,9,Distrito Federal,,19,-99.244739,,19.311739,,,"Av. San Jerónimo # 2625, Col. Pueblo San Bernabé Ocotepec, C.P.10600","Lunes a Viernes 
+8 a 14:30"
+126,SEDESA,Clínica,T-I,1ro. de Mayo ,1,Magdalena Contreras,8,Magdalena Contreras,9,Distrito Federal,,,-99.141609,,19.1811.75,,,"Calle Nogal s/n, (Mza. 3, Lote 1) casi esq. con Cda. 1o. de Mayo, Col. La Concepción (San Nicolás Totolapan), C.P. 10830","Lunes a Viernes 
+8 a 14:30"
+127,SEDESA,Clínica,T-I,Héroes de Padierna,1,Magdalena Contreras,7,Magdalena Contreras,9,Distrito Federal,,,-99.226287,,19.315163,,,"Oaxaca S/N Esq. Veracruz, Col. Héroes de Padierna, C.P. 10700","Lunes a Viernes 
+8 a 14:30"
+128,SEDESA,Clínica,T-I,San Nicolás Totolapan,1,Magdalena Contreras,7,Magdalena Contreras,9,Distrito Federal,,,-99.244085,,19.297929,,,"Calle Progreso, Esq. calle Benito Juárez s/n, Col. Pueblo de San Nicolás Totolapan, C.P. 10900.","Lunes a Viernes 
+8 a 14:30"
+129,SEDESA,Clínica,T-I,Exhacienda de Eslava,1,Magdalena Contreras,7,Magdalena Contreras,9,Distrito Federal,,,-99.242603,,19.293368,,,"Calle Prolongación Puente Cuadritos s/n, Col. San Nicolás Totolapan, C.P. 10900","Lunes a Viernes 
+8 a 14:30"
+130,SEDESA,Clínica,T-I,Ampliación Lomas de San Bernabé,1,Magdalena Contreras,7,Magdalena Contreras,9,Distrito Federal,,,-99.269827,,19.303073,,,"Av. Principal Mz-2  s/n Esq. Andador 14, Col. Tierra Unida, C.P. 10300","Lunes a Viernes 
+8 a 14:30"
+131,SEDESA,Clínica,T-I,Tierra Colorada,1,Magdalena Contreras,7,Magdalena Contreras,9,Distrito Federal,,,-99.145359,,19.161551,,,"Av. Metropolitana S/N, Col. Tierra Colorada, C.P. 10900","Lunes a Viernes 
+8 a 14:30"
+132,SEDESA,Clínica,T-III,Dr. Manuel Gutiérrez Zavala,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,16,-99.173082,,19.442404,, 52601952 y 52605579,"Calle Laguna de Términos No. 492,  Col. Anahuac, C.P. 11320 ","Lunes a Viernes 
+8 a 14:30"
+133,SEDESA,"Clínica, Laboratorio de Ultrasonido y Densitometro, Clínica de Colposcopia, Mód Atención Adolescentes",T-III,Dr. Angel Brioso y Clínica Condesa,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,25,-99.182898,,19.409085,,55154899,"Benjamin Hill 14, Col. Condesa, C.P. 06160","Lunes a Viernes 
+8 a 14:30"
+134,SEDESA,Clínica,T-III,Dr. Manuel González Rivera,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,24,-99.169176,,19.45248,,53411265,"Prol. Carpio y Plan de San Luis S/n, Col. Santo Tomás, CP 11340","Lunes a Viernes 
+8 a 14:30"
+135,SEDESA,"Clínica, Centro de Mastografías, Prueba de Híbridos, Laboratorio de Citopatología, ",T-III,Clínica México-España,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,24,-99.182686,,19.445328,,55450335,"Mariano Escobedo 148, Col. Anáhuac, C.P. 11320","Lunes a Viernes 
+8 a 14:30"
+136,SEDESA,Clínica,T-III,Lago Cardiel,1,Miguel Hidalgo,16,Miguel Hidalgo,9,Distrito Federal,,21,-99.202757,,19.455758,,"  55277174, 55272990 y 53865261","Lago Cardiel No. 61, Col. Argentina,                  C.P. 11270 ","Lunes a Viernes 
+8 a 14:30"
+137,SEDESA,Clínica,T-II,San Salvador Cuauhtenco,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,6,-99.091907,,19.191886,,58625158,"Chapultepec s/n, Col. Pueblo San Salvador Cuauhtenco, C.P. 12300 ","Lunes a Viernes 
+8 a 14:30"
+138,SEDESA,Clínica,T-II,Dr. Luis Alberto Erosa León,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,14,-99.046586,,19.203092,,58443783 y 58443294,"Av. Hidalgo s/n, Col. San Pedro Atocpan, C.P. 12200  ","Lunes a Viernes 
+8 a 14:30"
+139,SEDESA,Clínica,T-II,San Pablo Oztotepec,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,12,-99.072627,,19.187321,,  58620503 y 58625418,"Matamoros s/n, Col. Pueblo San Pablo Oztotepec, C.P. 12400 ","Lunes a Viernes 
+8 a 14:30"
+140,SEDESA,Clínica,T-II,Santa Ana Tlacotenco,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,12,-98.994554,,19172846,, tel. 58444323,"Av. Morelos S/N, esq. Agustín Melgar , Col. Santa Ana Tlacotenco, C.P. 12900 ","Lunes a Viernes 
+8 a 14:30"
+141,SEDESA,Clínica,T-III,Dr. Gastón Melo,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,22,-98.99562,,19.220366,,58470093,"Av. Dr. Gastón Melo s/n, esquina Ignacio Aldama, Col. San Antonio Tecomitl, C.P. 12100  ","Lunes a Viernes 
+8 a 14:30"
+142,SEDESA,Clínica,T-I,San Fco. Tecoxpa,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,,-99.007827,,19.197033,,,"Calle Juárez s/n, Pueblo San Francisco Tecoxpa,  C.P. 12700 ","Lunes a Viernes 
+8 a 14:30"
+143,SEDESA,Clínica,T-I,San Jerónimo Miacatlán,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,,-99.008428,,19.192818,,,"Av. Simón Bolivar s/n, Col. San Jerónimo Miacatlán, C.P. 12600","Lunes a Viernes 
+8 a 14:30"
+144,SEDESA,Clínica,T-I,San Juan Tepenahuac,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,,-98.993677,,19.187078,,,"Vicente Guerrero s/n, Col. San J. Tepenahuac, C.P. 12800","Lunes a Viernes 
+8 a 14:30"
+145,SEDESA,Clínica,T-I,Villa Milpa Alta,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,,-99.01703,,19.197327,,58445255,"Av. Nuevo León s/n, Col. Villa Milpa Alta, C.P. 12000 ","Lunes a Viernes 
+8 a 14:30"
+146,SEDESA,Clínica,T-I,San Lorenzo Tlacoyucan,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,,-99.029765,,19.176975,,,"Consulado s/n, Col. San Lorenzo Tlacoyucan, C.P. 12500","Lunes a Viernes 
+8 a 14:30"
+147,SEDESA,Clínica,T-I, San Bartolomé Xicomulco,1,Milpa Alta,9,Milpa Alta,9,Distrito Federal,,,-99.01703,,19.197327,,,"Av. Benito Juárez No. 26. Col. San Bartolomé Xicomulco, C.P. 12220","Lunes a Viernes 
+8 a 14:30"
+148,SEDESA,Clínica,Comunitaria,Mixquic,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,24,-98.951231,,19.226049,,58470269,"Carretera Mixquic -Chalco Km 8, s/n, esq. Calle Calmecac, Col Santa Cruz Mixquic, C.P. 13600 ","Lunes a Viernes 
+8 a 14:30"
+149,SEDESA,Clínica,T-II,13 de septiembre,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,8,-99.056622,,19.29875,," 58450655, 58452803","Calle Cisne s/n, entre Adalberto Tejeda y Revolución, Col. Los Olivos,  C.P. 13210 ","Lunes a Viernes 
+8 a 14:30"
+150,SEDESA,Clínica,T-II,Ampliación Selene,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,10,-98.995509,,19.28517,,"  tel. 58411380, 25943967","Calle Mar de los Vapores s/n esq. Cráter Platón (Lote 1 Manzana 181, Zona 2), Col. Ampliación Selene, C.P. 13430","Lunes a Viernes 
+8 a 14:30"
+151,SEDESA,Clínica,T-II,Del Mar,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,7,-99.055267,,19.289077,,58637592,"Av. La Turba s/n entre Abulón y Cangrejo, Col. Del Mar. C.P. 13270  ","Lunes a Viernes 
+8 a 14:30"
+152,SEDESA,Clínica,T-II,San José,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,12,-98.995938,,19.276096,,"58421130, 58428693","Agustín Lara S/N, entre Juventino Rosas y Farolito, Col. San José (Lote 05, Manzana 50, Zona 02, Poblado de Tlahuac), C.P. 13020  ","Lunes a Viernes 
+8 a 14:30"
+153,SEDESA,Clínica,T-II,Santa Catarina Yecahuizotl,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,8,-98.968053,,19.307893,," 58601019, 58603985 y 58601464","Calle Rafael Oropeza y Gabriel Mar s/n,  Col. Pueblo Santa Catarina Yecahuizotl, C.P. 13100 ","Lunes a Viernes 
+8 a 14:30"
+154,SEDESA,Clínica,T-II,Zapotitla,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,12,-99.036207,,19.311002,,"  26367252, 12724147","Calle Cecilio Acosta s/n esq. Alma Fuerte, Col. Zapotitla, C.P. 13310 ","Lunes a Viernes 
+8 a 14:30"
+155,SEDESA,Clínica,T-II,San Juan Ixtayopan,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,12,-98.994333,,19.242723,,"   58484295, 58488571","Calle Emiliano Zapata s/n esq. José María Morelos 1-A, Manzana 46, Zona 70,  Col. San Juan Ixtayopan, C.P. 13500","Lunes a Viernes 
+8 a 14:30"
+156,SEDESA,Clínica,T-III,Miguel Hidalgo,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,18,-99.046942,,19.291135,," 21603532, 58403364 y 21603458","Calle Fidelio s/n esq. Deodato, Col. Miguel Hidalgo, C.P. 13200 ","Lunes a Viernes 
+8 a 14:30"
+157,SEDESA,Clínica,T-III,San Francisco Tlaltenco,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,21,-99.014058,,19.295231,,58412228, Andrés Quintana Roo y General Carlos A. Vidal s/n. Col San Francisco Tlaltenco C.P. 13400 ,"Lunes a Viernes 
+8 a 14:30"
+158,SEDESA,Clínica,T-I,Zapotitlán,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,,-99.030291,,19.297433,,,"Av. Tlahuac S/N , esq. Felipe Ángeles No. 7 Lote 10, Col. Santiago Zapotitlan, (Porción del Lote identificado como 16, Manzana 242, Zona 57), C.P. 13300","Lunes a Viernes 
+8 a 14:30"
+159,SEDESA,Clínica,T-I,Quiahuatla,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,,-99.004017,,19.26294,,,"Margaritas S/N y Geranio Zona 02, Manzana 17, Lote 18), Col Quiahutla, C.P. 13090","Lunes a Viernes 
+8 a 14:30"
+160,SEDESA,Clínica,T-I,Solidaridad Tetelco,1,Tláhuac,11,Tláhuac,9,Distrito Federal,,,-98.971433,,19.210924,,25946500,"Vicente Guerrero esq. José María Morelos, Col. Emiliano Zapata 1a. Sección, San Nicolás Tetelco, Zona 67, manzana 267, Lote 02, C.P. 13700 ","Lunes a Viernes 
+8 a 14:30"
+161,SEDESA,Clínica,T-I,Parres,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.182587,,19.132063,,,"Calle Hidalgo s/n, frente a la Calle 20 de Noviembre, Col. Parres.","Lunes a Viernes 
+8 a 14:30"
+162,SEDESA,Clínica,T-II,Pedregal de las Águilas,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,15,-99.175741,,19.272157,,  56555910 y 55130062,"Mixtecas s/n casi esq. Nahoas, Col Pedregal de las Águilas, C.P. 14439 ","Lunes a Viernes 
+8 a 14:30"
+163,SEDESA,Clínica,T-II,San Andrés Totoltepec,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,17,-9917674,,19.249186,,  58491322 y 58497281,"Camino Real al Ajusco s/n casi esq. 3ra. Cda de Tlaquexpa, Col San Andrés Totoltepec, C.P. 14629. ","Lunes a Viernes 
+8 a 14:30"
+164,SEDESA,Clínica,T-II,Topilejo,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,12,-99.146709,,19.203305,,  22909738 y 58466430," Prolongación Las Cruces s/n, esquina Mirador Chapultepec,  Col. San Miguel Topilejo, C.P. 14500 ","Lunes a Viernes 
+8 a 14:30"
+165,SEDESA,Clínica,T-II,Cultura Maya,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,15,-99.222122,,19.275939,,56307451,"Izamal S/N entre las calles Tepakan y Hezelchakan, Col. Cultura Maya, C.P.14238","Lunes a Viernes 
+8 a 14:30"
+166,SEDESA,Clínica,T-III,Ampliación Hidalgo,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,18,-99.207944,,19.285214,,  56443282 y 26159355,"Adolfo Ruiz Cortines esq. Francisco I Madero s/n (Zona 2, Manzana 124-A Lote 2),  Col. Ampliación Hidalgo, C.P. 14250 ","Lunes a Viernes 
+8 a 14:30"
+167,SEDESA,Clínica,T-III,Dr. David Fragoso Lizalde,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,19,-99.160922,,19.265339,,56550811 y 58467689,"Calle Dr. David Fragoso Lizalde, esq. Cedral s/n, Col. Ejidos de San Pedro Mártir,  C.P. 14640  ","Lunes a Viernes 
+8 a 14:30"
+168,SEDESA,Clínica,T-III,Dr. Gerardo Varela Mariscal,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,6,-99.160386,,19.293208,,58460537 y 13154339,"Calle Matamoros y Allende, s/n,  Col Santo Tomás Ajusco, C.P. 14710  ","Lunes a Viernes 
+8 a 14:30"
+169,SEDESA,Clínica,T-III,Dr. José Castro Villagrana,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,23,-99.166957,,19.293444,,"55281173, 56066516 y  56963516","Calle Coapa , esq. Carrasco No. 153, Col. Toriello Guerra,  C.P. 14050 ","Lunes a Viernes 
+8 a 14:30"
+170,SEDESA,Clínica,T-I,Ejidos de Huipulco,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.133695,,19.286152,,,"Escuela s/n casi esq. Gadiez, Col. Ejidos de Huipulco,  C.P. 14387","Lunes a Viernes 
+8 a 14:30"
+171,SEDESA,Clínica,T-I,Magdalena Petlacalco,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.18033,,19.23387,,58461532 y 58463133,"5de mayo, esq. Juárez, dentro de la Subdelegación Magdalena Petlacalco, C.P. 14480  ","Lunes a Viernes 
+8 a 14:30"
+172,SEDESA,Clínica,T-I,San Miguel Xicalco,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.163758,,19.234184,,58461531,"16 de Septiembre s/n, Col. Pueblo San Miguel Xicalco, C.P. 14490  ","Lunes a Viernes 
+8 a 14:30"
+173,SEDESA,Clínica,T-I,Xitle,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.182877,,19.255506,,,"Cerro Xitle S/N casi esq. con Sierra Las Cruces, Col. María Esther Zuno de Echeverría, C.P. 16460","Lunes a Viernes 
+8 a 14:30"
+174,SEDESA,Clínica,T-I,DIF,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.195836,,19.284745,,54463725,"Calle Venustiano Carranza, esq. Ave. De las Torres, Col. Ampliación Miguel Hidalgo (Lote 01 de la Manzana 84, Zona 02),C.P. 14250 ","Lunes a Viernes 
+8 a 14:30"
+175,SEDESA,Clínica,T-I,Lomas de Padierna,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.222917,,19.291277,,,"Izamal Lotes # S/N, 21, 22 y 23 A, entre las calles de Chemax  y Acanceh, Col. Lomas de Padierna, C.P. 14240.  tel. 56450317","Lunes a Viernes 
+8 a 14:30"
+176,SEDESA,Clínica,T-I,Pedregal de San Nicolás Norte,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.238226,,19.289479,,,"Calle Acanceh esq. Sisal s/n (Lote 15 Manzana 782, Zona 74),  Col. Pedregal de Nicolás Totolapan 2° Sección, C.P. 14109  ","Lunes a Viernes 
+8 a 14:30"
+177,SEDESA,Clínica,T-I,Hortencia,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.228775,,19.297251,,,"Calle Sacalum esq. Cacalchen  (Zona 574, Manzana 9, Lote 8) s/n, Col. Héroes de Padierna, C.P. 14209  tel.54463236 ","Lunes a Viernes 
+8 a 14:30"
+178,SEDESA,Clínica,T-I,Tierra y Libertad,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.237835,,19.27087,,,"Ahuehuetes esq. Av. Bosques, Col Bosques del Pedregal, C.P. 14210  tel. 54463572","Lunes a Viernes 
+8 a 14:30"
+179,SEDESA,Clínica,T-I,Bosques del Pedregal,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.236943,,19.273919,,,"Sisal s/n casi esq. Encinos, Col. Bosques del Pedregal, C.P. 14738 ","Lunes a Viernes 
+8 a 14:30"
+180,SEDESA,Clínica,T-I,Pedregal de San Nicolás Sur,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.140067,,19.170067,,,"Calle Homun s/n (Lote 13-A, Manzana 860, Zona 74), Col Pedregal de San Nicolás, C.P. 14109 ","Lunes a Viernes 
+8 a 14:30"
+181,SEDESA,Clínica,T-I,Bekal,1,Tlalpan,12,Tlalpan,9,Distrito Federal,,,-99.227185,,19.268095,,,"Prolongación Bekal entre Ática y Peloponeso, Manzana 110, Lote 22,  Col. Belvedere, C.P. 14720","Lunes a Viernes 
+8 a 14:30"
+182,SEDESA,Clínica,T-II,Arenal 4a. Sección,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.060944,,19.430668,, 57583123 y 57010417,"XOCOYOTE S/N, XALTOCAN Y XANICHO, COL. EL ARENAL 4a SECCIÓN, C.P. 15610 ","Lunes a Viernes 
+8 a 14:30"
+183,SEDESA,Clínica,T-II,Cuchilla Pantitlán,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.062392,,19.421319,," 57580980, 57003870 y 57631544","PRIVADA DE ESTAÑO No. 43, COL. CUCHILLA PANTITLÁN, C.P. 15610 ","Lunes a Viernes 
+8 a 14:30"
+184,SEDESA,Clínica,T-II,Ixnahualtongo,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.126186,,19.418961,,"55520391, 57644694 y 57588482","CUITLÁHUAC S/N ESQ. FERROCARRIL INDUSTRIAL Y ZOQUIPA, COL. MERCED BALBUENA, C.P. 15810  ","Lunes a Viernes 
+8 a 14:30"
+185,SEDESA,Clínica,T-II,José María Morelos y Pavón,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.120929,,19.445207,,  57891081 y 26161083,"MINEROS No. 59 ESQ. AV. FERROCARRIL DE CINTURA, COL. MORELOS, C.P. 15270 ","Lunes a Viernes 
+8 a 14:30"
+186,SEDESA,Clínica,T-II,Peñón de los Baños,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.087114,,19.438231,,  57840247 y 26435226,"BOULEVARD PUERTO AÉREO S/N, ENTRE AV. DEL PEÑÓN Y ORIENTE 37, COL. PEÑÓN DE LOS BAÑOS, C.P. 15520 ","Lunes a Viernes 
+8 a 14:30"
+187,SEDESA,Clínica,T-III,Dr. Juan Duque de Estrada,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.097078,,19.428452,,"  55710524, 55712572 y 55717173","ORIENTE 170 No. 154 ESQ. 4a CERRADA DE ORIENTE 168, COL. MOCTEZUMA 2° SECCIÓN, C.P. 15500 ","Lunes a Viernes 
+8 a 14:30"
+188,SEDESA,Clínica,T-III,Dr. Luis E. Ruiz ,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.1196,,19.424547,,,"EJE 2 ORIENTE AV. H. CONGRESO DE LA UNIÓN No. 148, COL. DEL PARQUE, C.P. 15810 ","Lunes a Viernes 
+8 a 14:30"
+189,SEDESA,Clínica,T-III,Romero Rubio,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.090367,,19.444073,,"  57718040, 57607123 y 57609664","MANCHURIA No. 8 ESQ. TRANSVAAL, COL. AQUILES SERDÁN, C.P. 15430","Lunes a Viernes 
+8 a 14:30"
+190,SEDESA,Clínica,T-I,Revolución,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,,-99.106648,,19.436541,,57893068 y 57040193,"FRANCISCO SERRANO No. 5, COL. MIGUEL HIDALGO, C.P. 15470  ","Lunes a Viernes 
+8 a 14:30"
+191,SEDESA,Clínica,T-I,Renovación,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,,-99.109556,,19.432105,, 57623663 y 57851399,"FRANCISCO ESPEJEL No. 92, COL. MOCTEZUMA 1a SECCIÓN, C.P. 15500 ","Lunes a Viernes 
+8 a 14:30"
+192,SEDESA,Clínica,T-I,Cuatro Arboles,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,,-99.084111,,19.416773,,55714579,"BIENES NACIONALES No. 88, COL. CUATRO ÁRBOLES, C.P. 15730 ","Lunes a Viernes 
+8 a 14:30"
+193,SEDESA,Clínica,T-I,Ampliación Caracol,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,,-99.065115,,19.427521,,57637253,"AV. RÍO CHURUBUSCO No. 180, COL. AMPLIACIÓN CARACOL, C.P. 15650 ","Lunes a Viernes 
+8 a 14:30"
+194,SEDESA,Clínica,T-I,Polvorín,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,,-99.115252,,19.409854,,57683669,"JUAN PARDAVÉ No. 35, PUEBLO DE LA MAGDALENA MIXHUCA, C.P. 15850  ","Lunes a Viernes 
+8 a 14:30"
+195,SEDESA,Clínica,T-III,Clínica de Salud Reproductiva Beatriz Velasco de Alemán,1,Venustiano Carranza,17,Venustiano Carranza,9,Distrito Federal,,0,-99.112153,,19.445231,,,"EJE 3 ORIENTE AV. ING. EDUARDO MOLINA ESQ. PELUQUEROS, COL. AMPLIACIÓN 20 DE NOVIEMBRE, C.P. 15300","Lunes a Viernes 
+8 a 14:30"
+196,SEDESA,Clínica,T-I,San Bartolomé Xicomulco,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,,,,,,,"Lunes a Viernes 
+8 a 14:30"
+197,SEDESA,Clínica,T-II,Santa Cruz Acalpixca,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,12,-99.068272,,19.246319,," tel. 21577693, 21577891 y 21571979","Ahualapa s/n, Col. Pueblo de Santa Cruz Acalpixca, C.P. 16500 ","Lunes a Viernes 
+8 a 14:30"
+198,SEDESA,Clínica,T-II,Santa María Nativitas,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,14,-99.094407,,19.246532,, 21575132 y 21578120,"Carretera Vieja a Tulyehualco-Xochimilco s/n, esq. los Pinos, Col. Pueblo Nativitas, C.P. 16450  ","Lunes a Viernes 
+8 a 14:30"
+199,SEDESA,Clínica,T-III,San Mateo Xalpa,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,19,-99.119437,,19.227954,,21562412 y 21535332,"Carretera Xochimilco-Topilejo No. 255, casi esq. Las Granjas y Cuauhtémoc, Col. San Mateo Xalpa, C.P. 16800  ","Lunes a Viernes 
+8 a 14:30"
+200,SEDESA,Clínica,T-III,Tulyehualco,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,18,-99.011091,,19.25579,,21612390,"Av. Tlahuac-Tulyehualco, entre Tapia y División del Norte, (Lote 2, Manzana 324, Zona 357) s/n,  Barrio San Sebastián Tulyehualco, C.P. 16730  ","Lunes a Viernes 
+8 a 14:30"
+201,SEDESA,Clínica,T-III,Xochimilco,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,31,-99.104223,,19.264789,,"56769105, 56757455 y 56760043"," y  Juárez No. 2, esq. Calle Pino, Col. Barrio San Juan, C.P. 16070  ","Lunes a Viernes 
+8 a 14:30"
+202,SEDESA,Clínica,T-I,San Gregorio Atlapulco Esta en Construcción,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.064752,,19.257005,,,"Gustavo Díaz Ordaz s/n, entre Emiliano Zapata y Av. Chapultepec (Zona 371,Mza. 91 Lt. 01), Col. San Gregorio Atlapulco, C.P. 16700  ","Lunes a Viernes 
+8 a 14:30"
+203,SEDESA,Clínica,T-I,San Luis Tlaxialtemanco,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.041072,,19.255693,,tel.  58439517,"Av. 5 de Mayo S/N, esq. con la calle Temacpalco, Col. Barrio La Candelaria, C.P. 16610  ","Lunes a Viernes 
+8 a 14:30"
+204,SEDESA,Clínica,T-I,Santiago Tepalcatlalpan,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.123063,,19.247839,,,"Calle Aquiles Serdán S/N esq. con la calle Prolongación Sócrates,Col. Pueblo de Santiago Tepalcatlalpan, C.P. 16100  ","Lunes a Viernes 
+8 a 14:30"
+205,SEDESA,Clínica,T-I,Santa Cruz Xochitepec,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.130004,,19.254025,,,"Camino Real a Santiago s/n, esq. Cerrada de Santiago (planta Alta del Centro de Barrio), Col. Pueblo de Santa Cruz Xochitepec,  C.P. 16100","Lunes a Viernes 
+8 a 14:30"
+206,SEDESA,Clínica,T-I,Santa Cecilia Tepetlapa,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.099331,,19.215944,,55485626,"Francisco Sarabia s/n, Col. Santa Cecilia Tepetlapa, C.P. 16880.  ","Lunes a Viernes 
+8 a 14:30"
+207,SEDESA,Clínica,T-I,San Francisco Tlalnepantla,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.122754,,19.194885,,,"Constitución s/n, junto al No. 35, Col. San Francisco Tlalnepantla, C.P. 16890.  ","Lunes a Viernes 
+8 a 14:30"
+208,SEDESA,Clínica,T-I,San Andrés Ahuayucan,1,Xochimilco,13,Xochimilco,9,Distrito Federal,,,-99.108413,,19.224955,,,"Benito Juárez s/n, frente a la calle Galeana (planta alta del edificio), Col Pueblo de San Andrés Ahuayucan C.P. 16810","Lunes a Viernes 
+8 a 14:30"
+209,SEDESA,Clínica,Especializada,CEMI,2,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,,-99.261163,,19.261163,,55462375,"Francisco Díaz Covarrubias 23, Col. San Rafael, C.P. 06470","Lunes a Viernes 
+8 a 14:30"
+210,SEDESA,Clínica,Atención a la Mujer,Clínica de Atención Integral a la Mujer,3,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.071597,,19.310156,,,"Desposorios s/n esq. Sur 1, Col. San Lorenzo Tezonco","Lunes a Viernes 
+8 a 14:30"
+211,SEDESA,Clínica,Displasias,Clínica de Displasias,4,Iztapalapa,7,Iztapalapa,9,Distrito Federal,,,-99.0271,,19.212838,,,"Calz. Ermita Iztapalapa s/n, ex cárcel de mujeres, Col. Lomas de Zaragoza, 09620","Lunes a Viernes 
+8 a 14:30"
+212,SEDESA,Clínica,Especialidades,Clínica de Especialidades No. 2,5,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,,-99.74458,,19.26446,,55228611,"República de Guatemala 78, Col. Centro, C.P. 06020","Lunes a Viernes 
+8 a 14:30"
+213,SEDESA,Clínica,Especialidades,Clínica de Especialidades No. 3,6,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,,-99.74427,,19265175,,55266290,"Tenochtitán 79, Col. Morelos, C.P. 06200","Lunes a Viernes 
+8 a 14:30"
+214,SEDESA,Clínica,Especialidades,Clínica de Especialidades No. 5,7,Cuahtémoc,15,Cuahtémoc,9,Distrito Federal,,,-99.84692,,19.253732,,,"Arcos de Belén 17, Col. Centro, C.P. 06070","Lunes a Viernes 
+8 a 14:30"
+215,SEDESA,Clínica,Especialidades,Clínica de Especialidades No. 6,8,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,,-99.84692,,19.253732,,55217573,"Lucerna 67, Col. Juárez, C.P. 06600","Lunes a Viernes 
+8 a 14:30"
+216,SEDESA,Clínica,Dermatológico,Pascua,9,Cuauhtémoc,15,Cuauhtémoc,9,Distrito Federal,,,-99.91706,,19.25235,,55196351,"Dr. Vertiz 464, Col. Buenos Aires, C.P. 06780","Lunes a Viernes 
+8 a 14:30"
