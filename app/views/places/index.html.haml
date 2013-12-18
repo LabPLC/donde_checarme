@@ -3,7 +3,7 @@
 .container-fluid
   #busqueda_cont.row
     #busqueda.col-sm-8
-      =form_tag "/lugares.json", :method => :get, :remote => "true",:id => "forma_busqueda" do
+      =form_tag lugares_path(format: :json), :method => :get, :remote => "true",:id => "forma_busqueda" do
         = text_field_tag "busca", "", :placeholder => "Busca"
         = submit_tag "Submit", :class => "btn btn-default"
     #botones.col-sm-4
