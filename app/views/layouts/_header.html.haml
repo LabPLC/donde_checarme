@@ -1,12 +1,16 @@
 %header
   %nav.navbar.navbar-default.navbar-fixed-top{:role => "search"}
     .navbar-header
-      %a.navbar-brand CHECATE AQUI
-    .collapse.navbar-collapse
+      %a.navbar-brand{href: root_path} CHECATE AQUI
+      %button.navbar-toggle{ :type => 'button', :data => {target: '#colapsar', toggle: 'collapse'}}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    .collapse.navbar-collapse#colapsar 
       %ul.nav.navbar-nav
-        %li.active
+        %li{:class => "#{is_active?('hospitales')}"}
           %a Mapa
-        %li
-          %a Ayuda
-        %li
+        %li{:class => "#{is_active?('ayuda')}"}
+          %a{href: ayuda_path} Ayuda
+        %li{:class => "is_active?('about')"}
           %a Acerca De...

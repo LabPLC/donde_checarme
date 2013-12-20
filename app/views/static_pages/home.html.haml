@@ -1,8 +1,21 @@
 - provide(:titulo, 'Inicio')
 
-.center.hero-unit
-  %h1 Chécate aquí
+.center.jumbotron
+  .container
+    %h1 Chécate aquí
 
-  .h2 ¿Quieres saber en dónde puedes encontrar las clínicas de la Secretaría de Salud del Distrito Federal en donde puedes checarte?
+    .p ¿Quieres saber en dónde puedes encontrar las clínicas de la Secretaría de Salud del Distrito Federal en donde puedes checarte?
 
-  = link_to "Encuentra aquí!", hospitales_path, class: "btn btn-large btn-primary"
+    = link_to "Encuentra aquí!", hospitales_path, class: "btn btn-large btn-primary"
+.container
+  .row
+    .col-md-4
+      %h2 ¿En dónde hay clínicas?
+      %p En este sitio puedes encontrar los Centros de Salud y clinicas de la Secretaría de Salud del Distrito Federal.
+    .col-md-4
+      %h2 ¿Cómo me afilio a los Servicios de Salud Pública?
+      %p Como ciudadano del Distrito Federal, si no cuentas con seguridad social, el Gobierno del Distrito Federal garantiza el acceso gratuito a los Servicios de Salud. 
+      %p
+        = link_to 'Enterate cómo aquí', '#', class: "btn btn-default"
+
+
