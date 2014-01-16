@@ -157,7 +157,8 @@ card = (point) ->
 
 ajaxtrue = ->
 	$("#forma_busqueda").bind('ajax:success', (evt, data, status, xhr) ->
-		console.log data
+		delete_markers(window.map)
+		display_on_map(data, map)
 	)
 	
 

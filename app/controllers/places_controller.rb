@@ -23,14 +23,14 @@ class PlacesController < ApplicationController
     @lon = params[:longitude]
     if params.has_key? :busca
       puts "yaay"
-      @centros = Place.near([@lat, @lon], 3).where("nombre LIKE ?", params[:busca])
+      @centros = Place.near([@lat, @lon], 2).where("nombre LIKE ?", params[:busca])
       if @centros.count == 0
-        query_busqueda = params[:busca]
+        query_busqueda = params[:busca] + " Ciudad de Mexico"
         puts query_busqueda
-        @centros = Place.near(query_busqueda, 3)
+        @centros = Place.near(query_busqueda, 2)
       end
     else
-      @centros = Place.near([@lat, @lon], 3)
+      @centros = Place.near([@lat, @lon], 2)
     end
   end
 end
