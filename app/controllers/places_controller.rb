@@ -7,6 +7,9 @@ class PlacesController < ApplicationController
     end 
   end
 
+  def lista
+  end
+
   def show
     @place = Place.find(params[:id])
   end
@@ -19,7 +22,13 @@ class PlacesController < ApplicationController
     @lat = params[:latitude]
     @lon = params[:longitude]
     if params.has_key? :busca
-      @centros.Place.near([@lat, @lon], 3).where("nombre LIKE ?", params[:busca])
+      puts "yaay"
+      @centros = Place.near([@lat, @lon], 3).where("nombre LIKE ?", params[:busca])
+      if @centros.count == 0
+        query_busqueda = params[:busca]
+        puts query_busqueda
+        @centros = Place.near(query_busqueda, 3)
+      end
     else
       @centros = Place.near([@lat, @lon], 3)
     end

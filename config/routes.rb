@@ -6,6 +6,7 @@ ChecateAquiApp::Application.routes.draw do
   match '/lugares', to: 'places#lugares', via: 'get'
   match '/search', to: 'places#search', via: 'get'
   match '/hospitales/:id', to: 'places#show', via: 'get'
+  match '/lista', to: 'places#lista', via: 'get'
   
 
   resources :places
