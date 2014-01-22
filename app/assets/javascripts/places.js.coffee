@@ -52,6 +52,7 @@ $ ->
 	google.maps.event.addListener(map, 'dragend', moviendo_mapa)
 	navigator.geolocation.getCurrentPosition(success,error)
 	ajaxtrue()
+	getLocationNow()
 	#
 
 load_from_position = (map, lat, lon) ->
@@ -160,6 +161,12 @@ ajaxtrue = ->
 		delete_markers(window.map)
 		display_on_map(data, map)
 	)
+
+getLocationNow = ->
+	mostrar_todos = ->
+		console.log "wooo"
+		navigator.geolocation.getCurrentPosition(success,error)
+	$("#boton_todos").click(mostrar_todos)
 	
 
 
