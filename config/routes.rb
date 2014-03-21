@@ -1,16 +1,4 @@
-ChecateAquiApp::Application.routes.draw do
-  root 'static_pages#home'
-
-  match '/ayuda', to: 'static_pages#ayuda', via: 'get'
-  match '/hospitales', to: 'places#index', via: 'get'
-  match '/lugares', to: 'places#lugares', via: 'get'
-  match '/search', to: 'places#search', via: 'get'
-  match '/hospitales/:id', to: 'places#show', via: 'get'
-  match '/lista', to: 'places#lista', via: 'get'
-  
-
-  resources :places
-
+DondeMapas::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -51,7 +39,7 @@ ChecateAquiApp::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

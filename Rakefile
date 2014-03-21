@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ChecateAquiApp::Application.load_tasks
+DondeMapas::Application.load_tasks
