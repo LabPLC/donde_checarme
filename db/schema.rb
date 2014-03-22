@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131127205528) do
+ActiveRecord::Schema.define(version: 20140322183925) do
 
   create_table "categories", force: true do |t|
     t.string   "tipo"
@@ -22,6 +22,21 @@ ActiveRecord::Schema.define(version: 20131127205528) do
   create_table "categorizations", force: true do |t|
     t.integer  "place_id"
     t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "centros", force: true do |t|
+    t.string   "nombre"
+    t.float    "lat"
+    t.float    "lon"
+    t.string   "direccion"
+    t.string   "encargado"
+    t.string   "telefono"
+    t.string   "tipo"
+    t.string   "subtipo"
+    t.string   "delegacion"
+    t.string   "horario"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
