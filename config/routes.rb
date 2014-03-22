@@ -7,7 +7,9 @@ ChecateAquiApp::Application.routes.draw do
   match '/search', to: 'places#search', via: 'get'
   match '/hospitales/:id', to: 'places#show', via: 'get'
   match '/lista', to: 'places#lista', via: 'get'
-  
+
+  get 'mapa' => 'static_pages#index', as: :mapa
+
 
   resources :places
 
@@ -51,7 +53,7 @@ ChecateAquiApp::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
