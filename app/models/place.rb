@@ -38,6 +38,27 @@ class Place < ActiveRecord::Base
     categorizations.create(category_id: category.id)
   end
 
+  def to_geojson
+    {
+      id: id,
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [latitude, longitude]
+      },
+      properties: {
+        name: nombre,
+        address: direccion,
+        encargado: encargado,
+        tipo: tipo,
+        subtipo: subtipo,
+        delegacion: delegacion,
+        horario: horario,
+        telefono: telefono,
+      }
+    }
+  end
+
   def self.search(busqueda, latitude = 0, longitude = 0, dist = 3)
     places = nil
     if latitude == 0 || longitude == 0

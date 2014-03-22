@@ -4,7 +4,17 @@ class PlacesController < ApplicationController
       @centros = Place.where("nombre LIKE ?", params[:busca])
     else
       @centros = Place.all
-    end 
+    end
+    respond_to do |format|
+      format.html
+      format.json do
+        geojson = {
+          type: "FeatureCollection",
+          features: @centros.map(&:to_geojson)
+        }
+        render json: geojson
+      end
+    end
   end
 
   def lista
