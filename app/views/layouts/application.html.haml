@@ -5,11 +5,11 @@
     %title=full_title(yield(:titulo))
     - google_maps_api
     = stylesheet_link_tag "application", media: "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
   %body
 
     %div.content
       = yield
     = render 'layouts/footer'
+    = javascript_include_tag "application"
 

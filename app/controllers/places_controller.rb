@@ -8,11 +8,7 @@ class PlacesController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        geojson = {
-          type: "FeatureCollection",
-          features: @centros.map(&:to_geojson)
-        }
-        render json: geojson
+        to_json @centros
       end
     end
   end
@@ -22,10 +18,23 @@ class PlacesController < ApplicationController
 
   def show
     @place = Place.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json do
+        to_json @place
+      end
+    end
   end
 
   def search
-    @places = Place.find_by_tipo(params[:tipo])
+    #@places = Place.find_by_tipo(params[:tipo])
+    @places = Place.seach(params[:tipo])
+    respond_to do |format|
+      format.html
+      format.json do
+        to_json @places
+      end
+    end
   end
 
   def lugares
@@ -42,5 +51,21 @@ class PlacesController < ApplicationController
     else
       @centros = Place.near([@lat, @lon], 2)
     end
+    respond_to do |format|
+      format.html
+      format.json do
+        to_json @centros
+      end
+    end
   end
+
+  private
+
+    def to_json(lugares)
+      geojson = {
+          type: "FeatureCollection",
+          features: lugares.map(&:to_geojson)
+        }
+        render json: geojson
+    end
 end
