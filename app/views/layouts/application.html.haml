@@ -3,6 +3,7 @@
   %head
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'}
     %title=full_title(yield(:titulo))
+    %link{href: '//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css', rel: "stylesheet"}
     - google_maps_api
     = stylesheet_link_tag "application", media: "all"
     = csrf_meta_tags
@@ -12,4 +13,9 @@
       = yield
     = render 'layouts/footer'
     = javascript_include_tag "application"
+    %script{src: '//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'}
+
+
+
+
 
