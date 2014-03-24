@@ -40,11 +40,10 @@ class Place < ActiveRecord::Base
 
   def to_geojson
     {
-      id: id,
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [latitude, longitude]
+        coordinates: [longitude, latitude]
       },
       properties: {
         name: nombre,
@@ -55,6 +54,9 @@ class Place < ActiveRecord::Base
         delegacion: delegacion,
         horario: horario,
         telefono: telefono,
+        :'marker-color' => "#fc4353",
+        :'marker-size' => "large",
+        :'marker-symbol' => "hospital"
       }
     }
   end
