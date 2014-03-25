@@ -88,23 +88,25 @@ mapa.featureLayer.on('layeradd', function(e){
     console.log('kakakakaka')
     var mrkr = e.layer,
       feature = mrkr.feature;
-    var popupContent = '<div class=\'popup\'>' +
+    var popupContent = "<div class='popup'>" +
                                        "<div class='popup-info'>" +
                                         "<div class='popup-location'>" +
-                                          "<span class='location'>" + feature.properties.nombre + "</span>" +
+                                          "<span class='location'>" + feature.properties.name + "</span>" +
                                           "<br>" +
                                           "<span class='address'>" +
                                             "<i class='fi-compass'/>" +
-                                            "<a href='https://www.google.com/maps/@'" + feature.geometry.coordinates[0] + "," + feature.geometry.coordinates[1]+",13z' target='_blank'>" +
+                                            "<a href='https://maps.google.com/maps?daddr=" + feature.geometry.coordinates[1] + "," + feature.geometry.coordinates[0]+"&z=17&' target='_blank'>" +
                                           feature.properties.address + "</a></span>" +
                                         "</div>" +
                                       "</div>" +
-                                      feature.properties.address + '</div>'
+                                    '</div>'
     mrkr.bindPopup(popupContent, {
       closeButton: true,
       minWidth: 320
     });
   });
+
+http://maps.google.com/maps?daddr=1900%20Goldring,%20Las%20Vegas,%20NV%2089106
 
 
 
