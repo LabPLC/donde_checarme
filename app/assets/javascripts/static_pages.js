@@ -46,6 +46,8 @@ $.when(
     console.log("clickclick");
   });
 
+
+
 });
 
 /***************
@@ -81,6 +83,28 @@ mapa.on('dragend', function(e) {
   console.log(e.distance);
   console.log(mapa.getBounds().getCenter())
 });
+
+mapa.featureLayer.on('layeradd', function(e){
+    console.log('kakakakaka')
+    var mrkr = e.layer,
+      feature = mrkr.feature;
+    var popupContent = '<div class=\'popup\'>' +
+                                       "<div class='popup-info'>" +
+                                        "<div class='popup-location'>" +
+                                          "<span class='location'>" + feature.properties.nombre + "</span>" +
+                                          "<br>" +
+                                          "<span class='address'>" +
+                                            "<i class='fi-compass'/>" +
+                                            "<a href='https://www.google.com/maps/@'" + feature.geometry.coordinates[0] + "," + feature.geometry.coordinates[1]+",13z' target='_blank'>" +
+                                          feature.properties.address + "</a></span>" +
+                                        "</div>" +
+                                      "</div>" +
+                                      feature.properties.address + '</div>'
+    mrkr.bindPopup(popupContent, {
+      closeButton: true,
+      minWidth: 320
+    });
+  });
 
 
 
