@@ -34,12 +34,10 @@ gem 'will_paginate', '~> 3.0'
 gem 'mapbox-rails'
 gem "ransack"
 
-group :assets do
-  gem 'sass-rails', '4.0.2'
-  gem 'coffee-rails', '4.0.1'
-  gem 'uglifier', '2.1.1'
-  gem 'foundation-icons-sass-rails'
-end
+gem 'sass-rails', '4.0.2'
+gem 'coffee-rails', '4.0.1'
+gem 'uglifier', '2.1.1'
+gem 'foundation-icons-sass-rails'
 
 
 group :doc do
