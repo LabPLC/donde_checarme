@@ -39,6 +39,8 @@ gem 'coffee-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'foundation-icons-sass-rails'
 
+gem 'mustache-js-rails'
+
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

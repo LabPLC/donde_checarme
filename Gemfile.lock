@@ -108,6 +108,8 @@ GEM
     mini_portile (0.5.3)
     minitest (4.7.5)
     multi_json (1.9.2)
+    mustache-js-rails (0.0.7)
+      railties (>= 3.1)
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -231,6 +233,7 @@ DEPENDENCIES
   jquery-rails (= 3.0.4)
   libnotify
   mapbox-rails
+  mustache-js-rails
   nokogiri
   pg (= 0.15.1)
   rails (~> 4.0.4)
