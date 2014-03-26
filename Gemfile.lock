@@ -59,6 +59,9 @@ GEM
     execjs (2.0.2)
     ffi (1.9.3)
     formatador (0.2.4)
+    foundation-icons-sass-rails (3.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     geocoder (1.1.9)
     guard (2.5.1)
       formatador (>= 0.2.4)
@@ -218,6 +221,7 @@ DEPENDENCIES
   capybara (= 2.1.0)
   childprocess
   coffee-rails (= 4.0.1)
+  foundation-icons-sass-rails
   geocoder
   guard-rspec (= 2.5.0)
   guard-spork (= 1.5.0)

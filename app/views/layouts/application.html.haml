@@ -9,8 +9,8 @@
     = csrf_meta_tags
   %body
 
-    %div.content
-      = yield
+
+    = yield
     = render 'layouts/footer'
     = javascript_include_tag "application"
     %script{src: '//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'}

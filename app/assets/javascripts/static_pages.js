@@ -35,9 +35,16 @@ $.when(
   })
 ).then( function(){
   var centros = centroscentros;
-  //console.log("hooo")
+  console.log("hooo")
   //var markers = mapa.markerLayer.setGeoJSON(centros);
-  markers = mapa.featureLayer.setGeoJSON(centros);
+
+
+
+}). done(function() {
+  console.log(centroscentros);
+  console.log("wola")
+  markers = mapa.featureLayer.setGeoJSON(centroscentros);
+  console.log("wolo")
   //markers = L.mapbox.featureLayer(centros).addTo(mapa)
 
   markers.on('click', function(e) {
@@ -46,8 +53,6 @@ $.when(
     console.log("clickclick");
   });
 
-
-
 });
 
 /***************
@@ -55,6 +60,11 @@ $.when(
 // jQuery para hacer cositas de UI
 //*********/
 $(document).ready(function() {
+
+  $('.vendor-heading').click(function() {
+    toggleVendor($(this));
+  });
+
   var lc = L.control.locate().addTo(mapa);
   if (navigator.geolocation) {
       mapa.locate();
@@ -76,6 +86,8 @@ $(document).ready(function() {
       }
     }).addTo(mapa);
   });
+
+  addDatos();
 });
 
 
@@ -106,7 +118,24 @@ mapa.featureLayer.on('layeradd', function(e){
     });
   });
 
-http://maps.google.com/maps?daddr=1900%20Goldring,%20Las%20Vegas,%20NV%2089106
+function toggleVendor(clicked) {
+  if (clicked.next('.vendor-entries').is(':visible')) {
+    clicked.removeClass('active')
+    $('.vendor-entries').slideUp(200)
+  }
+  else {
+    if ($('.vendor-entries').is(':visible')) {
+      $('.vendor-entries').prev('.vendor-heading').removeClass('active')
+      $('.vendor-entries').slideUp(200)
+    }
+    clicked.next('.vendor-entries').slideDown(200)
+    clicked.addClass('active')
+  }
+}
+
+function addDatos(){
+  $('#vendor-info-now h3').html('There are no trucks open right now.')
+}
 
 
 
