@@ -186,6 +186,11 @@ function addDatos(){
   $('#vendor-info-now h3').html('Cargando...')
 }
 
+function addDatosMustache(data){
+  var mustacheScheduleEntry = $('#mustache-entry').html()
+  var $panelNow = $('#vendor-info-now .vendor-entry-list')
+  $panelNow.html(Mustache.render(mustacheScheduleEntry,data));
+}
 
 
 

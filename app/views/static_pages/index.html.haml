@@ -9,4 +9,16 @@
       #vendor-head-now.vendor-heading
         Cerca de aquí
       #vendor-info-now.vendor-entries{style: "display: none"}
+        .vendor-entry-list
+          .vendor-message
+            %h3
+              Cargando
   #map
+
+%section#templates{style: "display: none"}
+  %script#mustache-entry{type: "text/template"}
+    {{#features}}
+    .vendor-entry
+      %h3
+        {{properties.name}}
+    {{/features}}

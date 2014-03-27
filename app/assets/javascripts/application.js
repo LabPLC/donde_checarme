@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require mapbox.js
+//= require mustache
 //= require jquery
 //= require jquery_ujs
+//= require jquery.mustache
 //= require_tree .
