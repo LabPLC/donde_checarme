@@ -130,7 +130,7 @@ mapa.on('dragend', function(e) {
   console.log(mapa.getBounds().getCenter().lng)
   if (mapa.getZoom() == 14){
     getCentros(mapa.getBounds().getCenter().lat,mapa.getBounds().getCenter().lng)
-    addDatosMustache(markers.getGeoJSON());
+    showDataAtZoom(markers.getGeoJSON());
   } else {
     getCentros();
   }
@@ -186,10 +186,10 @@ function addDatos(){
   $('#vendor-info-now h3').html('Cargando...')
 }
 
-function addDatosMustache(data){
-  var mustacheScheduleEntry = $('#mustache-entry').html()
-  var $panelNow = $('#vendor-info-now .vendor-entry-list')
-  $panelNow.html(Mustache.render(mustacheScheduleEntry,data));
+function showDataAtZoom(data){
+  var mustacheTemplate = $('#mustache-entry').html()
+  var $panelCerca = $('#vendor-info-now .vendor-entry-list')
+  $panelCerca.html(Mustache.render(mustacheTemplate,data));
 }
 
 
