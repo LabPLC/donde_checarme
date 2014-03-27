@@ -1,4 +1,4 @@
-class PreguntasController < ApplicationController
+class PreguntaController < ApplicationController
 
   def preguntar
     pregunta = params[:pregunta]
