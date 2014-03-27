@@ -6,6 +6,14 @@
       %p
         De la Secretaría de Salud, SEDESA
     .vendor-data
+      #vendor-head-later.vendor-heading
+        ¿Qué necesitas?
+      #vendor-info-now.vendor-entries
+        = form_tag '/preguntas.json', id: "preguntas", method: 'post', remote: true do
+          = field_set_tag do
+            = label_tag :pregunta, "Pregunta"
+            = text_field_tag :pregunta
+            = submit_tag 'OK'
       #vendor-head-now.vendor-heading
         Cerca de aquí
       #vendor-info-now.vendor-entries{style: "display: none"}

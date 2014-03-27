@@ -33,6 +33,7 @@ function getCentros(lat, lng, busqueda) {
   } else {
     API_ENDPOINT = "/hospitales.json"
   }
+  console.log(API_ENDPOINT);
   var prom = $.ajax({
     url: API + API_ENDPOINT,
     cache: false,
@@ -93,6 +94,9 @@ function getCentros(lat, lng, busqueda) {
 //*********/
 $(document).ready(function() {
   getCentros();
+  submit_ajax_form();
+
+
   $('.vendor-heading').click(function() {
     toggleVendor($(this));
   });
@@ -123,12 +127,22 @@ $(document).ready(function() {
 
 });
 
+function submit_ajax_form() {
+  $('#preguntas').bind('ajax:success', function(e,data,status,xhr) {
+    console.log(xhr.responseText)
+  }).bind("ajax:error", function(e,xhr, status, error) {
+    console.log(error)
+  });
+}
+
+
 
 mapa.on('dragend', function(e) {
   console.log(e.distance);
   console.log(mapa.getBounds().getCenter().lat)
   console.log(mapa.getBounds().getCenter().lng)
-  if (mapa.getZoom() == 14){
+  console.log(mapa.getZoom())
+  if (mapa.getZoom() >= 14){
     getCentros(mapa.getBounds().getCenter().lat,mapa.getBounds().getCenter().lng)
     showDataAtZoom(markers.getGeoJSON());
   } else {

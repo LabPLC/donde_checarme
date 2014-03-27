@@ -10,6 +10,8 @@ ChecateAquiApp::Application.routes.draw do
 
   get 'mapa' => 'static_pages#index', as: :mapa
 
+  post '/preguntas' => 'preguntas#preguntar', as: :preguntar
+
 
   resources :places
 
