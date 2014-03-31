@@ -236,6 +236,7 @@ DEPENDENCIES
   mustache-js-rails
   nokogiri
   pg (= 0.15.1)
+  pry
   rails (~> 4.0.4)
   rails_12factor (= 0.0.2)
   ransack
