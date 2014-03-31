@@ -22,7 +22,8 @@ csv.each do |row|
     direccion: row['DOMICILIO'],
     horario: row['HORARIO'],
     tipo: row['TIPO'],
-    subtipo: row['SUB-TIPO']
+    subtipo: row['SUB-TIPO'],
+    categoria: row['CATEGORIAS']
     )
 end
 
@@ -58,14 +59,14 @@ placemarks.each do |p|
   coord = p.xpath("Point/coordinates").text
   longitude, latitude = coord.split(',')
   texto = extract_desc(p.xpath("description"))
-  
+
   partes = texto.match(cdata_regex)
   #puts partes[:director]
    puts partes[:telefono]
   # puts partes[:direccion]
   # puts "#{latitude} --- #{longitude}"
-  p = Place.new(nombre: name, 
-                            latitude: latitude, 
+  p = Place.new(nombre: name,
+                            latitude: latitude,
                             longitude: longitude,
                             direccion: partes[:direccion],
                             encargado: partes[:director],
