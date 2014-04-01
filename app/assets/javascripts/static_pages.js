@@ -129,7 +129,29 @@ $(document).ready(function() {
 
 function submit_ajax_form() {
   $('#preguntas').bind('ajax:success', function(e,data,status,xhr) {
-    console.log(xhr.responseText)
+    console.log(xhr.responseJSON)
+    if (markers != ""){
+      console.log("quitocosas")
+      mapa.removeLayer(markers);
+    }
+    markers = L.mapbox.featureLayer(xhr.responseJSON);
+    markers.eachLayer(function(l) {
+    var popupContent = "<div class='popup'>" +
+                                       "<div class='popup-info'>" +
+                                        "<div class='popup-location'>" +
+                                          "<span class='location'>" + l.feature.properties.name + "</span>" +
+                                          "<br>" +
+                                          "<span class='address'>" +
+                                            "<i class='fi-compass'/>" +
+                                            "<a href='https://maps.google.com/maps?daddr=" + l.feature.geometry.coordinates[1] + "," + l.feature.geometry.coordinates[0]+"&z=17&' target='_blank'>" +
+                                          l.feature.properties.address + "</a></span>" +
+                                        "</div>" +
+                                      "</div>" +
+                                    '</div>'
+
+    l.bindPopup(popupContent)
+    })
+    markers.addTo(mapa)
   }).bind("ajax:error", function(e,xhr, status, error) {
     console.log(error)
   });

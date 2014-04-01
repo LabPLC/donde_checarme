@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 require 'csv'
+require 'i18n'
 
 csv_fname = 'datos/hospitales.csv'
 
@@ -21,7 +22,7 @@ csv.each do |row|
     telefono: row['TELEFONO'],
     direccion: row['DOMICILIO'],
     horario: row['HORARIO'],
-    tipo: row['TIPO'],
+    tipo: I18n.transliterate(row['TIPO']),
     subtipo: row['SUB-TIPO'],
     categoria: row['CATEGORIAS']
     )
