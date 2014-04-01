@@ -19,6 +19,11 @@
 
 class Place < ActiveRecord::Base
 
+  include Filterable
+
+  scope :contiene, -> (termino) { where("upper(nombre) like ?", "%#{termino.upcase}%")}
+  scope :tipos, -> (tipos) { where tipo: tipos}
+
   has_many :categorizations
   has_many :categories, :through => :categorizations
 
@@ -65,10 +70,10 @@ class Place < ActiveRecord::Base
     places = nil
     if latitude == 0 || longitude == 0
       places =  self.where("nombre LIKE :busqueda
-                  OR tipo LIKE :busqueda", :busqueda => busqueda)
+                  OR tipo LIKE :busqueda", :busqueda => "%" + busqueda + "%")
     else
       places = self.near([latitude, longitude], dist).where("nombre LIKE :busqueda
-                  OR tipo LIKE :busqueda", :busqueda => busqueda)
+                  OR tipo LIKE :busqueda", :busqueda => "%" + busqueda + "%")
     end
 
   end
