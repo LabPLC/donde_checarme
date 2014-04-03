@@ -30,8 +30,6 @@ GEM
       rake (>= 0.8.7)
     arel (4.0.2)
     atomic (1.1.16)
-    bootstrap-sass (3.0.2.1)
-      sass (~> 3.2)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -219,7 +217,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  bootstrap-sass (~> 3.0.2.0)
   capybara (= 2.1.0)
   childprocess
   coffee-rails (= 4.0.1)
