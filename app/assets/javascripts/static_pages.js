@@ -1,24 +1,67 @@
-console.log("wooo");
+/**
+*Rutinas de ubicación en el mapa, l
+*
+*/
 
+///API ENDPOINT
 var API = "";
 var API_ENDPOINT = "/hospitales.json";
 
+
+/***Funciones de eventos***/
+
+
+/*Inicialización del mapa y del geocoder */
 var geocoder = L.mapbox.geocoder('juanjcsr.hinc76e0');
 var mapa = L.mapbox.map('map', 'juanjcsr.hinc76e0');
-var featureLayer = "";
-var markers;
 geocoder.query("Mexico City", showMap);
 
-
-
-var centroscentros = "";
+/**Global variables*/
+var featureLayer = "";
 var markers = "";
+var centroscentros = "";
+
+function onGetMapaSccess(resp) {
+  console.log("RESPUESTA RESPUESTA");
+  console.log(resp);
+  centroscentros = resp;
+  markers.on('click', function(e) {
+    //TODO, arreglar a offest
+    mapa.panTo(e.layer.getLatLng());
+    console.log("clickclick");
+  });
+}
+
+function onGetCentrosThen(resp) {
+  console.log("then")
+    console.log(resp)
+    if (markers != ""){
+      console.log("quitocosas")
+      mapa.removeLayer(markers);
+
+
+      //markers = mapa.markerLayer.setGeoJSON(resp);
+      //
+    }
+    markers = L.mapbox.featureLayer(resp);
+    markers.eachLayer(function(l) {
+    var mustacheTemplate = $('#mustache-popup').html()
+    console.log(l.feature)
+    var popupContent = Mustache.render(mustacheTemplate,l)
+    console.log(popupContent);
+    l.bindPopup(popupContent)
+    })
+    markers.addTo(mapa)
+}
 
 
 function showMap(err, data) {
   mapa.fitBounds(data.lbounds);
 }
 
+/***
+//Get data
+/****/
 
 function getCentros(lat, lng, busqueda) {
   lat =  typeof lat !== 'undefined' ? lat : 0;
@@ -32,59 +75,18 @@ function getCentros(lat, lng, busqueda) {
     API_ENDPOINT = "/hospitales.json"
   }
   console.log(API_ENDPOINT);
+
   var prom = $.ajax({
     url: API + API_ENDPOINT,
     cache: false,
     dataType: 'json'
   })
-
-  var success = function(resp) {
-    console.log("RESPUESTA RESPUESTA");
-    console.log(resp);
-    centroscentros = resp;
-    markers.on('click', function(e) {
-      //TODO, arreglar a offest
-      mapa.panTo(e.layer.getLatLng());
-      console.log("clickclick");
-    });
-  }
-  prom.then(function(resp) {
-    console.log("then")
-    console.log(resp)
-    if (markers != ""){
-      console.log("quitocosas")
-      mapa.removeLayer(markers);
-
-
-      //markers = mapa.markerLayer.setGeoJSON(resp);
-      //
-    }
-    markers = L.mapbox.featureLayer(resp);
-    markers.eachLayer(function(l) {
-    var popupContent = "<div class='popup'>" +
-                                       "<div class='popup-info'>" +
-                                        "<div class='popup-location'>" +
-                                          "<span class='location'>" + l.feature.properties.name + "</span>" +
-                                          "<br>" +
-                                          "<span class='address'>" +
-                                            "<i class='fi-compass'/>" +
-                                            "<a href='https://maps.google.com/maps?daddr=" + l.feature.geometry.coordinates[1] + "," + l.feature.geometry.coordinates[0]+"&z=17&' target='_blank'>" +
-                                          l.feature.properties.address + "</a></span>" +
-                                        "</div>" +
-                                      "</div>" +
-                                    '</div>'
-
-    l.bindPopup(popupContent)
-    })
-    markers.addTo(mapa)
-  });
-  prom.done(success);
+  prom.then(onGetCentrosThen);
+  prom.done(onGetMapaSccess);
 }
 
 
-/***
-//Get data
-/****/
+
 
 /***************
 // UI
@@ -102,10 +104,16 @@ $(document).ready(function() {
   var lc = L.control.locate().addTo(mapa);
   if (navigator.geolocation) {
       mapa.locate();
-    }
+  }
 
-  mapa.on('locationfound', function (e) {
-    var pointLngLat = [e.latlng.lng, e.latlng.lat];
+  mapa.on('locationfound', onMapLocationFound);
+
+  addDatos();
+
+});
+
+function onMapLocationFound(e){
+  var pointLngLat = [e.latlng.lng, e.latlng.lat];
     L.mapbox.featureLayer({
       type: 'Feature',
       geometry: {
@@ -119,11 +127,7 @@ $(document).ready(function() {
         'title': '<div class=\'popup-message\'>You are here</div>'
       }
     }).addTo(mapa);
-  });
-
-  addDatos();
-
-});
+}
 
 function submit_ajax_form() {
   $('#preguntas').bind('ajax:success', function(e,data,status,xhr) {
@@ -134,20 +138,11 @@ function submit_ajax_form() {
     }
     markers = L.mapbox.featureLayer(xhr.responseJSON);
     markers.eachLayer(function(l) {
-    var popupContent = "<div class='popup'>" +
-                                       "<div class='popup-info'>" +
-                                        "<div class='popup-location'>" +
-                                          "<span class='location'>" + l.feature.properties.name + "</span>" +
-                                          "<br>" +
-                                          "<span class='address'>" +
-                                            "<i class='fi-compass'/>" +
-                                            "<a href='https://maps.google.com/maps?daddr=" + l.feature.geometry.coordinates[1] + "," + l.feature.geometry.coordinates[0]+"&z=17&' target='_blank'>" +
-                                          l.feature.properties.address + "</a></span>" +
-                                        "</div>" +
-                                      "</div>" +
-                                    '</div>'
-
-    l.bindPopup(popupContent)
+      var mustacheTemplate = $('#mustache-popup').html()
+      console.log(l.feature)
+      var popupContent = Mustache.render(mustacheTemplate,l)
+      console.log(popupContent);
+      l.bindPopup(popupContent)
     })
     markers.addTo(mapa)
     mapa.fitBounds(markers.getBounds())
@@ -183,29 +178,6 @@ mapa.featureLayer.on('layerremove', function(){
 })
 //mapa.featureLayer.on('layeradd', callbackevent);
 
-function callbackevent(e){
-  console.log('kakakakaka')
-  var mrkr = e.layer,
-    feature = mrkr.feature;
-
-  var popupContent = "<div class='popup'>" +
-                                     "<div class='popup-info'>" +
-                                      "<div class='popup-location'>" +
-                                        "<span class='location'>" + feature.properties.name + "</span>" +
-                                        "<br>" +
-                                        "<span class='address'>" +
-                                          "<i class='fi-compass'/>" +
-                                          "<a href='https://maps.google.com/maps?daddr=" + feature.geometry.coordinates[1] + "," + feature.geometry.coordinates[0]+"&z=17&' target='_blank'>" +
-                                        feature.properties.address + "</a></span>" +
-                                      "</div>" +
-                                    "</div>" +
-                                  '</div>'
-  mrkr.bindPopup(popupContent, {
-    closeButton: true,
-    minWidth: 320
-  });
-  //mapa.featureLayer.off('layeradd',callbackevent)
-}
 
 function toggleVendor(clicked) {
   if (clicked.next('.vendor-entries').is(':visible')) {
