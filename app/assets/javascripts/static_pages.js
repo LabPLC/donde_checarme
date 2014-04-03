@@ -21,8 +21,6 @@ function showMap(err, data) {
 
 
 function getCentros(lat, lng, busqueda) {
-
-
   lat =  typeof lat !== 'undefined' ? lat : 0;
   lng =  typeof lng !== 'undefined' ? lng : 0;
   busqueda = typeof busqueda !== 'undefined' ? busqueda : 0;
@@ -152,6 +150,7 @@ function submit_ajax_form() {
     l.bindPopup(popupContent)
     })
     markers.addTo(mapa)
+    mapa.fitBounds(markers.getBounds())
   }).bind("ajax:error", function(e,xhr, status, error) {
     console.log(error)
   });
@@ -164,11 +163,17 @@ mapa.on('dragend', function(e) {
   console.log(mapa.getBounds().getCenter().lat)
   console.log(mapa.getBounds().getCenter().lng)
   console.log(mapa.getZoom())
-  if (mapa.getZoom() >= 14){
+  if (mapa.getZoom() >= 13){
     getCentros(mapa.getBounds().getCenter().lat,mapa.getBounds().getCenter().lng)
+    console.log("datatozoom")
+    console.log(markers.getGeoJSON())
     showDataAtZoom(markers.getGeoJSON());
   } else {
-    getCentros();
+    console.log(markers)
+    if (markers.getGeoJSON().features.length < 240) {
+      getCentros();
+    }
+
   }
 
 });
@@ -223,6 +228,8 @@ function addDatos(){
 }
 
 function showDataAtZoom(data){
+  console.log("mustachestuff")
+  console.log(data);
   var mustacheTemplate = $('#mustache-entry').html()
   var $panelCerca = $('#vendor-info-now .vendor-entry-list')
   $panelCerca.html(Mustache.render(mustacheTemplate,data));

@@ -75,6 +75,7 @@ class Place < ActiveRecord::Base
       places = self.near([latitude, longitude], dist).where("nombre LIKE :busqueda
                   OR tipo LIKE :busqueda", :busqueda => "%" + busqueda + "%")
     end
+    places = self.near(busqueda + " Ciudad de Mexico", 2, order: "distance")
 
   end
 end
