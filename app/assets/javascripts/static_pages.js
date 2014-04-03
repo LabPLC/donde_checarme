@@ -20,6 +20,7 @@ geocoder.query("Mexico City", showMap);
 var featureLayer = "";
 var markers = "";
 var centroscentros = "";
+var centralmarker = "";
 
 function onGetMapaSccess(resp) {
   console.log("RESPUESTA RESPUESTA");
@@ -38,10 +39,6 @@ function onGetCentrosThen(resp) {
     if (markers != ""){
       console.log("quitocosas")
       mapa.removeLayer(markers);
-
-
-      //markers = mapa.markerLayer.setGeoJSON(resp);
-      //
     }
     markers = L.mapbox.featureLayer(resp);
     markers.eachLayer(function(l) {
@@ -113,20 +110,17 @@ $(document).ready(function() {
 });
 
 function onMapLocationFound(e){
+  if (centralmarker != "") {
+    mapa.removeLayer(centralmarker)
+  }
   var pointLngLat = [e.latlng.lng, e.latlng.lat];
-    L.mapbox.featureLayer({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: pointLngLat
-      },
-      properties: {
-        'marker-size': 'large',
-        'marker-color': '#0000ff',
-        'marker-symbol': 'star-stroked',
-        'title': '<div class=\'popup-message\'>You are here</div>'
-      }
-    }).addTo(mapa);
+  centralmarker = L.marker(new L.LatLng(e.latlng.lat,e.latlng.lng), {
+    icon: L.mapbox.marker.icon({'marker-color': 'CC0033'}),
+    draggable:true
+  });
+  console.log(centralmarker)
+  centralmarker.addTo(mapa);
+
 }
 
 function submit_ajax_form() {
