@@ -34,6 +34,12 @@ class Place < ActiveRecord::Base
   validates :latitude, presence: true
   validates :longitude, presence: true
 
+  attr_reader :distance
+
+  def distance=(val)
+    @distance = val.round(2)
+  end
+
 
   def categories?(category)
     categorizations.find_by(category_id: category.id)
@@ -51,6 +57,7 @@ class Place < ActiveRecord::Base
         coordinates: [longitude, latitude]
       },
       properties: {
+        id: id,
         name: nombre,
         address: direccion,
         encargado: encargado,
@@ -61,7 +68,8 @@ class Place < ActiveRecord::Base
         telefono: telefono,
         :'marker-color' => "#fc4353",
         :'marker-size' => "large",
-        :'marker-symbol' => "hospital"
+        :'marker-symbol' => "hospital",
+        distance_to_center: distance
       }
     }
   end
@@ -75,6 +83,7 @@ class Place < ActiveRecord::Base
       places = self.near([latitude, longitude], dist).where("nombre LIKE :busqueda
                   OR tipo LIKE :busqueda", :busqueda => "%" + busqueda + "%")
     end
+    places = self.near(busqueda + " Ciudad de Mexico", 2, order: "distance")
 
   end
 end

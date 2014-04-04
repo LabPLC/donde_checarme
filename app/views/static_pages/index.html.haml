@@ -26,7 +26,25 @@
 %section#templates{style: "display: none"}
   %script#mustache-entry{type: "text/template"}
     {{#features}}
-    .vendor-entry
+    .vendor-entry{"data-location-id" => "{{properties.id}}"}
+      .vendor-image
+        {{properties.distance_to_center}} km.
       %h3
         {{properties.name}}
     {{/features}}
+  %script#mustache-popup{type: "text/template"}
+    {{#feature}}
+    .popup
+      .popup-info
+        .popup-location
+          %span.location
+            {{properties.name}}
+          %br
+          %span.address
+            %i.fi-compass
+            - linkl = "https://maps.google.com?daddr={{geometry.coordinates.1}},{{geometry.coordinates.0}}&z=17&"
+            %a{href: linkl, target: '_blank'}
+              {{properties.address}}
+    {{/feature}}
+
+

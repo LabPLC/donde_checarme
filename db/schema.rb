@@ -26,21 +26,6 @@ ActiveRecord::Schema.define(version: 20140328204717) do
     t.datetime "updated_at"
   end
 
-  create_table "centros", force: true do |t|
-    t.string   "nombre"
-    t.float    "lat"
-    t.float    "lon"
-    t.string   "direccion"
-    t.string   "encargado"
-    t.string   "telefono"
-    t.string   "tipo"
-    t.string   "subtipo"
-    t.string   "delegacion"
-    t.string   "horario"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "places", force: true do |t|
     t.string   "nombre"
     t.float    "latitude"
