@@ -12,8 +12,8 @@ var API_ENDPOINT = "/hospitales.json";
 
 
 /*Inicialización del mapa y del geocoder */
-var geocoder = L.mapbox.geocoder('juanjcsr.hinc76e0');
-var mapa = L.mapbox.map('map', 'juanjcsr.hinc76e0');
+var geocoder = L.mapbox.geocoder('codigocdmx.hn10j8d4');
+var mapa = L.mapbox.map('map', 'codigocdmx.hn10j8d4');
 geocoder.query("Mexico City", showMap);
 
 /**Global variables*/
@@ -43,9 +43,7 @@ function onGetCentrosThen(resp) {
     markers = L.mapbox.featureLayer(resp);
     markers.eachLayer(function(l) {
     var mustacheTemplate = $('#mustache-popup').html()
-    console.log(l.feature)
     var popupContent = Mustache.render(mustacheTemplate,l)
-    console.log(popupContent);
     l.bindPopup(popupContent)
     })
     markers.addTo(mapa)
@@ -118,7 +116,11 @@ function onMapLocationFound(e){
     icon: L.mapbox.marker.icon({'marker-color': 'CC0033'}),
     draggable:true
   });
-  console.log(centralmarker)
+  centralmarker.on('dragend', function(e){
+    getCentros(centralmarker.getLatLng().lat, centralmarker.getLatLng().lng)
+    showDataAtZoom(markers.getGeoJSON());
+  })
+
   centralmarker.addTo(mapa);
 
 }
@@ -135,7 +137,6 @@ function submit_ajax_form() {
       var mustacheTemplate = $('#mustache-popup').html()
       console.log(l.feature)
       var popupContent = Mustache.render(mustacheTemplate,l)
-      console.log(popupContent);
       l.bindPopup(popupContent)
     })
     markers.addTo(mapa)
