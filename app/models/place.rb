@@ -57,6 +57,7 @@ class Place < ActiveRecord::Base
         coordinates: [longitude, latitude]
       },
       properties: {
+        id: id,
         name: nombre,
         address: direccion,
         encargado: encargado,

@@ -43,9 +43,10 @@ function onGetCentrosThen(resp) {
     }
     markers = L.mapbox.featureLayer(resp);
     markers.eachLayer(function(l) {
-    var mustacheTemplate = $('#mustache-popup').html()
-    var popupContent = Mustache.render(mustacheTemplate,l)
-    l.bindPopup(popupContent)
+      var mustacheTemplate = $('#mustache-popup').html()
+      var popupContent = Mustache.render(mustacheTemplate,l)
+      l.bindPopup(popupContent)
+
     })
     markers.addTo(mapa)
 }
@@ -188,6 +189,20 @@ function showDataAtZoom(data){
   var mustacheTemplate = $('#mustache-entry').html()
   var $panelCerca = $('#vendor-info-now .vendor-entry-list')
   $panelCerca.html(Mustache.render(mustacheTemplate,data));
+  $('.vendor-entry').click(function(ex){
+        openPopUpOnClick(this.getAttribute("data-location-id"))
+      })
+}
+
+function openPopUpOnClick(id) {
+  markers.eachLayer(function(marker) {
+    console.log(marker)
+    if (marker.feature.properties.id == id ) {
+      console.log(id)
+      marker.openPopup();
+      mapa.panTo(marker.getLatLng())
+    }
+  })
 }
 
 

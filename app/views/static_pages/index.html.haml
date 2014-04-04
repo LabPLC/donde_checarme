@@ -26,7 +26,7 @@
 %section#templates{style: "display: none"}
   %script#mustache-entry{type: "text/template"}
     {{#features}}
-    .vendor-entry
+    .vendor-entry{"data-location-id" => "{{properties.id}}"}
       .vendor-image
         {{properties.distance_to_center}} km.
       %h3
