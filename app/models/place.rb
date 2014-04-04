@@ -62,7 +62,7 @@ class Place < ActiveRecord::Base
         :'marker-color' => "#fc4353",
         :'marker-size' => "large",
         :'marker-symbol' => "hospital",
-        distance: 0
+        distance_to_center: 0
       }
     }
   end
