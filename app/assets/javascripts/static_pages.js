@@ -94,7 +94,7 @@ $(document).ready(function() {
   submit_ajax_form();
 
 
-  $('.vendor-heading').click(function() {
+  $('.lugares-encabezado').click(function() {
     toggleVendor($(this));
   });
 
@@ -166,30 +166,30 @@ mapa.on('dragend', function(e) {
 
 
 function toggleVendor(clicked) {
-  if (clicked.next('.vendor-entries').is(':visible')) {
+  if (clicked.next('.lugares-entrada').is(':visible')) {
     clicked.removeClass('active')
-    $('.vendor-entries').slideUp(200)
+    $('.lugares-entrada').slideUp(200)
   }
   else {
-    if ($('.vendor-entries').is(':visible')) {
-      $('.vendor-entries').prev('.vendor-heading').removeClass('active')
-      $('.vendor-entries').slideUp(200)
+    if ($('.lugares-entrada').is(':visible')) {
+      $('.lugares-entrada').prev('.lugares-encabezado').removeClass('active')
+      $('.lugares-entrada').slideUp(200)
     }
-    clicked.next('.vendor-entries').slideDown(200)
+    clicked.next('.lugares-entrada').slideDown(200)
     clicked.addClass('active')
   }
 }
 
 function addDatos(){
-  var $panelNow = $('#vendor-info-now .vendor-entry-list')
-  $('#vendor-info-now h3').html('Cargando...')
+  var $panelNow = $('#lugares-pregunta .place-entry-list')
+  $('#lugares-pregunta h3').html('Cargando...')
 }
 
 function showDataAtZoom(data){
   var mustacheTemplate = $('#mustache-entry').html()
-  var $panelCerca = $('#vendor-info-now .vendor-entry-list')
+  var $panelCerca = $('#lugares-pregunta .place-entry-list')
   $panelCerca.html(Mustache.render(mustacheTemplate,data));
-  $('.vendor-entry').click(function(ex){
+  $('.place-entry').click(function(ex){
         openPopUpOnClick(this.getAttribute("data-location-id"))
       })
 }

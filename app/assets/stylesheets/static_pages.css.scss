@@ -508,7 +508,7 @@ header #nav-logo img {
 #debug fieldset {
   text-align: left;
 }
-#vendor-info {
+#info-lugares {
   width: 360px;
   position: absolute;
   top: 20px;
@@ -529,7 +529,7 @@ header #nav-logo img {
   border-radius: 2px;
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
-  #vendor-info {
+  #info-lugares {
     width: 100%;
     top: 0;
     left: 0;
@@ -537,16 +537,16 @@ header #nav-logo img {
     overflow: hidden;
   }
 }
-#vendor-info .vendor-title,
-#vendor-info .vendor-heading {
+#info-lugares .info-lugares-title,
+#info-lugares .lugares-encabezado {
   font-family: 'Fauna One';
   color: #ffffff;
 }
-#vendor-info .vendor-title {
+#info-lugares .info-lugares-title {
   background-color: #319abc;
   padding: 10px;
 }
-#vendor-info .vendor-title h1 {
+#info-lugares .info-lugares-title h1 {
   margin: 0 0 6px 0;
   padding: 0 0 0 50px;
   font-size: 24px;
@@ -554,24 +554,24 @@ header #nav-logo img {
   line-height: 28px;
   z-index: 9020;
 }
-#vendor-info .vendor-title h1:before {
+#info-lugares .info-lugares-title h1:before {
   content: '';
   width: 40px;
   height: 30px;
   position: absolute;
   left: 10px;
   top: 8px;
-  background: transparent url('../img/sprites.png') no-repeat;
+  /* background: transparent url('../img/sprites.png') no-repeat; */
   background-size: 200px;
   background-position: -2px -153px;
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
-  #vendor-info .vendor-title h1 {
+  #info-lugares .info-lugares-title h1 {
     line-height: 18px;
     font-size: 14px;
     padding-left: 30px;
   }
-  #vendor-info .vendor-title h1:before {
+  #info-lugares .info-lugares-title h1:before {
     width: 28px;
     height: 18px;
     margin-top: 4px;
@@ -579,28 +579,28 @@ header #nav-logo img {
     background-position: 0px -94px;
   }
 }
-#vendor-info .vendor-title p {
+#info-lugares .info-lugares-title p {
   margin: 0 0 0 50px;
   line-height: 130%;
   color: #dfdfdf;
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
-  #vendor-info .vendor-title p {
+  #info-lugares .info-lugares-title p {
     display: none;
   }
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
-  #vendor-info .vendor-title {
+  #info-lugares .info-lugares-title {
     height: 18px;
     padding: 10px;
   }
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px) {
-  #vendor-info #vendor-data {
+  #info-lugares #lugar-data {
     display: none;
   }
 }
-#vendor-info .vendor-heading {
+#info-lugares .lugares-encabezado {
   background-color: #4eb1d1;
   background: #4eb1d1 url('../img/arrow.png') right 20px top 16px no-repeat;
   font-size: 14px;
@@ -615,25 +615,25 @@ header #nav-logo img {
   -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-#vendor-info .vendor-heading.active {
+#info-lugares .lugares-encabezado.active {
   background-color: #4eb1d1;
   background: #4eb1d1 url('../img/arrow-down.png') right 19px top 18px no-repeat;
   border-bottom: 0px;
 }
-#vendor-info .vendor-heading.no-border {
+#info-lugares .lugares-encabezado.no-border {
   border-bottom: 0px;
 }
-#vendor-info .vendor-heading:hover {
+#info-lugares .lugares-encabezado:hover {
   background-color: #6fbfda;
 }
-#vendor-info .vendor-entries .vendor-entry-list {
+#info-lugares .lugares-entrada .place-entry-list {
   background-color: white;
 }
-#vendor-info .vendor-entries .vendor-entry,
-#vendor-info .vendor-entries .vendor-message {
-  padding: 14px 10px 14px;
+#info-lugares .lugares-entrada .place-entry,
+#info-lugares .lugares-entrada .lugares-cargando {
+  /* padding: 14px 10px 14px; */
 }
-#vendor-info .vendor-entries .vendor-entry {
+#info-lugares .lugares-entrada .place-entry {
   height: 48px;
   cursor: hand;
   cursor: pointer;
@@ -649,16 +649,16 @@ header #nav-logo img {
   -o-transition: background-color 0s linear;
   transition: background-color 0s linear;
 }
-#vendor-info .vendor-entries .vendor-entry:not(:last-child) {
+#info-lugares .lugares-entrada .place-entry:not(:last-child) {
   border-bottom: 1px dotted #d9d9d9;
 }
-#vendor-info .vendor-entries .vendor-entry:hover {
+#info-lugares .lugares-entrada .place-entry:hover {
   background-color: #f0f0f0;
 }
-#vendor-info .vendor-entries .vendor-entry:active {
+#info-lugares .lugares-entrada .place-entry:active {
   background-color: #ffffdd;
 }
-#vendor-info .vendor-entries .vendor-entry .vendor-image {
+#info-lugares .lugares-entrada .place-entry .vendor-image {
   height: 56px;
   width: 56px;
   position: absolute;
@@ -668,12 +668,12 @@ header #nav-logo img {
   background-size: 156px;
   background-position: 0px -66px;
 }
-#vendor-info .vendor-entries .vendor-entry .vendor-image img {
+#info-lugares .lugares-entrada .place-entry .vendor-image img {
   width: 100%;
   height: 100%;
   border-radius: 3px;
 }
-#vendor-info .vendor-entries .vendor-entry h3 {
+#info-lugares .lugares-entrada .place-entry h3 {
   padding: 0;
   margin: 0 0 10px;
   line-height: 12px;
@@ -683,17 +683,17 @@ header #nav-logo img {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#vendor-info .vendor-entries .vendor-entry p {
+#info-lugares .lugares-entrada .place-entry p {
   padding: 0;
   margin: 0;
 }
-#vendor-info .vendor-entries .vendor-entry p.cuisine {
+#info-lugares .lugares-entrada .place-entry p.cuisine {
   color: #777;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#vendor-info .vendor-entries .vendor-entry span.time {
+#info-lugares .lugares-entrada .place-entry span.time {
   position: absolute;
   bottom: 8px;
   right: 8px;
@@ -702,10 +702,10 @@ header #nav-logo img {
   color: white;
   padding: 3px 5px;
 }
-#vendor-info .vendor-entries .vendor-entry span.later {
-  background-color: #ff9933;
+#info-lugares .lugares-entrada .place-entry span.horario {
+  background-color: #3395FF;
 }
-#vendor-info .vendor-entries .vendor-entry-note {
+#info-lugares .lugares-entrada .place-entry-note {
   line-height: 10px;
   font-size: 11px;
   color: #777;
@@ -713,7 +713,7 @@ header #nav-logo img {
   background-color: #f1f1f1;
   padding: 0 10px;
 }
-#vendor-info .vendor-entries .vendor-message {
+#info-lugares .lugares-entrada .lugares-cargando {
   line-height: 10px;
 }
 footer {
@@ -1050,7 +1050,7 @@ div.footer-popup .footer-popup-content {
   top: -8px;
   left: -8px;
 }
-.popup .popup-info .popup-tag.later {
+.popup .popup-info .popup-tag.horario {
   background-color: #ff9933;
 }
 .popup .popup-info .popup-vendor,
