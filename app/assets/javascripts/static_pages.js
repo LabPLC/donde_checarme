@@ -31,6 +31,7 @@ function onGetMapaSccess(resp) {
     mapa.panTo(e.layer.getLatLng());
     console.log("clickclick");
   });
+  showDataAtZoom(centroscentros);
 }
 
 function onGetCentrosThen(resp) {
@@ -149,17 +150,11 @@ function submit_ajax_form() {
 
 
 mapa.on('dragend', function(e) {
-  console.log(e.distance);
-  console.log(mapa.getBounds().getCenter().lat)
-  console.log(mapa.getBounds().getCenter().lng)
-  console.log(mapa.getZoom())
   if (mapa.getZoom() >= 13){
     getCentros(mapa.getBounds().getCenter().lat,mapa.getBounds().getCenter().lng)
-    console.log("datatozoom")
-    console.log(markers.getGeoJSON())
     showDataAtZoom(markers.getGeoJSON());
+
   } else {
-    console.log(markers)
     if (markers.getGeoJSON().features.length < 240) {
       getCentros();
     }
@@ -167,11 +162,6 @@ mapa.on('dragend', function(e) {
   }
 
 });
-
-mapa.featureLayer.on('layerremove', function(){
-  console.log("buuu")
-})
-//mapa.featureLayer.on('layeradd', callbackevent);
 
 
 function toggleVendor(clicked) {
@@ -195,8 +185,6 @@ function addDatos(){
 }
 
 function showDataAtZoom(data){
-  console.log("mustachestuff")
-  console.log(data);
   var mustacheTemplate = $('#mustache-entry').html()
   var $panelCerca = $('#vendor-info-now .vendor-entry-list')
   $panelCerca.html(Mustache.render(mustacheTemplate,data));

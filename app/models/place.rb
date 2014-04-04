@@ -61,7 +61,8 @@ class Place < ActiveRecord::Base
         telefono: telefono,
         :'marker-color' => "#fc4353",
         :'marker-size' => "large",
-        :'marker-symbol' => "hospital"
+        :'marker-symbol' => "hospital",
+        distance: 0
       }
     }
   end
