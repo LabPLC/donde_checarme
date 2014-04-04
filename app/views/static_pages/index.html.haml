@@ -1,24 +1,24 @@
 %section#main
-  #vendor-info
-    .vendor-title
+  #info-lugares
+    .info-lugares-title
       %h1
         Centros de Salud de la Ciudad de Mexico
       %p
         De la Secretaría de Salud, SEDESA
-    .vendor-data
-      #vendor-head-later.vendor-heading
+    .lugar-data
+      #lugar-encabezado-pregunta.lugares-encabezado
         ¿Qué necesitas?
-      #vendor-info-now.vendor-entries
+      #lugares-pregunta.lugares-entrada
         = form_tag '/preguntas.json', id: "preguntas", method: 'post', remote: true do
           = field_set_tag do
             = label_tag :pregunta, "Pregunta"
             = text_field_tag :pregunta
             = submit_tag 'OK'
-      #vendor-head-now.vendor-heading
+      #lugares-cerca.lugares-encabezado
         Cerca de aquí
-      #vendor-info-now.vendor-entries{style: "display: none"}
-        .vendor-entry-list
-          .vendor-message
+      #lugares-pregunta.lugares-entrada{style: "display: none"}
+        .place-entry-list
+          .lugares-cargando
             %h3
               Cargando
   #map
@@ -26,11 +26,18 @@
 %section#templates{style: "display: none"}
   %script#mustache-entry{type: "text/template"}
     {{#features}}
-    .vendor-entry{"data-location-id" => "{{properties.id}}"}
+    .place-entry{"data-location-id" => "{{properties.id}}"}
       .vendor-image
         {{properties.distance_to_center}} km.
-      %h3
+      %h4
         {{properties.name}}
+      %p
+        Teléfono:
+        %strong
+          {{properties.telefono}}
+      %p.location
+        %span.time.horario
+          {{properties.horario}}
     {{/features}}
   %script#mustache-popup{type: "text/template"}
     {{#feature}}
