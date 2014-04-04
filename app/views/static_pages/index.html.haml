@@ -27,6 +27,8 @@
   %script#mustache-entry{type: "text/template"}
     {{#features}}
     .vendor-entry
+      .vendor-image
+        {{properties.distance_to_center}} km.
       %h3
         {{properties.name}}
     {{/features}}

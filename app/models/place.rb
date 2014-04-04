@@ -34,7 +34,11 @@ class Place < ActiveRecord::Base
   validates :latitude, presence: true
   validates :longitude, presence: true
 
-  attr_accessor :distance
+  attr_reader :distance
+
+  def distance=(val)
+    @distance = val.round(2)
+  end
 
 
   def categories?(category)
