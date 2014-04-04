@@ -34,6 +34,8 @@ class Place < ActiveRecord::Base
   validates :latitude, presence: true
   validates :longitude, presence: true
 
+  attr_accessor :distance
+
 
   def categories?(category)
     categorizations.find_by(category_id: category.id)
@@ -62,7 +64,7 @@ class Place < ActiveRecord::Base
         :'marker-color' => "#fc4353",
         :'marker-size' => "large",
         :'marker-symbol' => "hospital",
-        distance_to_center: 0
+        distance_to_center: distance
       }
     }
   end

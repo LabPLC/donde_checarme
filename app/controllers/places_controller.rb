@@ -51,6 +51,9 @@ class PlacesController < ApplicationController
     else
       @centros = Place.near([@lat, @lon], 2)
     end
+    @centros.each do |place|
+      place.distance = place.distance_to([@lat, @lon], :km)
+    end
     respond_to do |format|
       format.html
       format.json do
