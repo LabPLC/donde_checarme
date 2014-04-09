@@ -28,7 +28,7 @@ function onGetMapaSccess(resp) {
   centroscentros = resp;
   markers.on('click', function(e) {
     //TODO, arreglar a offest
-    mapa.panTo(e.layer.getLatLng());
+    mapa.panToOffset(e.layer.getLatLng(),_getCenterOffset());
     console.log("clickclick");
   });
   showDataAtZoom(centroscentros);
@@ -46,8 +46,10 @@ function onGetCentrosThen(resp) {
       var mustacheTemplate = $('#mustache-popup').html()
       var popupContent = Mustache.render(mustacheTemplate,l)
       l.bindPopup(popupContent)
-
+      console.log()
+      l.setIcon(L.icon(l.feature.properties.icon))
     })
+
     markers.addTo(mapa)
 }
 
@@ -115,7 +117,7 @@ function onMapLocationFound(e){
   }
   var pointLngLat = [e.latlng.lng, e.latlng.lat];
   centralmarker = L.marker(new L.LatLng(e.latlng.lat,e.latlng.lng), {
-    icon: L.mapbox.marker.icon({'marker-color': 'CC0033'}),
+    icon: L.mapbox.marker.icon({'marker-color': '0043C9'}),
     draggable:true
   });
   centralmarker.on('dragend', function(e){
@@ -124,8 +126,34 @@ function onMapLocationFound(e){
   })
 
   centralmarker.addTo(mapa);
-
 }
+
+L.Map.prototype.panToOffset = function (latlng, offset, options) {
+    var x = this.latLngToContainerPoint(latlng).x - offset[0]
+    var y = this.latLngToContainerPoint(latlng).y - offset[1]
+    var point = this.containerPointToLatLng([x, y])
+    return this.setView(point, this._zoom, { pan: options })
+  }
+  function _getCenterOffset () {
+    var offset = [0, 0]
+    var $overlay = $('#info-lugares')
+    if ($overlay.is(':visible')) {
+      var viewableWidth = $(window).width() - $overlay.width() - $overlay.offset().left
+      offset[0] =  ($overlay.width() + $overlay.offset().left) / 2
+      if (viewableWidth > 840) {
+        // Tweak to balance super wide windows.
+        offset[0] = offset[0] - 60
+      }
+    }
+    if ($(window).width() < 530) {
+      offset[1] = $(window).height() / 4
+    } else {
+      offset[1] = $(window).height() / 10
+    }
+
+    return offset
+
+   }
 
 function submit_ajax_form() {
   $('#preguntas').bind('ajax:success', function(e,data,status,xhr) {
@@ -200,7 +228,7 @@ function openPopUpOnClick(id) {
     if (marker.feature.properties.id == id ) {
       console.log(id)
       marker.openPopup();
-      mapa.panTo(marker.getLatLng())
+      mapa.panToOffset(marker.getLatLng(),_getCenterOffset)
     }
   })
 }

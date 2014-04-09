@@ -405,7 +405,7 @@ small {
   color: #888;
 }
 a {
-  color: #4eb1d1;
+  color: #6BB3F9;
 }
 header {
   width: 100%;
@@ -543,7 +543,7 @@ header #nav-logo img {
   color: #ffffff;
 }
 #info-lugares .info-lugares-title {
-  background-color: #319abc;
+  background-color: #0043C9;
   padding: 10px;
 }
 #info-lugares .info-lugares-title h1 {
@@ -592,7 +592,7 @@ header #nav-logo img {
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
   #info-lugares .info-lugares-title {
     height: 18px;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
   }
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px) {
@@ -601,8 +601,8 @@ header #nav-logo img {
   }
 }
 #info-lugares .lugares-encabezado {
-  background-color: #4eb1d1;
-  background: #4eb1d1 url('../img/arrow.png') right 20px top 16px no-repeat;
+  background-color: #6BB3F9;
+  background: #6BB3F9 url('../img/arrow.png') right 20px top 16px no-repeat;
   font-size: 14px;
   height: 40px;
   line-height: 40px;
@@ -616,15 +616,15 @@ header #nav-logo img {
   transition: background-color 0.2s ease;
 }
 #info-lugares .lugares-encabezado.active {
-  background-color: #4eb1d1;
-  background: #4eb1d1 url('../img/arrow-down.png') right 19px top 18px no-repeat;
+  background-color: #6BB3F9;
+  background: #6BB3F9 url('../img/arrow-down.png') right 19px top 18px no-repeat;
   border-bottom: 0px;
 }
 #info-lugares .lugares-encabezado.no-border {
   border-bottom: 0px;
 }
 #info-lugares .lugares-encabezado:hover {
-  background-color: #6fbfda;
+  background-color: #6BB3F9;
 }
 #info-lugares .lugares-entrada .place-entry-list {
   background-color: white;
