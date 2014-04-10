@@ -1,5 +1,6 @@
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,900|Fauna+One);
+//@import url(http://fonts.googleapis.com/css?family=Lato:300,400,900|Fauna+One);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic);
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -45,16 +46,9 @@ audio:not([controls]) {
 template {
   display: none;
 }
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
+/*    Base */
 html {
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   /* 1 */
 
   -ms-text-size-adjust: 100%;
@@ -68,9 +62,9 @@ html {
 body {
   margin: 0;
 }
-/* ==========================================================================
+/*
    Links
-   ========================================================================== */
+   */
 /**
  * Remove the gray background color from active links in IE 10.
  */
@@ -365,7 +359,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f8f8f8;
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 13px;
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
@@ -539,7 +533,7 @@ header #nav-logo img {
 }
 #info-lugares .info-lugares-title,
 #info-lugares .lugares-encabezado {
-  font-family: 'Fauna One';
+  font-family: 'Noto Sans', sans-serif;
   color: #ffffff;
 }
 #info-lugares .info-lugares-title {
@@ -557,13 +551,13 @@ header #nav-logo img {
 #info-lugares .info-lugares-title h1:before {
   content: '';
   width: 40px;
-  height: 30px;
+  height: 50px;
   position: absolute;
-  left: 10px;
-  top: 8px;
-  /* background: transparent url('../img/sprites.png') no-repeat; */
-  background-size: 200px;
-  background-position: -2px -153px;
+  left: 15px;
+  top: 15px;
+  background: transparent url('/assets/images/pin_ubicacion_hospital.png') no-repeat;
+  background-size: 30px;
+  /*background-position: -2px -153px;*/
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
   #info-lugares .info-lugares-title h1 {
@@ -575,8 +569,9 @@ header #nav-logo img {
     width: 28px;
     height: 18px;
     margin-top: 4px;
-    background-size: 120px;
-    background-position: 0px -94px;
+    top:0;
+    background-size: 13px;
+    /*background-position: 0px -94px;*/
   }
 }
 #info-lugares .info-lugares-title p {
@@ -730,7 +725,7 @@ footer {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  font-family: 'Fauna One';
+  font-family: 'Noto Sans', sans-serif;
   border-top: 1px solid #1f6177;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   /* Responsive footer button set */
@@ -844,7 +839,7 @@ div.footer-popup .footer-popup-title {
   background-color: #e4e4e4;
 }
 div.footer-popup .footer-popup-title h2 {
-  font-family: 'Fauna One';
+  font-family: 'Noto Sans', sans-serif;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -1152,14 +1147,14 @@ div.footer-popup .footer-popup-content {
   height: 100%;
 }
 .leaflet-container {
-  font-family: 'Lato', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Noto Sans', sans-serif !important;
 }
 .leaflet-container a {
   color: #777 !important;
 }
 .leaflet-top {
-  margin-left: 385px;
-  margin-top: 10px;
+  margin-left: 345px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 529px), screen and (min-width: 530px) and (max-width: 767px), screen and (max-width: 767px) and (orientation: landscape) {
   .leaflet-top {

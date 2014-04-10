@@ -4,14 +4,15 @@
       %h1
         Centros de Salud de la Ciudad de Mexico
       %p
-        De la Secretaría de Salud, SEDESA
+        Secretaría de Salud, SEDESA
+      %p
+        \-beta-
     .lugar-data
       #lugar-encabezado-pregunta.lugares-encabezado
-        ¿Qué necesitas?
+        ¿Qué necesitas buscar?
       #lugares-pregunta.lugares-entrada
         = form_tag '/preguntas.json', id: "preguntas", method: 'post', remote: true do
           = field_set_tag do
-            = label_tag :pregunta, "Pregunta"
             = text_field_tag :pregunta
             = submit_tag 'OK'
       #lugares-cerca.lugares-encabezado
