@@ -509,10 +509,10 @@ header #nav-logo img {
   text-align: left;
 }
 #info-lugares {
-  width: 360px;
+  width: 335px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 30px;
+  /*left: 20px;*/
   z-index: 8980;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   background-color: #f1f1f1;
@@ -898,7 +898,7 @@ div.footer-popup .footer-popup-content {
   z-index: -20;
 }
 #calendar .footer-popup-content {
-  max-height: 360px;
+  max-height: 335px;
   overflow: auto;
 }
 #about {
