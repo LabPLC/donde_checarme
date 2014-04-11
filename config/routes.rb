@@ -1,5 +1,5 @@
 ChecateAquiApp::Application.routes.draw do
-  root 'static_pages#home'
+  root 'static_pages#index'
 
   match '/ayuda', to: 'static_pages#ayuda', via: 'get'
   match '/hospitales', to: 'places#index', via: 'get'
