@@ -13,6 +13,9 @@ class PlacesController < ApplicationController
     end
   end
 
+  def mapa
+  end
+
   def lista
   end
 

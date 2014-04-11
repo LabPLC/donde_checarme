@@ -8,7 +8,7 @@ ChecateAquiApp::Application.routes.draw do
   match '/hospitales/:id', to: 'places#show', via: 'get'
   match '/lista', to: 'places#lista', via: 'get'
 
-  get 'mapa' => 'static_pages#index', as: :mapa
+  get 'mapa' => 'places#mapa', as: :mapa
 
   post '/preguntas' => 'pregunta#preguntar', as: :preguntar
 
