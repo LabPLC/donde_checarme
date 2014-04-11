@@ -108,6 +108,11 @@ $(document).ready(function() {
   mapa.on('locationfound', onMapLocationFound);
 
   addDatos();
+  $('.leaflet-control-locate a').click(function() {
+    console.log("cliiiiickk")
+    getCentros(centralmarker.getLatLng().lat, centralmarker.getLatLng().lng)
+    showDataAtZoom(markers.getGeoJSON());
+  })
 
 });
 

@@ -8,13 +8,6 @@
       %p
         \-beta-
     .lugar-data
-      #lugar-encabezado-pregunta.lugares-encabezado
-        ¿Qué necesitas buscar?
-      #lugares-pregunta.lugares-entrada
-        = form_tag '/preguntas.json', id: "preguntas", method: 'post', remote: true do
-          = field_set_tag do
-            = text_field_tag :pregunta
-            = submit_tag 'OK'
       #lugares-cerca.lugares-encabezado
         Cerca de aquí
       #lugares-pregunta.lugares-entrada{style: "display: none"}
@@ -22,6 +15,13 @@
           .lugares-cargando
             %h3
               Cargando
+      #lugar-encabezado-pregunta.lugares-encabezado
+        ¿Qué necesitas buscar?
+      #lugares-pregunta.lugares-entrada
+        = form_tag '/preguntas.json', id: "preguntas", method: 'post', remote: true do
+          = field_set_tag do
+            = text_field_tag :pregunta, nil,placeholder: "condones, urgencias o tu direccion dirección"
+            = submit_tag 'Buscar'
   #map
 
 
@@ -39,7 +39,7 @@
         %strong
           {{properties.telefono}}
       %p.location
-        %span.time.horario
+        %span.horari
           {{properties.horario}}
     {{/features}}
   %script#mustache-popup{type: "text/template"}

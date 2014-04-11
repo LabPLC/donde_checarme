@@ -597,7 +597,7 @@ header #nav-logo img {
 }
 #info-lugares .lugares-encabezado {
   background-color: #6BB3F9;
-  background: #6BB3F9 url('../img/arrow.png') right 20px top 16px no-repeat;
+  /*background: #6BB3F9 url('../img/arrow.png') right 20px top 16px no-repeat;*/
   font-size: 14px;
   height: 40px;
   line-height: 40px;
@@ -612,7 +612,7 @@ header #nav-logo img {
 }
 #info-lugares .lugares-encabezado.active {
   background-color: #6BB3F9;
-  background: #6BB3F9 url('../img/arrow-down.png') right 19px top 18px no-repeat;
+  /*background: #6BB3F9 url('../img/arrow-down.png') right 19px top 18px no-repeat;*/
   border-bottom: 0px;
 }
 #info-lugares .lugares-encabezado.no-border {
@@ -772,11 +772,11 @@ footer ul li {
   cursor: pointer;
 }
 footer ul li:hover {
-  background-color: #267993;
+  background-color: #C9C9C9;
 }
 footer ul li:after {
   margin-left: 15px;
-  content: '\25B4';
+  /*content: '\25B4';*/
   color: white;
 }
 footer ul li i {
