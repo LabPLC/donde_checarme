@@ -66,7 +66,7 @@ class Place < ActiveRecord::Base
         delegacion: delegacion,
         horario: horario,
         telefono: telefono,
-        icon: {:'iconUrl' => 'assets/images/pin_ubicacion_hospital.png',
+        icon: {:'iconUrl' => '/assets/images/pin_ubicacion_hospital.png',
                   :'iconSize'=> [30,50],
                   :'iconAnchor' => [15,50],
                   :'popupAnchor' => [0, -50]},
