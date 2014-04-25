@@ -1,5 +1,7 @@
 # Donde Checarme
 
+[![Build Status](https://travis-ci.org/LabPLC/donde_checarme.svg?branch=master)](https://travis-ci.org/LabPLC/donde_checarme)
+
 En este proyecto encontraras la localizacion de los centros de salud del DF
 
 **_Donde Checarme_** es una aplicación desarrollada en **Ruby on Rails** como despachador de páginas y Javascript con Coffee Script como front-end para localizar los elementos en el mapa.
