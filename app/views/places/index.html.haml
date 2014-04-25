@@ -1,4 +1,4 @@
-- provide(:titulo, 'Mapa')
+-provide :titulo, 'Mapa'
 
 .container-fluid
   #busqueda_cont.row
@@ -7,9 +7,9 @@
         = text_field_tag "busca", "", :placeholder => "Busca tu clinica"
         = submit_tag "Buscar", :class => "btn btn-default"
     #botones.col-sm-4
-      %button.btn.btn-default#boton_todos Localizarme 
-    
-  
+      %button.btn.btn-default#boton_todos Localizarme
+
+
 .container-fluid.explorar
   #contflu.row-fluid.contenedor
     #map_canvas.mapa.flexible.col-sm-8

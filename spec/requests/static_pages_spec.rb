@@ -8,13 +8,13 @@ describe "PaginasEstaticas" do
   describe "Pagina de inicio" do
 
     before { visit root_path }
-    
-    it "debe tener el Contenido 'Donde'" do
-      expect(page).to have_content('donde')
+
+    it "debe tener el Contenido 'Centros'" do
+      expect(page).to have_content('Centros')
     end
 
     it "debe tener el titulo 'Checate aqui'" do
-      expect(page).to have_title("#{titulo_base} | Inicio")
+      expect(page).to have_title("#{titulo_base}")
     end
   end
 
@@ -24,6 +24,6 @@ describe "PaginasEstaticas" do
     it "debe tener el contenido 'Ayuda'" do
       expect(page).to have_content('Ayuda')
     end
-    
+
   end
 end

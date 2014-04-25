@@ -23,7 +23,7 @@ module ApplicationHelper
 
   def google_maps_api
     content_tag(:script, :type => "text/javascript", :src => google_api_access ) do
-      
+
     end
   end
 
