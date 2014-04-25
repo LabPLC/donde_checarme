@@ -1,6 +1,9 @@
 # Donde Checarme
 
 [![Build Status](https://travis-ci.org/LabPLC/donde_checarme.svg?branch=master)](https://travis-ci.org/LabPLC/donde_checarme)
+[![Dependency Status](https://gemnasium.com/LabPLC/donde_checarme.svg)](https://gemnasium.com/LabPLC/donde_checarme)
+[![Code Climate](https://codeclimate.com/github/LabPLC/donde_checarme.png)](https://codeclimate.com/github/LabPLC/donde_checarme)
+[![Coverage Status](https://coveralls.io/repos/LabPLC/donde_checarme/badge.png)](https://coveralls.io/r/LabPLC/donde_checarme)
 
 En este proyecto encontraras la localizacion de los centros de salud del DF
 
