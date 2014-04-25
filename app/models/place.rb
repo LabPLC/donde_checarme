@@ -21,8 +21,8 @@ class Place < ActiveRecord::Base
 
   include Filterable
 
-  scope :contiene, -> (termino) { where("upper(nombre) like ?", "%#{termino.upcase}%")}
-  scope :tipos, -> (tipos) { where tipo: tipos}
+  scope :contiene, ->(termino) { where("upper(nombre) like ?", "%#{termino.upcase}%")}
+  scope :tipos, ->(tipos) { where tipo: tipos}
 
   has_many :categorizations
   has_many :categories, :through => :categorizations
