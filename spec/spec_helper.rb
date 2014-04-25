@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'spork'
+require 'coveralls'
 
 Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
@@ -10,6 +11,9 @@ Spork.prefork do
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+
+  # Measure code coverage
+  Coveralls.wear!
 
   # Checks for pending migrations before tests are run.
   # If you are not using ActiveRecord, you can remove this line.
