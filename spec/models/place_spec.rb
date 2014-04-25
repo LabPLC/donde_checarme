@@ -20,10 +20,10 @@
 require 'spec_helper'
 
 describe Place do
-  before { @place = Place.new(nombre: "Lugar de ejemplo", 
-                                        latitude:"99.09999", 
-                                        longitude:"-90.888888", 
-                                        direccion: "blablaba de ejemplo", 
+  before { @place = Place.new(nombre: "Lugar de ejemplo",
+                                        latitude:"99.09999",
+                                        longitude:"-90.888888",
+                                        direccion: "blablaba de ejemplo",
                                         telefono: "555-5555",
                                         encargado: "encargado del centro") }
 
@@ -51,6 +51,11 @@ describe Place do
   describe "cuando la longitud no esta disponible" do
     before { @place.longitude = nil}
     it { should_not be_valid}
+  end
+
+  describe "regresa un geojson" do
+    before { @place.to_geojson }
+    it { should be_valid }
   end
 
   describe "cuando el nombre ya existe" do
