@@ -2,12 +2,9 @@ class PreguntaController < ApplicationController
 
   def preguntar
     pregunta = params[:pregunta]
-    a = Pregunta.new(texto: pregunta)
-    if a.save!
-      puts a
-    end
-    lugares = Place.search(a.texto)
-    puts lugares
+    a = Pregunta.save!(texto: pregunta)
+
+    lugares = Place.near(a.texto + "")
     respond_to do |format|
       format.json do
         to_json lugares

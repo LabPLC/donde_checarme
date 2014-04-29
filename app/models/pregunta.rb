@@ -10,4 +10,8 @@
 #
 
 class Pregunta < ActiveRecord::Base
+
+  def is_in_cat?(query)
+    !Category.where("tipo LIKE ?",  "#{query}%").empty?
+  end
 end

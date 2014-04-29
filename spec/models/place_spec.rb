@@ -44,6 +44,19 @@ describe Place do
       it { should_not be_valid}
     end
 
+    describe "guardar algo" do
+      before { @place.save }
+      it { should be_valid}
+    end
+
+    describe "no debo guardar sin lat ni long" do
+      before { @place.latitude = nil }
+      it "no debe ser valido sin lat" do
+        expect(@place).to_not be_valid
+      end
+
+    end
+
     describe "cuando la latitud no esta disponible" do
       before { @place.latitude = nil}
       it { should_not be_valid }

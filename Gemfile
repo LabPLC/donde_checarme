@@ -23,7 +23,7 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'libnotify'
   gem 'factory_girl'
-  gem 'coveralls'
+  gem 'coveralls',  require: false
 
 end
 
