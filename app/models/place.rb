@@ -75,8 +75,11 @@ class Place < ActiveRecord::Base
     }
   end
 
+  def self.get_hospitals
+    Place.where(tipo: "Hospital")
+  end
+
   def self.search(busqueda, latitude = 0, longitude = 0, dist = 3)
-    places = nil
     if latitude == 0 || longitude == 0
       places =  self.where("nombre LIKE :busqueda
                   OR tipo LIKE :busqueda", :busqueda => "%" + busqueda + "%")

@@ -20,65 +20,77 @@
 require 'spec_helper'
 
 describe Place do
-  before { @place = Place.new(nombre: "Lugar de ejemplo",
+  context "todo sobre los lugares" do
+    before { @place = Place.new(nombre: "Lugar de ejemplo",
                                         latitude:"99.09999",
                                         longitude:"-90.888888",
                                         direccion: "blablaba de ejemplo",
                                         telefono: "555-5555",
                                         encargado: "encargado del centro") }
 
-  subject { @place }
+    subject { @place }
 
-  it { should respond_to( :nombre ) }
-  it { should respond_to( :latitude ) }
-  it { should respond_to( :longitude ) }
-  it { should respond_to( :direccion) }
-  it { should respond_to( :encargado)}
-  it { should respond_to( :telefono )}
+    it { should respond_to( :nombre ) }
+    it { should respond_to( :latitude ) }
+    it { should respond_to( :longitude ) }
+    it { should respond_to( :direccion) }
+    it { should respond_to( :encargado)}
+    it { should respond_to( :telefono )}
 
-  it { should be_valid}
+    it { should be_valid}
 
-  describe "cuando el nombre no esta disponible" do
-    before { @place.nombre = " "}
-    it { should_not be_valid}
-  end
-
-  describe "cuando la latitud no esta disponible" do
-    before { @place.latitude = nil}
-    it { should_not be_valid }
-  end
-
-  describe "cuando la longitud no esta disponible" do
-    before { @place.longitude = nil}
-    it { should_not be_valid}
-  end
-
-  describe "regresa un geojson" do
-    before { @place.to_geojson }
-    it { should be_valid }
-  end
-
-  describe "cuando el nombre ya existe" do
-    before do
-      lugar_con_mismo_nombre = @place.dup
-      lugar_con_mismo_nombre.save
+    describe "cuando el nombre no esta disponible" do
+      before { @place.nombre = " "}
+      it { should_not be_valid}
     end
-    it { should_not be_valid}
-  end
 
-  describe "cuando el nombre ya existe" do
-    before do
-      lugar_con_mismo_nombre = @place.dup
-      lugar_con_mismo_nombre.nombre = @place.nombre.upcase
-      lugar_con_mismo_nombre.save
+    describe "cuando la latitud no esta disponible" do
+      before { @place.latitude = nil}
+      it { should_not be_valid }
     end
-    it { should_not be_valid}
-  end
 
-  describe "busqueda de un lugar" do
-    it "no debe ser valido sin parametros" do
-      expect{Place.search()}.to raise_error
+    describe "cuando la longitud no esta disponible" do
+      before { @place.longitude = nil}
+      it { should_not be_valid}
+    end
+
+    describe "regresa un geojson" do
+      before { @place.to_geojson }
+      it { should be_valid }
+    end
+
+    describe "cuando el nombre ya existe" do
+      before do
+        lugar_con_mismo_nombre = @place.dup
+        lugar_con_mismo_nombre.save
+      end
+      it { should_not be_valid}
+    end
+
+    describe "cuando el nombre ya existe" do
+      before do
+        lugar_con_mismo_nombre = @place.dup
+        lugar_con_mismo_nombre.nombre = @place.nombre.upcase
+        lugar_con_mismo_nombre.save
+      end
+      it { should_not be_valid}
+    end
+
+    describe "busqueda de un lugar" do
+      it "no debe ser valido sin parametros" do
+        expect{Place.search()}.to raise_error
+      end
+    end
+
+  end
+  context "para los metodos de clase" do
+
+    describe "deben regresar los hospitales" do
+      before { @places = Place.get_hospitals }
+      subject { @places }
+      it{ should_not be_nil }
+      it {should be_a ActiveRecord::Relation}
     end
   end
-
 end
+

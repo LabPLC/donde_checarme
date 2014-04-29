@@ -28,6 +28,12 @@ csv.each do |row|
     )
 end
 
+Category.create(tipo: "condones")
+Category.create(tipo: "urgencias")
+Category.create(tipo: "rayos x")
+Category.create(tipo: "condones")
+
+
 
 
 
