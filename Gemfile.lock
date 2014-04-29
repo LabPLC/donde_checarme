@@ -54,6 +54,8 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
     ffi (1.9.3)
     formatador (0.2.4)
     foundation-icons-sass-rails (3.0.0)
@@ -220,6 +222,7 @@ DEPENDENCIES
   capybara (= 2.1.0)
   childprocess
   coffee-rails (= 4.0.1)
+  factory_girl
   foundation-icons-sass-rails
   geocoder
   guard-rspec (= 2.5.0)

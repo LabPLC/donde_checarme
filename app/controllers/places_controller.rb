@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+  rescue_from Exception, with: :failure_message
+
   def index
     if params.has_key? :busca
       @centros = Place.where("nombre LIKE ?", params[:busca])
@@ -31,7 +33,10 @@ class PlacesController < ApplicationController
 
   def search
     #@places = Place.find_by_tipo(params[:tipo])
-    @places = Place.seach(params[:tipo])
+    if params.has_key? :urgencias
+      @places = Place.get_hospitals
+    end
+    @places = Place.search(params[:tipo])
     respond_to do |format|
       format.html
       format.json do
@@ -73,5 +78,9 @@ class PlacesController < ApplicationController
           features: lugares.map(&:to_geojson)
         }
         render json: geojson
+    end
+
+    def failure_message(error)
+      render :json => { :error => error.message}, :status => :not_found
     end
 end
