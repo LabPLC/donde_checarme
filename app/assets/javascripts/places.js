@@ -73,6 +73,9 @@ function getCentros(lat, lng, busqueda) {
   } else {
     API_ENDPOINT = "/hospitales.json"
   }
+  if ( busqueda == "urgencias") {
+    API_ENDPOINT = "/search.json?urgencias=true"
+  }
   console.log(API_ENDPOINT);
 
   var prom = $.ajax({
@@ -84,6 +87,12 @@ function getCentros(lat, lng, busqueda) {
   prom.done(onGetMapaSccess);
 }
 
+function toggleUrgencias(checked) {
+  if ( checked )
+    getCentros(0,0,"urgencias")
+  else
+    getCentros()
+}
 
 
 
@@ -112,6 +121,10 @@ $(document).ready(function() {
     console.log("cliiiiickk")
     getCentros(centralmarker.getLatLng().lat, centralmarker.getLatLng().lng)
     showDataAtZoom(markers.getGeoJSON());
+  })
+
+  $("#urgencias").click(function() {
+    toggleUrgencias(this.checked)
   })
 
 });
@@ -156,7 +169,7 @@ L.Map.prototype.panToOffset = function (latlng, offset, options) {
       offset[1] = $(window).height() / 10
     }
 
-    return offset
+    return offset;
 
    }
 

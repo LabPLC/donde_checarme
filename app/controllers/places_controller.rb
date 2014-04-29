@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-  rescue_from Exception, with: :failure_message
+  rescue_from TypeError, with: :failure_message
 
   def index
     if params.has_key? :busca
@@ -35,8 +35,9 @@ class PlacesController < ApplicationController
     #@places = Place.find_by_tipo(params[:tipo])
     if params.has_key? :urgencias
       @places = Place.get_hospitals
+    elsif
+      @places = Place.search(params[:tipo])
     end
-    @places = Place.search(params[:tipo])
     respond_to do |format|
       format.html
       format.json do
