@@ -87,12 +87,7 @@ function getCentros(lat, lng, busqueda) {
   prom.done(onGetMapaSccess);
 }
 
-function toggleUrgencias(checked) {
-  if ( checked )
-    getCentros(0,0,"urgencias")
-  else
-    getCentros()
-}
+
 
 
 
@@ -128,6 +123,13 @@ $(document).ready(function() {
   })
 
 });
+
+function toggleUrgencias(checked) {
+  if ( checked )
+    getCentros(0,0,"urgencias")
+  else
+    getCentros()
+}
 
 function onMapLocationFound(e){
   if (centralmarker != "") {

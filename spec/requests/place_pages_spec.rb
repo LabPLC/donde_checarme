@@ -12,6 +12,6 @@ describe "PlacePages" do
     it { should have_css('div#map') }
     it { should have_title("#{titulo_base}") }
     it { should have_field('pregunta')}
-    it { should have_content('Urgencias')}
+    it { should have_content('Emergencias')}
   end
 end
