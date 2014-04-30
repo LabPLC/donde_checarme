@@ -15,6 +15,7 @@
 #  subtipo    :string(255)
 #  delegacion :string(255)
 #  horario    :string(255)
+#  categoria  :string(255)
 #
 
 class Place < ActiveRecord::Base

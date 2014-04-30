@@ -1,45 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/juancho/code/codigocdmx/donde_checarme/app/models/pregunta.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/home/juancho/code/codigocdmx/donde_checarme/app/models/category.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null
-      ]
     },
-    "timestamp": 1398804804
+    "timestamp": 1398872215
   }
 }
