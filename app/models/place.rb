@@ -51,6 +51,15 @@ class Place < ActiveRecord::Base
   end
 
   def to_geojson
+    #telefono = telefono.scan(/(\d{7,10})/)[1] unless telefono.nil?
+    if !telefono.nil?
+      tele = telefono.gsub(/-/, "").gsub(/\s+/, "").scan(/(\d{7,10})/)[0]
+
+      if tele[0].length < 10
+        tele[0].insert(0, "55")
+      end
+      telefono = tele
+    end
     {
       type: "Feature",
       geometry: {

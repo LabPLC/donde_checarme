@@ -57,6 +57,9 @@
             - linkl = "https://maps.google.com?daddr={{geometry.coordinates.1}},{{geometry.coordinates.0}}&z=17&"
             %a{href: linkl, target: '_blank'}
               {{properties.address}}
+            %a{href: "tel:{{properties.telefono}}"}
+              Telefono: {{properties.telefono.0}}
+
     {{/feature}}
 
 
