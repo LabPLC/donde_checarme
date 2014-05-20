@@ -12,6 +12,7 @@ ChecateAquiApp::Application.routes.draw do
 
   post '/preguntas' => 'pregunta#preguntar', as: :preguntar
 
+  get "/.well-known/status" => "status#check"
 
   resources :places
 
