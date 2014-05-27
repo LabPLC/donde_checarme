@@ -28,12 +28,13 @@ group :test do
 end
 
 gem 'geocoder'
-
+gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'jquery-rails', '3.0.4'
 #gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
-gem 'will_paginate', '~> 3.0'
+
 gem 'mapbox-rails'
 gem "ransack"
 
