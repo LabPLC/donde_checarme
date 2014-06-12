@@ -633,7 +633,7 @@ header #nav-logo img {
   /* padding: 14px 10px 14px; */
 }
 #info-lugares .lugares-entrada .place-entry {
-  height: 48px;
+  height: 80px;
   cursor: hand;
   cursor: pointer;
   position: relative;
@@ -1266,4 +1266,22 @@ div.footer-popup .footer-popup-content {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.filter-type {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.text-leyenda {
+  display: block;
+}
+
+.h1-header {
+  color: #fff;
+}
+
+.flechaarriba {
+  display: none;
 }

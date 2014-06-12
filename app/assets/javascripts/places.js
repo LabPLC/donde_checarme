@@ -75,6 +75,12 @@ function getCentros(lat, lng, busqueda) {
   }
   if ( busqueda == "urgencias") {
     API_ENDPOINT = "/search.json?urgencias=true"
+  } else if (busqueda == "hospitales") {
+    API_ENDPOINT = "/search.json?urgencias=true"
+  } else if (busqueda == "t2") {
+    API_ENDPOINT = "/search.json?t2=true"
+  } else if (busqueda == "t3") {
+    API_ENDPOINT = "/search.json?t3=true"
   }
   console.log(API_ENDPOINT);
 
@@ -119,14 +125,26 @@ $(document).ready(function() {
   })
 
   $("#urgencias").click(function() {
-    toggleUrgencias(this.checked)
+    toggleUrgencias(this.checked, "urgencias")
   })
+
+  $("#Hospitales").click(function() {
+    toggleUrgencias(this.checked, "hospitales");
+  });
+
+  $("#T-2").click(function() {
+    toggleUrgencias(this.checked, "t2");
+  });
+
+  $("#T-3").click(function() {
+    toggleUrgencias(this.checked, "t3");
+  });
 
 });
 
-function toggleUrgencias(checked) {
+function toggleUrgencias(checked, tipo) {
   if ( checked )
-    getCentros(0,0,"urgencias")
+    getCentros(0,0,tipo)
   else
     getCentros()
 }
@@ -154,6 +172,7 @@ L.Map.prototype.panToOffset = function (latlng, offset, options) {
     var point = this.containerPointToLatLng([x, y])
     return this.setView(point, this._zoom, { pan: options })
   }
+
   function _getCenterOffset () {
     var offset = [0, 0]
     var $overlay = $('#info-lugares')
@@ -217,11 +236,15 @@ function toggleVendor(clicked) {
   if (clicked.next('.lugares-entrada').is(':visible')) {
     clicked.removeClass('active')
     $('.lugares-entrada').slideUp(200)
+    $('.flechaarriba').css("display", "inline")
+    $('.flechaabajo').css("display", "none")
   }
   else {
     if ($('.lugares-entrada').is(':visible')) {
       $('.lugares-entrada').prev('.lugares-encabezado').removeClass('active')
       $('.lugares-entrada').slideUp(200)
+      $('.flechaarriba').css("display", "none")
+      $('.flechaarriba').css("display", "none")
     }
     clicked.next('.lugares-entrada').slideDown(200)
     clicked.addClass('active')
@@ -238,7 +261,9 @@ function showDataAtZoom(data){
   var $panelCerca = $('#lugares-pregunta .place-entry-list')
   $panelCerca.html(Mustache.render(mustacheTemplate,data));
   $('.place-entry').click(function(ex){
+        toggleVendor($(this))
         openPopUpOnClick(this.getAttribute("data-location-id"))
+
       })
 }
 
@@ -246,9 +271,9 @@ function openPopUpOnClick(id) {
   markers.eachLayer(function(marker) {
     console.log(marker)
     if (marker.feature.properties.id == id ) {
-      console.log(id)
       marker.openPopup();
-      mapa.panToOffset(marker.getLatLng(),_getCenterOffset)
+      mapa.panToOffset(marker.getLatLng(),_getCenterOffset())
     }
   })
 }
+

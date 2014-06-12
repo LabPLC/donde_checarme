@@ -35,7 +35,11 @@ class PlacesController < ApplicationController
     #@places = Place.find_by_tipo(params[:tipo])
     if params.has_key? :urgencias
       @places = Place.get_hospitals
-    elsif
+    elsif params.has_key? :t2
+      @places = Place.get_t2(nil)
+    elsif params.has_key? :t3
+      @places = Place.get_t3(nil)
+    else
       @places = Place.search(params[:tipo])
     end
     respond_to do |format|

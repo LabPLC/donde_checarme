@@ -1,29 +1,52 @@
 %section#main
   #info-lugares
     .info-lugares-title
-      %h1
+      %h1.h1-header
         Centros de Salud de la Ciudad de Mexico
       %p
         Secretaría de Salud, SEDESA
       %p
         \-beta-
     .lugar-data
+
       #lugares-cerca.lugares-encabezado
         Cerca de aquí
+        %i.fa.fa-chevron-down.flechaabajo
+        %i.fa.fa-chevron-up.flechaarriba
       #lugares-pregunta.lugares-entrada{style: "display: none"}
         .place-entry-list
           .lugares-cargando
             %h3
               Cargando
       #lugar-encabezado-pregunta.lugares-encabezado
-        ¿Qué necesitas buscar?
+        Busca Centros de Salud
+        %i.fa.fa-chevron-down.flechaarriba
+        %i.fa.fa-chevron-up.flechaabajo
       #lugares-pregunta.lugares-entrada
         = form_tag '/preguntas.json', id: "preguntas", method: 'post', remote: true do
           = field_set_tag do
             = text_field_tag :pregunta, nil,placeholder: "condones, urgencias o tu direccion dirección"
             = submit_tag 'Buscar'
-        = check_box_tag "urgencias"
-        Emergencias
+        .categorias
+          %span.text-leyenda
+            Encuentra
+          .encabezado
+            .filter-type
+              = check_box_tag "Hospitales"
+              %span.text-leyenda
+                Hospitales
+            .filter-type
+              = check_box_tag "T-2"
+              %span.text-leyenda
+                T2
+            .filter-type
+              = check_box_tag "T-3"
+              %span.text-leyenda
+                T3
+            .filter-type
+              = check_box_tag "urgencias"
+              %span.text-leyenda
+                Emergencias
   #map
 
 

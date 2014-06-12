@@ -85,8 +85,26 @@ class Place < ActiveRecord::Base
     }
   end
 
+
+
   def self.get_hospitals
     Place.where(tipo: "Hospital")
+  end
+
+  def self.get_t1(places)
+    places ||= Place.where(subtipo: "T-I")
+    places.where(subtipo: "T-I")
+  end
+
+  def self.get_t2(places)
+    places ||= Place.where(subtipo: "T-II")
+    places.where(subtipo: "T-II")
+
+  end
+
+  def self.get_t3(places)
+    places ||= Place.where(subtipo: "T-III")
+    places.where(subtipo: "T-III")
   end
 
   def self.search(busqueda, latitude = 0, longitude = 0, dist = 3)
