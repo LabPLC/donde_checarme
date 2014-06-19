@@ -9,6 +9,8 @@ En este proyecto encontraras la localizacion de los centros de salud del DF
 
 **_Donde Checarme_** es una aplicación desarrollada en **Ruby on Rails** como despachador de páginas y Javascript con Coffee Script como front-end para localizar los elementos en el mapa.
 
+![Imgur](http://i.imgur.com/2GdAIjj.png)
+
 ## ¿Cómo utilizar tus propios puntos?
 
 **Donde Checarme** fue realizado con el objetivo de desarrollar a futuro un framework sencillo de localización en un mapa de puntos georreferenciados
